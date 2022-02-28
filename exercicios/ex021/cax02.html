@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grouping text</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lavender;
+            margin: 0px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.5);
+            border-radius: 10px ;
+
+        }
+
+        header {
+            background-color: blue;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.5);
+            border-radius: 30px 10px;
+        }
+
+        nav {
+            background-color: fuchsia;
+            padding: 3px;
+            margin-right: 30px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.5);
+            border-radius: 30px;
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: green;
+            font-weight: bold;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.5);
+            
+
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.5);
+        }
+
+        main{
+            background-color: brown;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.5);
+            border-radius: 10px 30px ;
+        }
+
+        article {
+            background-color: chocolate;
+            padding: 5px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.5);
+
+        }
+
+        article > aside {
+            background: darkorange;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.5);
+        }
+
+        footer {
+            background-color: black;
+            color: whitesmoke;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.5);
+            border-radius: 10px 30px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        #bola{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: hotpink;
+            border-radius: 50%;
+
+        }
+
+
+    </style>
+</head>
+<body>
+   <header>
+     <h1>meu site</h1>
+     <nav>
+         <a href="#">link link  </a>
+     </nav>
+   </header>
+   <main>
+     <section id="assustos">
+       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure suscipit quas praesentium veniam provident officia quo nobis, corporis voluptate hic. Facilis perferendis eius illo debitis magnam numquam accusantium quibusdam a!</p>
+     </section>
+     <section id="noticias">
+        <article>
+            <h2>noticia da vida</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde non, odit voluptas distinctio, quaerat itaque, soluta facilis obcaecati illo ducimus nobis deserunt voluptates dicta neque velit fuga! Aliquid, rem aliquam?</p>
+            <aside>
+                  <p>artigo escrito por Jacinto Pereira</p>
+            </aside>
+        </article>
+        <article>
+            <aside>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dolorum sunt, accusantium, temporibus tempora dolor similique accusamus quibusdam perferendis illo maxime debitis cumque adipisci harum expedita modi eaque facilis rerum?</p>
+            </aside>
+        </article>
+     </section>
+   </main>
+   <footer>
+      <p>desenvolvido por mim </p>
+   </footer>
+   <div id="bola"></div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+body {
+    text-align: center;
+    background-color: pink;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+h1 {
+   color: peru;
+   background-color: peachpuff;
+}
+h2 {
+    color: papayawhip;
+    background-color: palevioletred;
+}
+p {
+   color: seashell;
+   background-color: paleturquoise;
+   text-align: justify;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: blueviolet;
+        }
+        h1 {
+            background-color: greenyellow;
+        }
+    </style>
+    <link rel="shortcut icon" href="favicon (7).ico" type="image/x-icon">
+    <title>Imagens Interativas</title>
+</head>
+<body>
+    <h1 style="color: blueviolet;">Imagens</h1>
+    <h2 style="color: chartreuse;">Vamos usar a tag &lt;Picture&gt;</h2>
+    <picture>
+       <source media="(min-width: 1050px)" srcset="imagem/foto-m.png" type="image/png">
+        <img src="imagem/foto-g.png" alt="foto flexivel">
+    </picture>
+<h1>reproduzindo aúdios</h1>
+<audio preload="metadata" autoplay controls loo>
+    <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+    <source src="midia/guanacast-33.ogg" type="audio/ogg">
+    <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+    <p>infelizmente você não poderá ouvir o aúdio, clique <a href="midia/guanacast-33.mp3">aqui</a> para baixar o aúdio</p>
+</audio>
+</body>
+</html>
