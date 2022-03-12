@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrupado Colunas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        .cnome{
+            background-color: aquamarine;
+        }
+        .cgrupo {
+            background-color: cornflowerblue;
+        }
+        .cprof {
+            background-color: darkmagenta;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicio de tabelas</h1>
+
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="cgrupo" span="2">
+            <col class="cprof">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <th  scope="col">Nome</th>
+        <th  scope="col">Sexo</th>
+        <th  scope="col">Idade</th>
+        <th  scope="col">Profissão</th>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td >25</td>
+            <td >Detetive</td>
+        </tr>
+        <tr>
+            <td >Clark Kent</td>
+            <td >M</td>
+            <td>34</td>
+            <td >Jornalista</td>
+        </tr>
+        <tr>
+            <td >Peter Parker</td>
+            <td >M</td>
+            <td >23</td>
+            <td >Fotografo</td>
+        </tr>
+        <tr>
+            <td >Lois Lane</td>
+            <td >F</td>
+            <td >35</td>
+            <td >Jornalista</td>
+        </tr>
+        <tr>
+            <td >Mike Ross</td>
+            <td >M</td>
+            <td >25</td>
+            <td >Advogado</td>
+        </tr>
+        <tr>
+            <td >Maria Hill</td>
+            <td >F</td>
+            <td >29</td>
+            <td >Agente Secreta</td>
+        </tr>
+
+    </table>
+</body>
+</html>
