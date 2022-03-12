@@ -18,6 +18,13 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot {
             background-color: gray;
             color: white;
@@ -33,6 +40,7 @@
     <!--
         Anatomia para tabelas grandes
         Table
+         Caption (legenda)
          Thead
             tr, td, th
          Tbody
@@ -41,10 +49,11 @@
             tr, td, th
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -159,8 +168,8 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
-                <td class="num"><strong>210.147.125</strong></td>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num" style="width: 50px;"><strong>210.147.125</strong></td>
             </tr>
         </tfoot>
     </table>
