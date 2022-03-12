@@ -30,6 +30,13 @@
             color: white;
 
         }
+        tbody > tr:not(odd) {
+            background-color: white; /*2n-1*/
+            
+        }
+        tbody > tr:nth-child(even) {
+            background-color: lightgrey;/*2n*/
+        }
         td.num {
             text-align: right;
         }
