@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class</title>
+    <style>
+        body {
+            background-color: purple;
+            color: orangered;
+        }
+    </style>
+</head>
+<body>
+    <h2>Uso da atribuição class em JavaScript</h2>
+    <p>Clique no botão com o elemento class "botão"</p>
+
+    <button onclick="myFuction()">Esconder</button>
+
+    <h2 class="botão">Vermelho</h2>
+
+    <h2 class="botão">Amarelo</h2>
+
+    <h2 class="botão">Verde</h2>
+
+    <script>
+        function myFuction() {
+            var x = document.getElementsByClassName("botão");
+            for (var i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
