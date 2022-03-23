@@ -5,10 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iframe</title>
+    <style>
+        body {
+            background-color: red;
+        }
+
+        
+    </style>
 </head>
 <body>
     <h1>Iframe</h1>
 
-    <iframe src="demo_iframe.html" frameborder="0" height="200" width="200" title="Iframe Example">Iframe</iframe>
+    <iframe src="https://www.techtudo.com.br" frameborder="0" height="500" width="500" title="Iframe Example">Iframe</iframe>
+
+    <br>
+
+    <iframe src="https://www.techtudo.com.br" style="height:500px;width:500px" title="Iframe Example"></iframe>
+
+    <br>
+
+    <iframe src="https://www.techtudo.com.br" frameborder="0" style="height:500;width:500px;" title="Iframe example"></iframe>
+
+    <iframe src="https://www.techtudo.com.br" frameborder="0" height="500" width="500" style="border:2px solid wheat;" title="Iframe Example"></iframe>
+
+    <iframe src="https://www.techtudo.com.br" frameborder="0" name="iframe_a" height="500" width="100%" title="Iframe Example"></iframe>
+
+    <p><a href="https://www.techtudo.com.br" target="iframe_a">Techtudo</a></p>
 </body>
 </html>
