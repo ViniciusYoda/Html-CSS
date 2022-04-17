@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Exemplos de formúlarios</h1>
+
+    <label for="fname">Primeiro nome: </label>
+    <input type="text" id="fname" name="fname">
+
+    <br>
+    <br>
+
+    <label for="cars">Escolha um carro: </label>
+    <select name="cars" id="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option></select>
+
+    <br>
+    <br>
+
+    <label for="cars">Escolha um carro: </label>
+    <select name="cars" id="cars" size="4" multiple>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option></select>
+
+    <br>
+    <br>
+
+    <textarea name="message" id="message" cols="30" rows="10">Escreva como foi seu dia: </textarea>
+
+    <br>
+    <br>
+
+    <button type="button" onclick="alert('HEllo World!')">Click em mim!</button>
+
+    <br>
+    <br>
+
+    <form action="/https://www.w3schools.com/html/html_form_elements.asp">
+        <fieldset>
+            <legend>Personalia: </legend>
+            <label for="fname">Primeiro nome: </label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Sobrenome> </label><br>
+            <input type="text" id="lname" name="lname"><br><br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+
+    <br>
+    <br>
+
+    <form action="/https://www.w3schools.com/html/html_form_elements.asp">
+        <input list="browsers">
+        <datalist id="brpwsers">
+            <option value="Edge"></option>
+            <option value="Firefox"></option>
+            <option value="Chrome"></option>
+            <option value="Opera"></option>
+            <option value="Safari"></option>
+        </datalist>
+    </form>
+
+    <br><br>
+
+    <form action="/action_page.php"
+  oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range"  id="a" name="a" value="50">
+  100 +
+  <input type="number" id="b" name="b" value="50">
+  =
+  <output name="x" for="a b"></output>
+  <br><br>
+  <input type="submit">
+</form>
+</body>
+</html>

@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+body {
+    background-color: darkkhaki;
+}
+
+h1 {
+    color: white;
+}
+
+label {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+fieldset {
+    background-color: white;
+}
