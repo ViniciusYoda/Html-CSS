@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Valor</h1>
+    <form action="#">
+        <label for="fname">Primeiro nome:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Sobrenome: </label><br>
+        <input type="text" id="lname" name="lname">
+    </form>
+    <br><br>
+    <h1>Readonly</h1>
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" readonly><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" >
+      </form>
+      <br><br>
+      <h1>Disabled</h1>
+      <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"  disabled><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" >
+      </form>
+      <br><br>
+      <h1>Size</h1>
+      <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" size="50"><br>
+        <label for="pin">PIN:</label><br>
+        <input type="text" id="pin" name="pin" size="4">
+      </form>
+      <br><br>
+      <h1>Maxlength</h1>
+      <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" size="50"><br>
+        <label for="pin">PIN:</label><br>
+        <input type="text" id="pin" name="pin" maxlength="4" size="4">
+      </form>
+      <br><br>
+      <h1>Min&Max</h1>
+      <form>
+        <label for="datemax">Enter a date before 1980-01-01:</label>
+        <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+      
+        <label for="datemin">Enter a date after 2000-01-01:</label>
+        <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+      
+        <label for="quantity">Quantity (between 1 and 5):</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="5">
+      </form>
+      <br><br>
+      <h1>Multiple</h1>
+      <form>
+        <label for="files">Select files:</label>
+        <input type="file" id="files" name="files" multiple>
+      </form>
+      <br><br>
+      <h1>Pattern</h1>
+      <form>
+        <label for="country_code">Country code:</label>
+        <input type="text" id="country_code" name="country_code"
+        pattern="[A-Za-z]{3}" title="Three letter country code">
+      </form>
+      <br><br>
+      <h1>Placeholder</h1>
+      <form>
+        <label for="phone">Enter a phone number:</label>
+        <input type="tel" id="phone" name="phone"
+        placeholder="123-45-678"
+        pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+      </form>
+      <br><br>
+      <h1>Required</h1>
+      <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </form>
+      <br><br>
+      <h1>Step</h1>
+      <form>
+        <label for="points">Points:</label>
+        <input type="number" id="points" name="points" step="3">
+      </form>
+      <br><br>
+      <h1>Autofocus</h1>
+      <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" autofocus><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname">
+      </form>
+      <br><br>
+      <h1>height&width</h1>
+      <form>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="image" src="./img/bola.webp" alt="Submit" width="48" height="48">
+      </form>
+      <br><br>
+      <h1>List</h1>
+      <form>
+        <input list="browsers">
+        <datalist id="browsers">
+          <option value="Internet Explorer">
+          <option value="Firefox">
+          <option value="Chrome">
+          <option value="Opera">
+          <option value="Safari">
+        </datalist>
+      </form>
+      <br><br>
+      <h1>Autocomplete</h1>
+      <form>
+        <input list="browsers">
+        <datalist id="browsers">
+          <option value="Internet Explorer">
+          <option value="Firefox">
+          <option value="Chrome">
+          <option value="Opera">
+          <option value="Safari">
+        </datalist>
+      </form>
+      <br><br>
+</body>
+</html>
