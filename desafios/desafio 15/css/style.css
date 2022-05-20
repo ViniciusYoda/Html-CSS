@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+body{
+    background-color: darkturquoise;
+}
+
+.titulo {
+    text-align: center;
+    padding-top: 4px;
+    font-size: larger;
+    color: cyan;
+   
+}
+
+.login {
+    padding-bottom: 100ex;
+    background-color: aliceblue;
+    height: 70vh;
+    padding-left: 30%;
+    padding-right: 100%;
+    
+}
+
+#email {
+    height: 3vh;
+}
