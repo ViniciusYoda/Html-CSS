@@ -4,8 +4,24 @@
     font-family: sans-serif;
     
 }
+
+body{
+    background-color: rgb(15, 226, 230);
+    margin-top: 18%;
+    margin-left: 24%;
+    margin-right: 18%;
+}   
+
 .container{
-    background-color: rgb(34, 132, 230);
-    height: 100vh;
-    width: 100vh;
+    background-color: whitesmoke;
+    display: flexbox;
+    margin-left: 10%;
+    padding-left: 30%;
+    width: 100px;
+    max-width: 100%;
+    min-width: 50%;
+}
+
+.cabeca {
+    color: teal;
 }
