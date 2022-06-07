@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RWD</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
 </head>
 <body>
     <div class="container"> 
@@ -15,7 +16,7 @@
             </header>
         </div>
         <div class="principal">
-            <form action="index.html" method="post">
+            <form action="index.html" method="post" class="formulario">
                 <div class="nome">
                     <label for="noma">Nome </label>
                     <input type="text" id="nomeId" name="nome">
@@ -31,6 +32,9 @@
                 <div class="senha">
                     <label for="senha">Senha </label>
                     <input type="password" name="senha" id="senhaId">
+                </div>
+                <div class="mandar">
+                    <input type="submit" value="Enviar" name="enviar" id="enviar">
                 </div>
             </form>
             <div class="rodape">
