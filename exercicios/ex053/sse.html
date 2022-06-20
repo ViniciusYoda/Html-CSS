@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSE</title>
+</head>
+<body>
+    <h1>Getting server uptades</h1>
+    <div id="result"></div>
+
+    <script>
+        if(typeof(EventSource) !== "undefined") {
+            var source = new EventSource("demo_sse.php");
+            source.onmessage = function(event){
+                document.getElementById("result").innerHTML += event.data + "<br>";
+            };
+        }else{
+            document.getElementById("result").innerHTML = "Sorry, your browser does not support servevr-sent events..."
+        }
+    </script>
+</body>
+</html>
