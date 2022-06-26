@@ -1,0 +1,9 @@
+body{
+    background-color: blue;
+}
+
+.bg {
+    background: darkorchid url('../ex011/imagem/foto-m.png') no-repeat bottom center fixed;
+    width: 500px;
+    height: 500px;
+}
