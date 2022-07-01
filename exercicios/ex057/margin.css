@@ -1,0 +1,46 @@
+p {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+    background-color: aquamarine;
+}
+div{
+    margin: 25px 50px 75px 100px;
+    background-color: darkorange;
+}
+
+main{
+    margin: 25px 50px 75px;
+    background-color: gold;
+}
+nav{
+    margin: 25px 50px;
+    background-color: lightcoral;
+}
+h4{
+    margin: 25px;
+    background-color: darkorchid;
+}
+h1{
+    width: 300px;
+    margin: auto;
+    border: 1px solid red;
+    background-color: lightskyblue;
+}
+.d{
+    border: 1px solid red;
+    width: 150px;
+    background-color: peachpuff;
+}
+p.ex1{
+    margin-left: inherit;
+}
+h2{
+    margin: 0 0 50px o;
+    background-color: mediumpurple;
+}
+h3{
+    margin: 20px 0 0 0;
+    background-color: cornflowerblue;
+}
