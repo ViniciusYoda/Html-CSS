@@ -1,0 +1,47 @@
+.margin{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+    background-color: crimson;
+}
+
+.margin4{
+    margin: 25px 50px 75px 100px;
+    background-color: darkorange;
+}
+.margin3{
+    margin: 25px 50px 75px;
+    background-color: orangered;
+}
+.margin2{
+    margin: 25px 50px;
+    background-color: skyblue;
+}
+.margin1{
+    margin: 25px;
+    background-color: rebeccapurple;
+}
+.auto{
+    width: 300px;
+    margin: auto;
+    border: 1px solid red;
+    background-color: indigo;
+}
+.herdado{
+    border: 1px solid red;
+    margin-left: 100px;
+    background-color: deeppink;
+}
+p.ex1{
+    margin-left: inherit;
+    background-color: darkgoldenrod;
+}
+h1{
+    margin: 0 0 50px 0;
+    background-color: lightsalmon;
+}
+h2{
+    margin: 20px 0 0 0;
+    background-color: mediumpurple;
+}
