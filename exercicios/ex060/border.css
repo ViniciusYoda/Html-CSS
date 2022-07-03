@@ -1,0 +1,96 @@
+.dotted {
+    border-style: dotted;
+}
+.dashed{
+    border-style: dashed;
+}
+.solid{
+    border-style: solid;
+}
+.double{
+    border-style: double;
+}
+.groove{
+    border-style: groove;
+}
+.ridge{
+    border-style: ridge;
+}
+.inset{
+    border-style: inset;
+}
+.outset{
+    border-style: outset;
+}
+.none{
+    border-style: none;
+}
+.hidden{
+    border-style: hidden;
+}
+.mix{
+    border-style: dotted dashed solid double;
+}
+.one{
+    border-style: solid;
+    border-width: 5px;
+}
+.two{
+    border-style: solid;
+    border-width: medium;
+}
+.three{
+    border-style: dotted;
+    border-width: 2px;
+}
+.four{
+    border-style: dotted;
+    border-width: thick;
+}
+.five{
+    border-style: solid;
+    border-width: 5px 20px;
+}
+.six{
+    border-style: solid;
+    border-width: 25px 10px 4px 35px;
+}
+.seven{
+    border-style: solid;
+    border-color: red;
+}
+.eight{
+    border-style: solid;
+    border-color: red green blue yellow;
+}
+.nine{
+    border-style: solid;
+    border-color: #ff0000;
+}
+.rgb{
+    border-style: solid;
+    border-color: rgb(255, 0, 0);
+}
+.hsl{
+    border-style: solid;
+    border-color: hsl(0, 100%, 50%);
+}
+.lados{
+    border-top-style: dotted;
+    border-right-style: solid;
+    border-bottom-style: dotted;
+    border-left-style: solid;
+}
+.lados2{
+    border-style: dotted solid;
+}
+.abreviado{
+    border: 5px solid red;
+}
+.left{
+    border-left: 6px solid red;
+}
+.radius{
+    border: 2px solid red;
+    border-radius: 50px;
+}
