@@ -1,0 +1,34 @@
+div {
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    background-color: darkblue;
+}
+.abreviado{
+    padding: 25px 50px 75px 100px;
+    background-color: darkgoldenrod;
+}
+.tres{
+    padding: 25px 50px 75px;
+    background-color: darkgreen;
+}
+.dois{
+    padding: 25px 50px;
+    background-color: darkkhaki;
+}
+.um{
+    padding: 25px;
+    background-color: darkorange;
+}
+.width{
+    width: 300px;
+    padding: 25px;
+    background-color: darkred;
+}
+.box{
+    width: 300px;
+    padding: 25px;
+    box-sizing: border-box;
+    background-color: darkviolet;
+}
