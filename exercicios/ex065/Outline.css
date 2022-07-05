@@ -1,0 +1,75 @@
+.dotted{
+    outline-style: dotted;
+}
+.dashed{
+    outline-style: dashed;
+}
+.solid{
+    outline-style: solid;
+}
+.double{
+    outline-style: double;
+}
+.groove{
+    outline-style: groove;
+}
+.ridge{
+    outline-style: ridge;
+}
+.inset{
+    outline-style: inset;
+}
+.outset{
+    outline-style: outset;
+}
+.ex1{
+    border: 1px solid black;
+    outline-style: solid;
+    outline-color: red;
+    outline-width: thin;
+}
+.ex2{
+    border: 1px solid black;
+    outline-style: solid;
+    outline-color: red;
+    outline-width: medium;
+}
+.ex3{
+    border: 1px solid black;
+    outline-style: solid;
+    outline-color: red;
+    outline-width: thick;
+}
+.ex4{
+    border: 1px solid black;
+    outline-style: solid;
+    outline-color: red;
+    outline-width: 4px;
+}
+.ex5{
+    border: 2px solid black;
+    outline-style: solid;
+    outline-color: red;
+}
+.ex6{
+    outline-style: solid;
+    outline-color: #ff0000;
+}
+.ex7{
+    outline-style: solid;
+    outline-color: rgb(255, 0, 0);
+}
+.ex8{
+    outline-style: solid;
+    outline-color: hsl(0, 100%, 50%);
+}
+.ex9{
+    outline: 5px solid yellow;
+}
+.offset{
+    margin: 30px;
+    background: yellow;
+    border: 1px solid black;
+    outline: 1px solid red;
+    outline-offset: 15px;
+}
