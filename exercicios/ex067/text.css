@@ -1,0 +1,142 @@
+body {
+    background-color: lightgrey;
+    color: blue;
+}
+
+h1 {
+    background-color: black;
+    color: green;
+    text-align: center;
+    text-decoration-line: overline;
+    text-decoration-color: red;
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+    text-shadow: 2px 2px 5px red;
+}
+
+div {
+    background-color: blue;
+    color: white;
+    text-align: justify;
+}
+
+h2 {
+    text-align: left;
+    text-decoration-line: line-through;
+    text-decoration-color: blue;
+    text-decoration-style: double;
+    text-decoration-thickness: 5px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+h3 {
+    text-align: right;
+    text-decoration-line: underline;
+    text-decoration-color: green;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 25%;
+    text-shadow: 0 0 3px #ff0000;
+}
+
+.a {
+    text-align-last: right;
+}
+
+.b {
+    text-align-last: center;
+}
+
+.c {
+    text-align-last: justify;
+}
+
+p {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    text-decoration-line: overline underline;
+    text-decoration-color: purple;
+    text-decoration-thickness: 5px;
+    text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+}
+
+.d {
+    vertical-align: baseline;
+    
+}
+
+.e {
+    vertical-align: text-top;
+}
+
+.f {
+    vertical-align: text-bottom;
+}
+
+.g {
+    vertical-align: sub;
+}
+
+.h {
+    vertical-align: super;
+}
+
+.ex1{
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+}
+
+.ex2 {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+}
+
+.ex3 {
+    text-decoration-line: underline;
+    text-decoration-color: red;
+    text-decoration-style: wavy;
+}
+
+.ex4 {
+    text-decoration: underline red double 5px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+.indent {
+    text-indent: 50px;
+}
+.spacing {
+    letter-spacing: 5px;
+}
+.spacing-{
+    letter-spacing: -2px;
+}
+.small {
+    line-height: 0.8;
+}
+.big {
+    line-height: 1.8;
+}
+.one {
+    word-spacing: 10px;
+}
+.two {
+    word-spacing: -2px;
+}
+.branco{
+    white-space: nowrap;
+}
