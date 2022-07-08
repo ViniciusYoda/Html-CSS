@@ -1,0 +1,40 @@
+a {
+    color: hotpink;
+}
+
+/*link: um link normal e não visitado
+visited: um link que o usuário visitou
+hover: um link quando o usuário passa o mouse sobre ele
+active: um link no momento em que é clicado */
+
+/* A text-decorationpropriedade é usada principalmente para remover sublinhados de links: */
+
+a:link {
+    color: red;
+    text-decoration: none;
+    background-color: yellow;
+}
+
+a:visited {
+    color: green;
+    text-decoration: none;
+    background-color: cyan;
+}
+
+a:hover {
+    color: hotpink;
+    text-decoration: underline;
+    background-color: lightgreen;
+}
+
+a:active {
+    color: blue;
+    text-decoration: underline;
+    background-color: hotpink;
+}
+
+/* Ao definir o estilo para vários estados de link, existem algumas regras de ordem:
+
+a:hover DEVE vir depois de a:link e a:visited
+a:active DEVE vir depois de a:hover */
+
