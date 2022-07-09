@@ -1,0 +1,79 @@
+/* A list-style-typepropriedade especifica o tipo de marcador de item de lista. */
+
+ul.a {
+    list-style-type: circle;
+}
+
+ul.b {
+    list-style-type: square;
+}
+
+ol.c {
+    list-style-type: upper-roman;
+}
+
+ol.d {
+    list-style-type: lower-alpha;
+}
+
+/* A list-style-imagepropriedade especifica uma imagem como o marcador de item da lista */
+
+ul.img {
+    list-style-image: url('../ex017/favicon\ \(14\).ico');
+}
+
+/* A list-style-positionpropriedade especifica a posição dos marcadores de item de lista (pontos de bala).
+
+"list-style-position: outside;" significa que os marcadores estarão fora do item da lista. O início de cada linha de um item de lista será alinhado verticalmente.  */
+
+ul.outside {
+    list-style-position: outside;
+}
+
+/* "list-style-position: inside;" significa que os marcadores estarão dentro do item da lista. Como faz parte do item da lista, fará parte do texto e empurrará o texto no início: */
+
+ul.inside {
+    list-style-position: inside;
+}
+
+/* A list-style-type:nonepropriedade também pode ser usada para remover os marcadores/balas. Observe que a lista também possui margem e preenchimento padrão. Para remover isso, adicione margin:0e padding:0a <ul> ou <ol>: */
+
+ul.e{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* A list-stylepropriedade é uma propriedade abreviada. Ele é usado para definir todas as propriedades da lista em uma declaração: */
+
+ul.abreviada{
+    list-style: square inside url('../ex017/favicon\ \(14\).ico');
+}
+
+/* Ao usar a propriedade abreviada, a ordem dos valores da propriedade é:
+
+list-style-type(se uma imagem de estilo de lista for especificada, o valor desta propriedade será exibido se a imagem por algum motivo não puder ser exibida)
+
+list-style-position(especifica se os marcadores de item de lista devem aparecer dentro ou fora do fluxo de conteúdo)
+
+list-style-image(especifica uma imagem como marcador de item da lista)
+
+Se um dos valores de propriedade acima estiver ausente, o valor padrão para a propriedade ausente será inserido, se houver.
+
+ */
+
+ /* Também podemos estilizar listas com cores, para torná-las um pouco mais interessantes.
+
+Qualquer coisa adicionada à tag <ol> ou <ul> afeta a lista inteira, enquanto as propriedades adicionadas à tag <li> afetarão os itens individuais da lista: */
+
+ol.f{
+    background: #ff9999;
+    padding: 20px;
+}
+
+ul.g li{
+    background: #ffe5e5;
+    color: darkred;
+    padding: 5px;
+    margin-left: 35px;
+}
