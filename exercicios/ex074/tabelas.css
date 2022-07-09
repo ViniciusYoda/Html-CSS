@@ -1,0 +1,24 @@
+/* Bordas da tabela
+
+Para especificar as bordas da tabela em CSS, use a borderpropriedade.
+
+O exemplo abaixo especifica uma borda sólida para os elementos <table>, <th> e <td>: */
+
+table, th, td{
+    border: 1px solid
+}
+
+/* Tabela de largura total
+
+A tabela acima pode parecer pequena em alguns casos. Se você precisar de uma tabela que deva abranger toda a tela (largura total), adicione width: 100%ao elemento <table>: */
+
+/* Recolher bordas da tabela
+
+A border-collapsepropriedade define se as bordas da tabela devem ser recolhidas em uma única borda: */
+
+/*  Se você quiser apenas uma borda ao redor da tabela, especifique apenas a borderpropriedade para <table>: */ 
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}

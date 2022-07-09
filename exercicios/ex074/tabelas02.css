@@ -1,0 +1,74 @@
+/* Largura e Altura da Mesa
+A largura e a altura de uma tabela são definidas pelas propriedades widthe height.
+
+O exemplo abaixo define a largura da tabela para 100% e a altura dos elementos <th> para 70px: */
+
+table, th, th {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Para alinhar o conteúdo à esquerda, force o alinhamento dos elementos <th> a serem alinhados à esquerda, com a text-align: leftpropriedade: */ 
+
+/* Cor da tabela
+O exemplo abaixo especifica a cor de fundo e a cor do texto dos elementos <th>:
+
+*/
+
+th {
+    background-color: #04AA6d;
+    color: white;
+    height: 70px;
+}
+
+/* Alinhamento horizontal
+A text-alignpropriedade define o alinhamento horizontal (como esquerda, direita ou centro) do conteúdo em <th> ou <td>.
+
+Por padrão, o conteúdo dos elementos <th> é alinhado ao centro e o conteúdo dos elementos <td> é alinhado à esquerda.
+
+Para centralizar também o conteúdo dos elementos <td>, use text-align: center:*/
+
+/* Alinhamento vertical
+A vertical-alignpropriedade define o alinhamento vertical (como superior, inferior ou meio) do conteúdo em <th> ou <td>.
+
+Por padrão, o alinhamento vertical do conteúdo em uma tabela é no meio (para elementos <th> e <td>).
+
+O exemplo a seguir define o alinhamento vertical do texto para baixo para elementos <td>: */
+
+td {
+    height: 50px;
+    text-align: center;
+    vertical-align: super;
+}
+
+/* Preenchimento da mesa
+
+Para controlar o espaço entre a borda e o conteúdo de uma tabela, use a paddingp ropriedade nos elementos <td> e <th>: */
+
+/* Divisores horizontais */
+
+/* Adicione a border-bottompropriedade a <th> e <td> para divisores horizontais: */
+
+th, td{
+    padding: 15px;
+    text-align: justify;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Mesa flutuante
+Use o :hoverseletor em <tr> para destacar as linhas da tabela ao passar o mouse: */
+
+tr:hover {
+    background-color: coral;
+}
+
+/* Tabelas listradas 
+Para tabelas com listras zebra, use o nth-child()seletor e adicione a background-colora todas as linhas da tabela pares (ou ímpares): */
+
+tr:nth-child(even){
+    background-color: lawngreen;
+}
