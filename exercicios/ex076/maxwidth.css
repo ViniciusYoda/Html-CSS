@@ -1,0 +1,29 @@
+/* Usando largura, largura máxima e margem: auto;
+
+Conforme mencionado no capítulo anterior; um elemento de nível de bloco sempre ocupa toda a largura disponível (se estende para a esquerda e para a direita o máximo possível).
+
+Definir o width de um elemento de nível de bloco impedirá que ele se estenda até as bordas de seu contêiner. Em seguida, você pode definir as margens como automáticas, para centralizar horizontalmente o elemento em seu contêiner. O elemento ocupará a largura especificada e o espaço restante será dividido igualmente entre as duas margens:
+
+Este elemento <div> tem uma largura de 500px e uma margem definida como automática.
+
+Nota: O problema com o <div> acima ocorre quando a janela do navegador é menor que a largura do elemento. O navegador adiciona uma barra de rolagem horizontal à página.
+
+Usar max-widthem vez disso, nessa situação, melhorará o manuseio de janelas pequenas pelo navegador. Isso é importante ao tornar um site utilizável em dispositivos pequenos:
+
+Este elemento <div> tem uma largura máxima de 500px e uma margem definida como automática.
+
+Dica: Redimensione a janela do navegador para menos de 500px de largura, para ver a diferença entre as duas divs!
+
+Aqui está um exemplo das duas divs acima: */
+
+div.ex1{
+    width: 500px;
+    margin: auto;
+    border: 3px solid #73AD21;
+}
+
+div.ex2{
+    max-width: 500px;
+    margin: auto;
+    border: 3px solid #73AD21;
+}
