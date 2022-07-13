@@ -1,0 +1,22 @@
+/*   A z-index propriedade especifica a ordem de pilha de um elemento.
+
+A propriedade z-index
+Quando os elementos são posicionados, eles podem se sobrepor a outros elementos.
+
+A z-indexpropriedade especifica a ordem de pilha de um elemento (qual elemento deve ser colocado na frente ou atrás dos outros).
+
+Um elemento pode ter uma ordem de pilha positiva ou negativa:
+
+
+*/
+
+img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
+/*   Nota: z-index só funciona em elementos posicionados (posição: absoluto, posição: relativa, posição: fixo ou posição: fixo) e itens flex (elementos que são filhos diretos de display: elementos flex).
+
+*/
