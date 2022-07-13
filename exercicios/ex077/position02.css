@@ -1,0 +1,51 @@
+.container {
+    position: relative;
+    background-color: lightgreen;
+}
+
+.topleft {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: 18px;
+    background-color: red;
+}
+
+.topright {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 18px;
+    background-color: red;
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    font-size: 18px;
+    background-color: red;
+}
+
+.bottomright {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 18px;
+    background-color: red;
+}
+
+.center {
+    position:absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    background-color: red;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    opacity: 0.3;;
+}
