@@ -1,0 +1,118 @@
+/*    Overflow
+
+A propriedade CSS overflowcontrola o que acontece com o conteúdo grande demais para caber em uma área.
+
+*/
+
+#overflowTest{
+    background: #4CAF50;
+    color: white;
+    padding: 15px;
+    width: 50%;
+    height: 100px;
+    overflow: scroll;
+    border: 1px solid #ccc;
+}
+
+/* CSS overflow
+
+A overflowpropriedade especifica se o conteúdo deve ser recortado ou adicionado barras de rolagem quando o conteúdo de um elemento for muito grande para caber na área especificada.
+
+A overflow propriedade tem os seguintes valores:
+
+visible- Predefinição. O estouro não é cortado. O conteúdo é renderizado fora da caixa do elemento
+
+hidden- O estouro é cortado e o restante do conteúdo ficará invisível
+
+scroll- O estouro é cortado e uma barra de rolagem é adicionada para ver o restante do conteúdo
+
+auto- Semelhante a scroll, mas adiciona barras de rolagem apenas quando necessário
+
+Nota: A overflowpropriedade só funciona para elementos de bloco com uma altura especificada.
+
+Nota: No OS X Lion (no Mac), as barras de rolagem ficam ocultas por padrão e são exibidas apenas quando usadas (mesmo que "overflow:scroll" esteja definido).
+
+Overflow: visible
+
+Por padrão, o estouro é visible, o que significa que não é recortado e renderizado fora da caixa do elemento:
+
+Você pode usar a propriedade overflow quando quiser ter um melhor controle do layout. A propriedade overflow especifica o que acontece se o conteúdo transbordar da caixa de um elemento.
+
+Exemplo:
+*/
+
+#visible{
+    background-color: coral;
+    width: 200px;
+    height: 65px;
+    border: 1px solid;
+    overflow: visible;
+}
+
+/*Overflow: hidden
+
+Com o hidden valor, o overflow é cortado e o restante do conteúdo fica oculto:
+
+Você pode usar a propriedade overflow quando quiser ter um melhor controle do layout. A propriedade
+
+Exemplo:
+*/
+
+#hidden {
+    background-color: cornsilk;
+    width: 200px;
+    height: 65px;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+/*Overflow: scroll
+
+Definindo o valor como scroll, o estouro é cortado e uma barra de rolagem é adicionada para rolar dentro da caixa. Observe que isso adicionará uma barra de rolagem horizontal e verticalmente (mesmo que você não precise):
+
+Você pode usar a propriedade overflow quando quiser ter um melhor controle do layout. A propriedade
+
+*/
+
+#scroll{
+    background-color: cornflowerblue;
+    width: 200px;
+    height: 100px;
+    border: 1px solid black;
+    overflow: scroll;
+}
+
+/* Overflow: auto
+
+O autovalor é semelhante a scroll, mas adiciona barras de rolagem apenas quando necessário:
+
+Você pode usar a propriedade overflow quando quiser ter um melhor controle do layout. A propriedade overflow especifica o que acontece se o conteúdo transbordar da caixa de um elemento.
+
+*/
+
+#auto {
+    background-color: crimson;
+    width: 200px;
+    height: 65px;
+    border: 1px solid black;
+    overflow: auto;
+}
+
+/*Overflow-x e overflow-y
+
+As propriedades overflow-x and overflow-y especificam se o estouro do conteúdo deve ser alterado apenas horizontalmente ou verticalmente (ou ambos):
+
+overflow-x especifica o que fazer com as bordas esquerda/direita do conteúdo.
+overflow-y especifica o que fazer com as bordas superior/inferior do conteúdo.
+
+Você pode usar a propriedade overflow quando quiser ter um melhor controle do layout. A propriedade overflow especifica o que acontece se o conteúdo transbordar da caixa de um elemento.
+*/
+
+#xy{
+    background-color: rosybrown;
+    width: 200px;
+    height: 65px;
+    border: 1px solid black;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-y: scroll; /* Add vertical scrollbar */
+}
