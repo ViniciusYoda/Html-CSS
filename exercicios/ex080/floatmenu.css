@@ -1,0 +1,36 @@
+/*
+
+menu de navegação
+Você também pode usar floatcom uma lista de hiperlinks para criar um menu horizontal:
+
+exemplo:
+
+*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: #111;
+}
+
+.active {
+    background-color: red;
+}

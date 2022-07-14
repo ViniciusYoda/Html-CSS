@@ -1,0 +1,33 @@
+/*
+
+Grade de Caixas / Caixas de Largura Igual
+
+Com a floatpropriedade, é fácil flutuar caixas de conteúdo lado a lado:
+
+Exemplo
+
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    float: left;
+    width: 33.33%;
+    padding: 50px;
+}
+
+.clearflix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*
+
+O que é dimensionamento de caixa?
+
+Você pode criar facilmente três caixas flutuantes lado a lado. No entanto, quando você adiciona algo que aumenta a largura de cada caixa (por exemplo, preenchimento ou bordas), a caixa será quebrada. A box-sizingpropriedade nos permite incluir o preenchimento e a borda na largura total (e altura) da caixa, garantindo que o preenchimento fique dentro da caixa e que não quebre.
+
+*/

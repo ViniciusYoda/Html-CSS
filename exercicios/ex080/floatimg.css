@@ -1,0 +1,25 @@
+/*
+
+Imagens lado a lado
+
+A grade de caixas também pode ser usada para exibir imagens lado a lado:
+
+Exemplo
+
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+.img-container {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
