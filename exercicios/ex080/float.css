@@ -1,0 +1,80 @@
+/*
+
+CSS float e clear
+
+A propriedade CSS floatespecifica como um elemento deve flutuar.
+
+A propriedade CSS clearespecifica quais elementos podem flutuar ao lado do elemento limpo e de que lado.
+
+A propriedade flutuante
+
+A float propriedade é usada para posicionar e formatar o conteúdo, por exemplo, deixar uma imagem flutuar à esquerda do texto em um contêiner.
+
+A float propriedade pode ter um dos seguintes valores:
+
+left- O elemento flutua à esquerda de seu contêiner
+
+right- O elemento flutua à direita de seu contêiner
+
+none- O elemento não flutua (será exibido exatamente onde ocorre no texto). Isso é padrão
+
+inherit- O elemento herda o valor float de seu pai
+
+Em seu uso mais simples, a floatpropriedade pode ser usada para quebrar o texto em torno das imagens.
+
+Exemplo - float: right;
+
+O exemplo a seguir especifica que uma imagem deve flutuar à direita em um texto:
+*/
+
+img#floatright {
+    float: right;
+}
+
+/*
+
+Exemplo - float: left;
+
+O exemplo a seguir especifica que uma imagem deve flutuar para a esquerda em um texto:
+
+*/
+
+img#floatleft {
+    float: left;
+}
+
+/*
+
+Exemplo - none
+No exemplo a seguir, a imagem será exibida exatamente onde ocorre no texto (float: none;):
+
+*/
+
+img#floatnone{
+    float: none;
+}
+
+/*
+
+Exemplo - Float um ao lado do outro
+
+Normalmente, os elementos div serão exibidos um em cima do outro. No entanto, se usarmos float: left, podemos deixar os elementos flutuarem um ao lado do outro:
+
+*/
+
+div {
+    float: left;
+    padding: 15px;
+}
+
+.div1 {
+    background: red;
+}
+
+.div2 {
+    background: yellow;
+}
+
+.div3 {
+    background: green;
+}
