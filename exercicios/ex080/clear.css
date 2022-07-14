@@ -1,0 +1,84 @@
+/*
+
+CSS - clear e clearfix
+
+A propriedade clear
+
+A propriedade clara
+Quando usamos a floatpropriedade, e queremos o próximo elemento abaixo (não à direita ou à esquerda), teremos que usar a clear propriedade.
+
+A clearpropriedade especifica o que deve acontecer com o elemento que está próximo a um elemento flutuante.
+
+A clearpropriedade pode ter um dos seguintes valores:
+
+none- O elemento não é empurrado abaixo dos elementos flutuantes à esquerda ou à direita. Isso é padrão
+left- O elemento é empurrado abaixo dos elementos flutuantes à esquerda
+right- O elemento é empurrado abaixo dos elementos flutuantes à direita
+both- O elemento é empurrado abaixo dos elementos flutuantes esquerdo e direito
+inherit- O elemento herda o valor clear de seu pai
+Ao limpar floats, você deve combinar o clear com o float: Se um elemento flutuar para a esquerda, então você deve limpar para a esquerda. Seu elemento flutuante continuará flutuando, mas o elemento desmarcado aparecerá abaixo dele na página da web.
+
+Exemplo
+Este exemplo limpa o float para a esquerda. Aqui, significa que o elemento <div2> é empurrado abaixo do elemento <div1> flutuante à esquerda: 
+
+*/
+
+.div1 {
+    float: left;
+    padding: 10px;
+    border: 3px solid #73AD21;
+}
+
+.div2 {
+    padding: 10px;
+    border: 3px solid red;
+}
+
+.div3 {
+    float: left;
+    padding-left: 10px;
+    border: 3px solid #73AD21;
+}
+
+.div4 {
+    padding: 10px;
+    border: 3px solid red;
+    clear: left;
+}
+
+/*
+
+O hack do clearfix
+
+Se um elemento flutuante for mais alto que o elemento que o contém, ele "transbordará" para fora de seu contêiner. Podemos então adicionar um hack clearfix para resolver este problema:
+
+*/
+
+div {
+    border: 3px solid #4CAF50;
+    padding: 5px;
+}
+
+.img1 {
+    float: right;
+}
+
+.img2 {
+    float: right;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+/* 
+
+O overflow: autoclearfix funciona bem desde que você consiga manter o controle de suas margens e preenchimento (caso contrário, você poderá ver barras de rolagem). O novo e moderno hack do clearfix , no entanto, é mais seguro de usar, e o código a seguir é usado para a maioria das páginas da web:
+
+*/
+
+.clearfix2::after {
+    content: "";
+    clear: both;
+    display: table;
+}
