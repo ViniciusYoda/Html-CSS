@@ -1,0 +1,166 @@
+/*
+
+Alinhamento horizontal e vertical 
+
+Elementos de alinhamento central
+
+Para centralizar horizontalmente um elemento de bloco (como <div>), use margin: auto;
+
+Definir a largura do elemento impedirá que ele se estenda até as bordas de seu contêiner.
+
+O elemento então ocupará a largura especificada e o espaço restante será dividido igualmente entre as duas margens:
+
+Exemplo
+
+*/
+
+.center {
+    margin: auto;
+    width: 60%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+
+/*
+Nota: O alinhamento ao centro não tem efeito se a widthpropriedade não estiver definida (ou definida como 100%).
+
+Centralizar texto
+Para apenas centralizar o texto dentro de um elemento, usetext-align: center;
+*/
+
+.center2 {
+    text-align: center;
+    border: 3px solid green;
+}
+
+/*
+Centralizar uma imagem
+Para centralizar uma imagem, defina as margens esquerda e direita autoe transforme-a em um blockelemento:
+*/
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*
+Alinhar à esquerda e à direita - Usando a posição
+Um método para alinhar elementos é usar position: absolute;:
+*/
+
+.right {
+    position: absolute;
+    right: 0px;
+    width: 300px;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+
+/*
+Nota: Os elementos posicionados absolutos são removidos do fluxo normal e podem sobrepor elementos.
+
+Alinhamento à esquerda e à direita - Usando flutuação
+Outro método para alinhar elementos é usar a floatpropriedade:
+*/
+
+.right2 {
+    float: right;
+    width: 300px;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+
+/*
+O hack do clearfix
+
+Nota: Se um elemento for mais alto que o elemento que o contém e estiver flutuando, ele transbordará para fora de seu contêiner. Você pode usar o "hack clearfix" para corrigir isso (veja o exemplo abaixo).
+
+Em seguida, podemos adicionar o hack clearfix ao elemento que o contém para corrigir esse problema:
+
+*/
+
+div {
+    border: 3px solid #4CAF50;
+    padding: 5px;
+}
+
+.img1 {
+    float: right;
+}
+
+.img2 {
+    float: right;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*
+
+Centralizar verticalmente - usando preenchimento
+Existem muitas maneiras de centralizar um elemento verticalmente em CSS. Uma solução simples é usar top e bottom padding:
+*/
+
+.center3 {
+    padding: 70px 0;
+    border: 3px solid green;
+}
+
+/*Para centralizar vertical e horizontalmente, use paddinge text-align: center:*/
+
+.center4 {
+    padding: 70px 0;
+    border: 3px solid green;
+    text-align: center;
+}
+
+/*Centralizar Verticalmente - Usando a altura da linha
+Outro truque é usar a line-heightpropriedade com um valor igual à heightpropriedade:*/
+
+.center5 {
+    line-height: 200px;
+    height: 200px;
+    border: 3px solid green;
+    text-align: center;
+}
+
+/* If the text has multiple lines, add the following: */
+
+.center5 p {
+    line-height: 1.5;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/*Centralizar verticalmente - Usando posição e transformação
+Se paddinge line-height não forem opções, outra solução é usar o posicionamento e a transformpropriedade:*/
+
+.center6 {
+    height: 200px;
+    position: relative;
+    border: 3px solid green;
+}
+
+.center6 p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+/*Centralizar Verticalmente - Usando Flexbox
+Você também pode usar o flexbox para centralizar as coisas. Apenas observe que o flexbox não é suportado no IE10 e em versões anteriores:*/
+
+.flexbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    border: 3px solid green;
+}
