@@ -1,0 +1,117 @@
+/*
+
+Pseudo-classes
+
+O que são pseudoclasses?
+Uma pseudo-classe é usada para definir um estado especial de um elemento.
+
+Por exemplo, pode ser usado para:
+
+Estilizar um elemento quando um usuário passa o mouse sobre ele
+Estilize links visitados e não visitados de maneira diferente
+Estilize um elemento quando ele estiver em foco
+
+Sintaxe
+A sintaxe das pseudoclasses:
+
+selector:pseudo-class {
+  property: value;
+}
+
+Pseudo-classes âncora
+Os links podem ser exibidos de diferentes maneiras:
+
+*/
+
+/* unvisited link */
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+/*
+
+Nota: a:hover DEVE vir depois a:linke a:visitedna definição CSS para ser eficaz! a:activeDEVE vir depois a:hoverna definição CSS para ser eficaz! Os nomes de pseudoclasses não diferenciam maiúsculas de minúsculas.
+
+Pseudo-classes e classes HTML
+Pseudo-classes podem ser combinadas com classes HTML:
+
+Quando você passa o mouse sobre o link no exemplo, ele muda de cor:
+
+*/
+
+a.highlight:hover{
+    color: #ff0;
+    font-size: 22px;
+}
+
+/*Passe o mouse em <div>
+Um exemplo de uso da :hoverpseudoclasse em um elemento <div>:*/
+
+div.over {
+    background-color: green;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+div:hover {
+    background-color: blue;
+}
+
+/*Dica de ferramenta simples
+Passe o mouse sobre um elemento <div> para mostrar um elemento <p> (como uma dica de ferramenta):*/
+
+p.pa {
+    display: none;
+    background-color: yellow;
+    padding: 20px;
+}
+
+div:hover p {
+    display: block;
+}
+
+/*CSS - A pseudo-classe :first-child
+A :first-childpseudoclasse corresponde a um elemento especificado que é o primeiro filho de outro elemento.
+
+Corresponde ao primeiro elemento <p>
+No exemplo a seguir, o seletor corresponde a qualquer elemento <p> que seja o primeiro filho de qualquer elemento:*/
+
+p.filho:first-child{
+    color: blue;
+}
+
+/*Corresponde ao primeiro elemento <i> em todos os elementos <p>
+No exemplo a seguir, o seletor corresponde ao primeiro elemento <i> em todos os elementos <p>:*/
+
+div.pc p i:first-child{
+    color: gold;
+}
+
+div.fci p:first-child i {
+    color: coral;
+}
+
+/*CSS - A pseudoclasse :lang
+A :langpseudo-classe permite definir regras especiais para diferentes idiomas.
+
+No exemplo abaixo, :langdefine as aspas para elementos <q> com lang="no":*/
+
+q:lang(no) {
+    quotes: "~" "~";
+}
