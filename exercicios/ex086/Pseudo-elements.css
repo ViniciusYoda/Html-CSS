@@ -1,0 +1,162 @@
+/*
+
+O que são pseudo-elementos?
+Um pseudoelemento CSS é usado para estilizar partes especificadas de um elemento.
+
+Por exemplo, pode ser usado para:
+
+Estilize a primeira letra, ou linha, de um elemento
+Inserir conteúdo antes ou depois do conteúdo de um elemento
+
+Sintaxe
+A sintaxe dos pseudo-elementos:
+
+selector::pseudo-element {
+  property: value;
+}
+
+Sintaxe
+A sintaxe dos pseudo-elementos:
+
+selector::pseudo-element {
+  property: value;
+}
+
+*/
+
+p.firstline::first-line{
+    color: #ff0000;
+    font-variant: small-caps;
+}
+
+/*
+Nota: O ::first-linepseudoelemento só pode ser aplicado a elementos de nível de bloco.
+
+As seguintes propriedades se aplicam ao ::first-line pseudoelemento:
+
+font properties
+color properties
+background properties
+word-spacing
+letter-spacing
+text-decoration
+vertical-align
+text-transform
+line-height
+clear
+
+Observe a notação de dois pontos - ::first-line versus :first-line
+
+Os dois pontos substituíram a notação de dois pontos para pseudo-elementos em CSS3. Esta foi uma tentativa do W3C de distinguir entre pseudo-classes e pseudo-elementos .
+
+A sintaxe de dois-pontos foi usada para pseudoclasses e pseudoelementos em CSS2 e CSS1.
+
+Para compatibilidade com versões anteriores, a sintaxe de dois-pontos é aceitável para pseudoelementos CSS2 e CSS1.
+
+O pseudo-elemento ::primeira letra
+O ::first-letterpseudoelemento é usado para adicionar um estilo especial à primeira letra de um texto.
+
+O exemplo a seguir formata a primeira letra do texto em todos os elementos <p>: 
+
+*/
+p.firstletter::first-letter{
+    color:#ff0000;
+    font-size: xx-large;
+}
+
+/*
+
+Nota: O ::first-letterpseudoelemento só pode ser aplicado a elementos de nível de bloco.
+
+As seguintes propriedades se aplicam ao pseudoelemento ::first-letter: 
+
+font properties
+color properties
+background properties
+word-spacing
+letter-spacing
+text-decoration
+vertical-align
+text-transform
+line-height
+clear
+
+Pseudo-elementos e classes HTML
+Pseudo-elementos podem ser combinados com classes HTML: 
+
+*/
+
+p.intro::first-letter{
+    color: #ff0000;
+    font-size: 200%
+
+}
+
+/*
+
+O exemplo acima exibirá a primeira letra dos parágrafos com class="intro", em vermelho e em tamanho maior.
+
+Vários pseudo-elementos
+Vários pseudo-elementos também podem ser combinados.
+
+No exemplo a seguir, a primeira letra de um parágrafo será vermelha, em um tamanho de fonte xx grande. O restante da primeira linha será azul e em versalete. O restante do parágrafo será o tamanho e a cor da fonte padrão:
+
+*/
+
+p.letterline::first-letter{
+    color: #ff0000;
+    font-size: xx-large;
+}
+
+p.letterline::first-line{
+    color: #0000ff;
+    font-variant: small-caps;
+}
+
+/*
+CSS - O ::antes do pseudo-elemento
+O ::beforepseudoelemento pode ser usado para inserir algum conteúdo antes do conteúdo de um elemento.
+
+O exemplo a seguir insere uma imagem antes do conteúdo de cada elemento <h1>:
+*/
+
+h1.before::before{
+    content: url(../ex017/favicon\ \(14\).ico);
+}
+
+/*
+CSS - O ::depois do pseudo-elemento
+O ::afterpseudoelemento pode ser usado para inserir algum conteúdo após o conteúdo de um elemento.
+
+O exemplo a seguir insere uma imagem após o conteúdo de cada elemento <h1>:
+*/
+
+h1.after::after{
+    content: url(../ex017/favicon\ \(14\).ico);
+}
+
+/*
+CSS - O pseudo-elemento ::marker
+O ::markerpseudoelemento seleciona os marcadores dos itens da lista.
+
+O exemplo a seguir estiliza os marcadores de itens de lista:
+*/
+
+::marker{
+    color: red;
+    font-size: 23px;
+}
+
+/*
+CSS - O pseudo-elemento ::selection
+O ::selectionpseudoelemento corresponde à parte de um elemento selecionado por um usuário.
+
+As seguintes propriedades CSS podem ser aplicadas a ::selection: color, background, cursore outline.
+
+O exemplo a seguir torna o texto selecionado vermelho em um fundo amarelo:
+*/
+
+::selection{
+    color: crimson;
+    background-color: darkgoldenrod;
+}
