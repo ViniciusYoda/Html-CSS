@@ -1,0 +1,41 @@
+/*
+
+Itens de lista flutuante
+Outra maneira de criar uma barra de navegação horizontal é flutuar os elementos <li> e especificar um layout para os links de navegação:
+
+*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+}
+/*
+Exemplo explicado:
+
+. float: left;- Use float para fazer com que os elementos do bloco flutuem um ao lado do outro
+
+. display: block;- Permite especificar o preenchimento (e altura, largura, margens, etc., se desejar)
+
+. padding: 8px;- Especifique algum preenchimento entre cada elemento <a>, para torná-los bonitos
+
+. background-color: #dddddd;- Adicione uma cor de fundo cinza a cada elemento <a>
+
+Dica: adicione a cor de fundo a <ul> em vez de cada elemento <a> se quiser uma cor de fundo de largura total:
+
+*/
+
+ul {
+    background-color: #dddddd;
+}

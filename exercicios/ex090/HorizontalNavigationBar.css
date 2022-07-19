@@ -1,0 +1,28 @@
+/*
+
+Barra de navegação horizontal CSS
+
+Há duas maneiras de criar uma barra de navegação horizontal. Usando itens de lista em linha ou flutuantes .
+
+Itens de lista em linha
+Uma maneira de construir uma barra de navegação horizontal é especificar os elementos <li> como embutidos, além do código "padrão" da página anterior:
+
+*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+}
+
+/*
+
+Exemplo explicado:
+
+display: inline;- Por padrão, os elementos <li> são elementos de bloco. Aqui, removemos as quebras de linha antes e depois de cada item da lista, para exibi-las em uma linha
+
+*/

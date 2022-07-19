@@ -1,0 +1,43 @@
+/*
+
+Exemplos de barra de navegação horizontal
+
+Crie uma barra de navegação horizontal básica com uma cor de fundo escura e altere a cor de fundo dos links quando o usuário passar o mouse sobre eles:
+
+*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+/*
+
+Link de navegação ativo/atual
+Adicione uma classe "ativa" ao link atual para que o usuário saiba em qual página ele está:
+
+*/
+
+
+.active {
+    background-color: #04AA6D;
+}

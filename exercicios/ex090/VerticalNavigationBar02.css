@@ -1,0 +1,28 @@
+/*
+
+Exemplos de barra de navegação vertical
+Crie uma barra de navegação vertical básica com uma cor de fundo cinza e altere a cor de fundo dos links quando o usuário passar o mouse sobre eles:
+
+*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+
+li a:hover {
+    background-color: #555;
+    color: white;
+}

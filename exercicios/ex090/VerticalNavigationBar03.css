@@ -1,0 +1,48 @@
+/*
+
+Link de navegação ativo/atual
+Adicione uma classe "ativa" ao link atual para que o usuário saiba em qual página ele está:
+
+*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+}
+  
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #04aa6D;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+/*
+
+Centralizar links e adicionar bordas
+Adicione text-align:centera <li> ou <a> para centralizar os links.
+
+Adicione a borderpropriedade para <ul> adicionar uma borda ao redor da barra de navegação. Se você também quiser bordas dentro da barra de navegação, adicione um border-bottoma todos os elementos <li>, exceto o último:
+
+*/
+
+li {
+    text-align: center;
+    border-bottom: 1px solid #555;
+}
+
+li:last-child {
+    border-bottom: none;
+}

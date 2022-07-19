@@ -1,0 +1,44 @@
+/*
+
+Barra de navegação vertical CSS
+
+Para construir uma barra de navegação vertical, você pode estilizar os elementos <a> dentro da lista, além do código da página anterior:
+
+*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li a {
+    display: block;
+    width: 60px;
+    background-color: #dddddd;
+}
+
+/*
+
+Exemplo explicado:
+
+. display: block;- A exibição dos links como elementos de bloco torna toda a área do link clicável (não apenas o texto) e nos permite especificar a largura (e preenchimento, margem, altura etc., se desejar)
+
+. width: 60px;- Os elementos do bloco ocupam a largura total disponível por padrão. Queremos especificar uma largura de 60 pixels
+
+Você também pode definir a largura de <ul> e remover a largura de <a>, pois eles ocuparão toda a largura disponível quando exibidos como elementos de bloco. Isso produzirá o mesmo resultado do nosso exemplo anterior:
+
+Exemplo
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 60px;
+}
+
+li a {
+  display: block;
+}
+
+*/
