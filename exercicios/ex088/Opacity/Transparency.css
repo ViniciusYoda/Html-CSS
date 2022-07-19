@@ -1,0 +1,133 @@
+/*
+
+CSS Opacity / Transparency
+
+A opacity propriedade especifica a opacidade/transparência de um elemento.
+
+Imagem transparente
+A opacitypropriedade pode ter um valor de 0,0 a 1,0. Quanto menor o valor, mais transparente:
+
+*/
+
+img.um {
+    opacity: 0.5;
+}
+
+/*
+
+Efeito de passar o mouse transparente
+A opacitypropriedade é frequentemente usada junto com o :hover seletor para alterar a opacidade ao passar o mouse:
+
+*/
+
+img.dois {
+    opacity: 0.5;
+}
+
+img.dois:hover {
+    opacity: 1.0;
+}
+
+/*
+
+Exemplo explicado
+O primeiro bloco CSS é semelhante ao código do Exemplo 1. Além disso, adicionamos o que deve acontecer quando um usuário passa o mouse sobre uma das imagens. Nesse caso, queremos que a imagem NÃO seja transparente quando o usuário passar o mouse sobre ela. O CSS para isso é opacity:1;.
+
+Quando o ponteiro do mouse se afastar da imagem, a imagem ficará transparente novamente.
+
+Um exemplo de efeito de foco invertido:
+
+*/
+
+img.tres:hover {
+    opacity: 0.5;
+}
+
+/*
+
+Caixa transparente
+Ao usar a opacitypropriedade para adicionar transparência ao plano de fundo de um elemento, todos os seus elementos filho herdam a mesma transparência. Isso pode dificultar a leitura do texto dentro de um elemento totalmente transparente:
+
+*/
+
+div {
+    background-color: #4CAF50;
+    padding: 10px;
+}
+
+div.first {
+    opacity: 0.1;
+}
+
+div.second {
+    opacity: 0.3;
+}
+
+div.third {
+    opacity: 0.6;
+}
+
+/*
+
+Transparência usando RGBA
+Se você não deseja aplicar opacidade a elementos filho, como no exemplo acima, use valores de cor RGBA . O exemplo a seguir define a opacidade da cor de fundo e não do texto:
+
+Você aprendeu em nosso capítulo CSS Colors que você pode usar RGB como um valor de cor. Além de RGB, você pode usar um valor de cor RGB com um canal alfa (RGBA) - que especifica a opacidade de uma cor.
+
+Um valor de cor RGBA é especificado com: rgba(red, green, blue, alpha ). O parâmetro alfa é um número entre 0,0 (totalmente transparente) e 1,0 (totalmente opaco).
+
+*/
+
+div#quatro {
+    background-color: rgb(76, 175, 80);
+    padding: 10px;
+}
+
+div.four {
+    background: rgba(76, 175, 80, 0.1);
+}
+
+div.five {
+    background: rgba(76, 175, 80, 0.3);
+}
+
+div.six {
+    background: rgba(76, 175, 80, 0.6);
+}
+
+/*
+
+Texto na caixa transparente
+
+*/
+
+div.background {
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJK7b27yyJI5Qx74jGdGfVZ_jWQvCz1jHF_w&usqp=CAU) repeat;
+    border: 2px solid black;
+}
+
+div.transbox {
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+}
+
+div.transbox p {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+}
+
+/*
+
+Exemplo explicado
+Primeiro, criamos um elemento <div> (class="background") com uma imagem de fundo e uma borda.
+
+Em seguida, criamos outro <div> (class="transbox") dentro do primeiro <div>.
+
+A <div class="transbox"> tem uma cor de fundo e uma borda - a div é transparente.
+
+Dentro do <div> transparente, adicionamos algum texto dentro de um elemento <p>.
+
+*/
