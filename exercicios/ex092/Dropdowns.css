@@ -1,0 +1,48 @@
+/*
+
+Listas suspensas de CSS
+
+Crie um menu suspenso flutuante com CSS.
+
+Lista suspensa básica
+Crie uma caixa suspensa que aparece quando o usuário move o mouse sobre um elemento.
+
+*/
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*
+
+Exemplo explicado
+HTML) Use qualquer elemento para abrir o conteúdo suspenso, por exemplo, um elemento <span> ou <button>.
+
+Use um elemento de contêiner (como <div>) para criar o conteúdo suspenso e adicione o que quiser dentro dele.
+
+Enrole um elemento <div> em torno dos elementos para posicionar o conteúdo da lista suspensa corretamente com CSS.
+
+CSS) A .dropdownclasse usa position:relative, que é necessário quando queremos que o conteúdo do menu suspenso seja colocado logo abaixo do botão suspenso (usando position:absolute).
+
+A .dropdown-contentclasse contém o conteúdo suspenso real. Ele está oculto por padrão e será exibido ao passar o mouse (veja abaixo). Observe min-widthque está definido para 160px. Sinta-se à vontade para mudar isso. Dica: Se você quiser que a largura do conteúdo do menu suspenso seja tão grande quanto o botão do menu suspenso, defina o widthpara 100% (e overflow:autoative a rolagem em telas pequenas).
+
+Em vez de usar uma borda, usamos a box-shadowpropriedade CSS para fazer o menu suspenso parecer um "cartão".
+
+O :hoverseletor é usado para mostrar o menu suspenso quando o usuário move o mouse sobre o botão suspenso.
+
+*/
