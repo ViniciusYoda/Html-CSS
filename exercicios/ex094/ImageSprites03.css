@@ -1,0 +1,71 @@
+/*
+
+Sprites de Imagem - Efeito Hover
+Agora queremos adicionar um efeito de foco à nossa lista de navegação.
+
+Dica: O :hoverseletor pode ser usado em todos os elementos, não apenas em links.
+
+Nossa nova imagem ("img_navsprites_hover.gif") contém três imagens de navegação e três imagens para usar para efeitos de foco:
+
+imagens de navegação
+
+Como esta é uma única imagem e não seis arquivos separados, não haverá atraso no carregamento quando um usuário passar o mouse sobre a imagem.
+
+Adicionamos apenas três linhas de código para adicionar o efeito hover:
+
+*/
+
+#navlist {
+    position: relative;
+}
+
+#navlist li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 0;
+}
+
+#navlist li, #navlist a {
+    height: 44px;
+    display: block;
+}
+
+#home {
+    left: 0px;
+    width: 46px;
+    background: url('https://www.w3schools.com/css/default.asp') 0 0;
+}
+
+#prev {
+    left: 63px;
+    width: 43px;
+    background: url('https://www.w3schools.com/css/css_intro.asp') -47px 0;
+}
+
+#next {
+    left: 129px;
+    width: 43px;
+    background: url('https://www.w3schools.com/css/css_syntax.asp') -91px 0;
+}
+
+#home a:hover {
+    background: url('https://www.w3schools.com/css/default.asp') 0 -45px;
+}
+
+#prev a:hover {
+    background: url('https://www.w3schools.com/css/css_intro.asp') -47px -45px;
+}
+
+#next a:hover {
+    background: url('https://www.w3schools.com/css/css_syntax.asp') -91px -45px;
+}
+
+/*
+
+Exemplo explicado:
+
+#home a:hover {background: url('img_navsprites_hover.gif') 0 -45px;} - Para todas as três imagens hover, especificamos a mesma posição de fundo, apenas 45px mais abaixo
+
+*/

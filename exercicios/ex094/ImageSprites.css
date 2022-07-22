@@ -1,0 +1,45 @@
+/*
+
+Sprites de imagem CSS
+
+Sprites de imagem
+Um sprite de imagem é uma coleção de imagens colocadas em uma única imagem.
+
+Uma página da Web com muitas imagens pode levar muito tempo para carregar e gerar várias solicitações de servidor.
+
+O uso de sprites de imagem reduzirá o número de solicitações do servidor e economizará largura de banda.
+
+Sprites de imagem - exemplo simples
+Em vez de usar três imagens separadas, usamos esta única imagem ("img_navsprites.gif"):
+
+imagens de navegação
+
+Com CSS, podemos mostrar apenas a parte da imagem que precisamos.
+
+No exemplo a seguir, o CSS especifica qual parte da imagem "img_navsprites.gif" mostrar:
+
+*/
+
+#home {
+    width: 46px;
+    height: 44px;
+    background: url('https://www.w3schools.com/css/img_trans.gif') 0 0;
+}
+
+#next {
+    width: 43px;
+    height: 44px;
+    background: url('https://www.w3schools.com/css/img_trans.gif') -91px 0;
+}
+
+/*
+
+Exemplo explicado:
+
+<img id="home" src="img_trans.gif">- Define apenas uma pequena imagem transparente porque o atributo src não pode ficar vazio. A imagem exibida será a imagem de fundo que especificamos em CSS
+width: 46px; height: 44px;- Define a parte da imagem que queremos usar
+background: url(img_navsprites.gif) 0 0;- Define a imagem de fundo e sua posição (esquerda 0px, top 0px)
+Esta é a maneira mais fácil de usar sprites de imagem, agora queremos expandi-la usando links e efeitos de foco.
+
+*/
+
