@@ -1,0 +1,22 @@
+/*
+
+Entradas focadas
+Por padrão, alguns navegadores adicionam um contorno azul ao redor da entrada quando ela recebe o foco (clicado). Você pode remover esse comportamento adicionando outline: none;à entrada.
+
+Use o :focusseletor para fazer algo com o campo de entrada quando ele ficar em foco:
+
+*/
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #555;
+    outline: none;
+}
+
+input[type=text]:focus {
+    background-color: lightblue;
+    border: 3px solid #555;
+}

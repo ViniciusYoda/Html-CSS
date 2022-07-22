@@ -1,0 +1,25 @@
+/*
+
+Estilizando campos de entrada
+Use a widthpropriedade para determinar a largura do campo de entrada:
+
+Primeiro nome 
+Exemplo
+
+*/
+
+input {
+    width: 100%;
+}
+
+/*
+
+O exemplo acima se aplica a todos os elementos <input>. Se você deseja apenas estilizar um tipo de entrada específico, pode usar seletores de atributo:
+
+input[type=text]- selecionará apenas campos de texto
+input[type=password]- selecionará apenas campos de senha
+input[type=number]- selecionará apenas campos numéricos
+etc.
+
+*/
+

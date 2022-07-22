@@ -1,0 +1,36 @@
+/*
+
+Entradas com bordas
+Use a borderpropriedade para alterar o tamanho e a cor da borda e use a border-radiuspropriedade para adicionar cantos arredondados:
+
+Primeiro nome 
+Exemplo
+
+*/
+
+div.p1 input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid red;
+    border-radius: 4px;
+}
+
+/*
+
+Se você quiser apenas uma borda inferior, use a border-bottompropriedade:
+
+Primeiro nome 
+Exemplo
+
+*/
+
+div.p2 input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid red;
+}

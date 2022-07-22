@@ -1,0 +1,27 @@
+/*
+
+Entradas acolchoadas
+Use a paddingpropriedade para adicionar espaço dentro do campo de texto.
+
+Dica: Quando você tem muitas entradas uma após a outra, você também pode querer adicionar algumas margin, para adicionar mais espaço fora delas:
+
+Primeiro nome 
+ Sobrenome 
+Exemplo
+
+*/
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+/*
+
+Observe que definimos a box-sizingpropriedade como border-box. Isso garante que o preenchimento e, eventualmente, as bordas sejam incluídos na largura e altura totais dos elementos.
+Leia mais sobre a box-sizingpropriedade em nosso capítulo CSS Box Sizing .
+
+*/
+

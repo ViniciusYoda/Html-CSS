@@ -1,0 +1,18 @@
+/*
+
+Entradas coloridas
+Use a background-colorpropriedade para adicionar uma cor de fundo à entrada e a colorpropriedade para alterar a cor do texto:
+
+
+
+*/
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: #3CBC8D;
+    color: white;
+}
