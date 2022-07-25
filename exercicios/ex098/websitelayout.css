@@ -1,0 +1,19 @@
+/*
+
+Layout do site CSS
+
+Layout do site
+Um site geralmente é dividido em cabeçalhos, menus, conteúdo e rodapé:
+
+Cabeçalhomenu de navegação
+ContenteConteúdo principalContenteRodapé
+Há toneladas de designs de layout diferentes para escolher. No entanto, a estrutura acima é uma das mais comuns, e vamos dar uma olhada mais de perto neste tutorial.
+
+Cabeçalho
+Um cabeçalho geralmente está localizado na parte superior do site (ou logo abaixo de um menu de navegação superior). Geralmente contém um logotipo ou o nome do site:
+
+*/
+
+body {
+    margin: 0;
+}
