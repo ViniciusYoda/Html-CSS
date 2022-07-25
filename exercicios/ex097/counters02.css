@@ -1,0 +1,40 @@
+/*
+
+Contadores de aninhamento
+O exemplo a seguir cria um contador para a página (seção) e um contador para cada elemento <h1> (subseção). O contador "seção" será contado para cada elemento <h1> com "Seção < valor do contador de seção >.", e o contador "subseção" será contado para cada elemento <h2> com "< valor do contador de seção >.< valor do contador de subseções >":
+
+*/
+
+body {
+    counter-reset: section;
+}
+
+h1 {
+    counter-reset: subsection;
+}
+
+h1::before {
+    counter-increment: section;
+    content: "Section " counter(section) ". ";
+}
+
+h2::before {
+    counter-increment: subsection;
+    content: counter(section) "." counter(subsection) " ";
+}
+
+/*
+
+Um contador também pode ser útil para fazer listas destacadas porque uma nova instância de um contador é criada automaticamente em elementos filho. Aqui usamos a counters()função para inserir uma string entre diferentes níveis de contadores aninhados:
+
+*/
+
+ol {
+    counter-reset: section;
+    list-style-type: none;
+}
+
+li::before {
+    counter-increment: section;
+    content: counters(section,".") " ";
+}
