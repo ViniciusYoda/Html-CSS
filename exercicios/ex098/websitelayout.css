@@ -17,3 +17,144 @@ Um cabeçalho geralmente está localizado na parte superior do site (ou logo aba
 body {
     margin: 0;
 }
+
+/* Style the header */
+.header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 
+
+Barra de navegação
+Uma barra de navegação contém uma lista de links para ajudar os visitantes a navegar pelo seu site:
+
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/*
+
+Contente
+O layout nesta seção geralmente depende dos usuários-alvo. O layout mais comum é um (ou combiná-los) dos seguintes:
+
+1 coluna (geralmente usado para navegadores móveis)
+2 colunas (geralmente usado para tablets e laptops)
+Layout de 3 colunas (usado apenas para desktops)
+1-coluna:
+
+2 colunas:
+
+3 colunas:
+
+Vamos criar um layout de 3 colunas e alterá-lo para um layout de 1 coluna em telas menores:
+
+Dica: Para criar um layout de 2 colunas, altere a largura para 50%. Para criar um layout de 4 colunas, use 25%, etc.
+
+Dica: Você quer saber como funciona a regra @media? Leia mais sobre isso em nosso capítulo CSS Media Queries .
+
+Dica: Uma forma mais moderna de criar layouts de colunas é usar CSS Flexbox. No entanto, ele não é compatível com o Internet Explorer 10 e versões anteriores. Se você precisar de suporte ao IE6-10, use floats (como mostrado acima).
+
+Para saber mais sobre o Módulo de Layout de Caixa Flexível, leia nosso capítulo CSS Flexbox .
+
+*/
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+/*
+
+Colunas Desiguais
+O conteúdo principal é a maior e mais importante parte do seu site.
+
+É comum com larguras de colunas desiguais , de modo que a maior parte do espaço é reservada para o conteúdo principal. O conteúdo secundário (se houver) é frequentemente usado como uma navegação alternativa ou para especificar informações relevantes ao conteúdo principal. Altere as larguras como quiser, lembre-se apenas que deve somar 100% no total:
+
+*/
+
+/* Create three unequal columns that floats next to each other */
+.column2 {
+    float: left;
+    padding: 10px;
+}
+
+/* Left and right column */
+
+.columnside2 {
+    width: 25%;
+}
+
+/* Middle column */
+.columnmiddle2 {
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row2:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+    .columnside2, .columnmiddle2 {
+        width: 100%;
+    }
+}
+
+/*
+
+Rodapé
+O rodapé é colocado na parte inferior da sua página. Geralmente contém informações como direitos autorais e informações de contato:
+
+*/
+
+/* Style the footer */
+.footer {
+    background-color: #f3f3f3;
+    padding: 10px;
+    text-align: center;
+}
