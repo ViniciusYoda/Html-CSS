@@ -1,0 +1,162 @@
+/*
+
+O que é Especificidade?
+Se houver duas ou mais regras CSS que apontam para o mesmo elemento, o seletor com o maior valor de especificidade "vencerá" e sua declaração de estilo será aplicada a esse elemento HTML.
+
+Pense na especificidade como uma pontuação/classificação que determina qual declaração de estilo será aplicada a um elemento.
+
+Observe os seguintes exemplos:
+
+Exemplo 1
+Neste exemplo, usamos o elemento "p" como seletor e especificamos uma cor vermelha para esse elemento. O texto ficará vermelho:
+
+*/
+
+p {
+    color: red;
+}
+
+/*
+
+Agora, veja o exemplo 2:
+
+Exemplo 2
+Neste exemplo, adicionamos um seletor de classe (chamado "teste") e especificamos uma cor verde para essa classe. O texto agora será verde (mesmo que tenhamos especificado uma cor vermelha para o seletor de elemento "p". Isso ocorre porque o seletor de classe tem prioridade mais alta:
+
+*/
+
+.test {
+    color: green;
+}
+
+/*
+
+Agora, veja o exemplo 3:
+
+Exemplo 3
+Neste exemplo, adicionamos o seletor de id (chamado "demo"). O texto agora será azul, porque o seletor de id tem prioridade mais alta:
+
+*/
+
+#demo {
+    color: blue;
+}
+
+/*
+
+Agora, veja o exemplo 4:
+
+Exemplo 4
+Neste exemplo, adicionamos um estilo embutido para o elemento "p". O texto agora será rosa, porque o estilo embutido recebe a prioridade mais alta:
+
+Hierarquia de Especificidade
+Cada seletor CSS tem seu lugar na hierarquia de especificidade.
+
+Existem quatro categorias que definem o nível de especificidade de um seletor:
+
+Estilos embutidos - Exemplo: <h1 style="color: pink;">
+IDs - Exemplo: #navbar
+Classes, pseudoclasses, seletores de atributos - Exemplo: .test, :hover, [href]
+Elementos e pseudoelementos - Exemplo: h1, :before
+
+Como calcular a especificidade?
+Memorize como calcular a especificidade!
+
+Comece em 0, adicione 100 para cada valor de ID, adicione 10 para cada valor de classe (ou pseudoclasse ou seletor de atributo), adicione 1 para cada seletor de elemento ou pseudoelemento.
+
+Nota: O estilo embutido recebe um valor de especificidade de 1000 e sempre recebe a prioridade mais alta!
+
+Nota 2: Há uma exceção a esta regra: se você usar a !important regra, ela substituirá até mesmo os estilos embutidos!
+
+A tabela abaixo mostra alguns exemplos de como calcular os valores de especificidade:
+
+Selector	Specificity Value	Calculation
+p	1	1
+p.test	11	1 + 10
+p#demo	101	1 + 100
+<p style="color: pink;">	1000	1000
+#demo	100	100
+.test	10	10
+p.test1.test2	21	1 + 10 + 10
+#navbar p#demo	201	100 + 1 + 100
+*	0	0 (the universal selector is ignored)
+
+O seletor com o maior valor de especificidade ganhará e entrará em vigor!
+
+Considere estes três fragmentos de código:
+
+Exemplo
+A: h1
+B: h1#content
+C: <h1 id="content" style="color: pink;">Heading</h1>
+
+A especificidade de A é 1 (um seletor de elemento)
+A especificidade de B é 101 (uma referência de ID + um seletor de elemento)
+A especificidade de C é 1000 (estilo inline)
+
+Como a terceira regra (C) tem o maior valor de especificidade (1000), esta declaração de estilo será aplicada.
+
+Mais exemplos de regras de especificidade
+Especificidade igual: a regra mais recente vence - Se a mesma regra for escrita duas vezes na folha de estilo externa, a regra mais recente vence:
+
+*/
+
+h1 {
+    background-color: yellow;
+}
+
+h1 {
+    background-color: red;
+}
+
+/* 
+
+Os seletores de ID têm uma especificidade mais alta do que os seletores de atributo - Observe as três linhas de código a seguir:
+
+*/
+
+div#a {
+    background-color: green;
+}
+
+#a {
+    background-color: yellow;
+}
+
+div[id=a] {
+    background-color: blue;
+}
+
+/*
+
+a primeira regra é mais específica que as outras duas e, portanto, será aplicada.
+
+Os seletores contextuais são mais específicos do que um seletor de elemento único - A folha de estilo incorporada está mais próxima do elemento a ser estilizado. Então na seguinte situação
+
+From external CSS file:
+#content h1 {background-color: red;}
+
+In HTML file:
+<style>
+#content h1 {background-color: yellow;}
+</style>
+
+a última regra será aplicada.
+
+Um seletor de classe supera qualquer número de seletores de elemento - um seletor de classe como .intro supera h1, p, div, etc:
+
+*/
+
+.intro {
+    background-color: yellow;
+}
+
+h1 {
+    background-color: red;
+}
+
+/*
+
+O seletor universal (*) e os valores herdados têm uma especificidade de 0 - O seletor universal (*) e os valores herdados são ignorados!
+
+*/
