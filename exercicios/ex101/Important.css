@@ -1,0 +1,103 @@
+/*
+
+CSS A regra !importante
+
+O que é importante?
+A !importantregra em CSS é usada para adicionar mais importância a uma propriedade/valor do que o normal.
+
+Na verdade, se você usar a !importantregra, ela substituirá TODAS as regras de estilo anteriores para essa propriedade específica nesse elemento!
+
+Vamos ver um exemplo:
+
+*/
+
+#myid {
+    background-color: blue;
+}
+
+.myclass {
+    background-color: gray;
+}
+
+p {
+    background-color: red !important;
+}
+
+/*
+
+Exemplo explicado
+No exemplo acima. todos os três parágrafos terão uma cor de fundo vermelha, mesmo que o seletor de ID e o seletor de classe tenham uma especificidade mais alta. A !importantregra substitui a background-colorpropriedade em ambos os casos.
+
+Importante Sobre !importante
+A única maneira de substituir uma !important regra é incluir outra !important regra em uma declaração com a mesma (ou superior) especificidade no código-fonte - e aqui começa o problema! Isso torna o código CSS confuso e a depuração será difícil, especialmente se você tiver uma folha de estilo grande!
+
+Aqui criamos um exemplo simples. Não fica muito claro, quando você olha para o código-fonte CSS, qual cor é considerada mais importante:
+
+*/
+
+#myid2 {
+    background-color: blue !important;
+}
+
+.myclass2 {
+    background-color: gray !important;
+}
+
+p {
+    background-color: red !important;
+}
+
+/*
+
+Dica: É bom saber sobre a !important regra, você pode vê-la em algum código-fonte CSS. No entanto, não use a menos que seja absolutamente necessário.
+
+Talvez um ou dois usos justos de !important
+Uma maneira de usar !importanté se você precisar substituir um estilo que não pode ser substituído de nenhuma outra maneira. Isso pode acontecer se você estiver trabalhando em um sistema de gerenciamento de conteúdo (CMS) e não puder editar o código CSS. Em seguida, você pode definir alguns estilos personalizados para substituir alguns dos estilos do CMS.
+
+Outra maneira de usar !importanté: Suponha que você queira uma aparência especial para todos os botões de uma página. Aqui, os botões são estilizados com uma cor de fundo cinza, texto branco e alguns preenchimentos e bordas:
+
+*/
+
+.button {
+    background-color: #8c8c8c;
+    color: white;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+/*
+
+A aparência de um botão às vezes pode mudar se o colocarmos dentro de outro elemento com maior especificidade, e as propriedades entrarem em conflito. Aqui está um exemplo disso:
+
+*/
+
+.button {
+    background-color: #8c8c8c;
+    color: white;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+#myDiv a {
+    color: red;
+    background-color: yellow;
+}
+
+/*
+
+Para "forçar" todos os botões a terem a mesma aparência, não importa o que aconteça, podemos adicionar a !important regra às propriedades do botão, assim:
+
+*/
+
+.button {
+    background-color: #8c8c8c !important;
+    color: white !important;
+    padding: 5px !important;
+    border: 1px solid black !important;
+}
+
+#myDiv a {
+    color: red;
+    background-color: yellow;
+}
+
