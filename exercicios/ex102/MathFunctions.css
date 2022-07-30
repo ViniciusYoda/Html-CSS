@@ -1,0 +1,88 @@
+/*
+
+Funções matemáticas CSS
+
+As funções matemáticas do CSS permitem que expressões matemáticas sejam usadas como valores de propriedade. Aqui, explicaremos as funções calc(), max()e min().
+
+A função calc()
+A calc()função executa um cálculo a ser usado como o valor da propriedade.
+
+Sintaxe CSS
+
+calc(expression)
+
+
+Value	    Description
+expression	Required. A mathematical    expression. The result will be used as the value.
+The following operators can be used: + - 
+* /
+
+Vamos ver um exemplo:
+
+Exemplo
+Use calc() para calcular a largura de um elemento <div>:
+
+*/
+
+#div1 {
+    position: absolute;
+    left: 50px;
+    width: calc(100% - 100px);
+    border: 1px solid black;
+    background-color: yellow;
+    padding: 5px;
+}
+
+/*
+
+A função max()
+A max()função usa o maior valor, de uma lista de valores separados por vírgulas, como o valor da propriedade.
+
+Sintaxe CSS
+max(value1, value2, ...)
+Value	Description
+value1, value2, ...	Required. A list of comma-separated values - where the largest value is chosen
+Vamos ver um exemplo:
+
+Exemplo
+Use max() para definir a largura de #div1 para o maior valor, 50% ou 300px:
+
+*/
+
+#div2 {
+    background-color: yellow;
+    height: 100px;
+    width: max(50%, 300px);
+}
+
+/*
+
+A função min()
+A min()função usa o menor valor, de uma lista de valores separados por vírgulas, como o valor da propriedade.
+
+Sintaxe CSS
+min(value1, value2, ...)
+Value	Description
+value1, value2, ...	Required. A list of comma-separated values - where the smallest value is chosen
+Vamos ver um exemplo:
+
+Exemplo
+Use min() para definir a largura de #div1 para o menor valor, 50% ou 300px:
+
+*/
+
+#div3 {
+    background-color: yellow;
+    height: 100px;
+    width: min(50%, 300px);
+}
+
+/*
+
+Todas as funções matemáticas CSS
+Function	Description
+calc()	Allows you to perform calculations to determine CSS property values
+max()	Uses the largest value, from a comma-separated list of values, as the property value
+min()	Uses the smallest value, from a comma-separated list of values, as the property value
+
+*/
