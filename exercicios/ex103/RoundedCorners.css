@@ -1,0 +1,155 @@
+/*
+
+Cantos arredondados CSS
+
+Com a propriedade CSS border-radius, você pode dar "cantos arredondados" a qualquer elemento.
+
+Propriedade CSS border-radius
+A propriedade CSS border-radiusdefine o raio dos cantos de um elemento.
+
+Dica: Esta propriedade permite adicionar cantos arredondados aos elementos!
+
+Aqui estão três exemplos:
+
+1. Cantos arredondados para um elemento com uma cor de fundo especificada:
+
+*/
+
+#rcorners1 {
+    border-radius: 25px;
+    background: #73AD21;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+
+/*
+
+2. Cantos arredondados para um elemento com borda:
+
+*/
+
+#rcorners2 {
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+
+/*
+
+3. Cantos arredondados para um elemento com imagem de fundo:
+
+Aqui está o código:
+
+*/
+
+#rcorners3 {
+    border-radius: 25px;
+    background: url(	https://www.w3schools.com/css/paper.gif);
+    background-position: left top;
+    background-repeat: repeat;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+
+/*
+
+Dica: A border-radiuspropriedade é, na verdade, uma propriedade abreviada para as propriedades border-top-left-radius, border-top-right-radiuse .border-bottom-right-radiusborder-bottom-left-radius
+
+CSS border-radius - Especificar cada canto
+A border-radiuspropriedade pode ter de um a quatro valores. Aqui estão as regras:
+
+Quatro valores - raio da borda: 15px 50px 30px 5px; (o primeiro valor se aplica ao canto superior esquerdo, o segundo valor se aplica ao canto superior direito, o terceiro valor se aplica ao canto inferior direito e o quarto valor se aplica ao canto inferior esquerdo): 
+
+*/
+
+#rcorners4 {
+    border-radius: 15px 50px 30px 5px;
+    background: #73AD21;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+
+/*
+
+Três valores - border-radius: 15px 50px 30px; (o primeiro valor se aplica ao canto superior esquerdo, o segundo valor se aplica aos cantos superior direito e inferior esquerdo e o terceiro valor se aplica ao canto inferior direito):
+
+*/
+
+#rcorners5 {
+    border-radius: 15px 50px 30px;
+    background: #73AD21;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+
+/*
+
+Dois valores - border-radius: 15px 50px; (o primeiro valor se aplica aos cantos superior esquerdo e inferior direito, e o segundo valor se aplica aos cantos superior direito e inferior esquerdo):
+
+*/
+
+#rcorners6 {
+    border-radius: 15px 50px;
+    background: #73AD21;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+
+/*
+
+Um valor - raio da borda: 15px; (o valor se aplica a todos os quatro cantos, que são arredondados igualmente:
+
+*/
+
+#rcorners7 {
+    border-radius: 15px;
+    background: #73AD21;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+
+/* Você também pode criar cantos elípticos: */
+
+#rcorners8 {
+    border-radius: 50px / 15px;
+    background: #73AD21;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+
+#rcorners9 {
+    border-radius: 15px / 50px;
+    background: #73AD21;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+
+#rcorners10 {
+    border-radius: 50%;
+    background: #73AD21;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+
+/*
+
+Propriedades de cantos arredondados CSS
+Property	Description
+border-radius	A shorthand property for setting all the four border-*-*-radius properties
+border-top-left-radius	Defines the shape of the border of the top-left corner
+border-top-right-radius	Defines the shape of the border of the top-right corner
+border-bottom-right-radius	Defines the shape of the border of the bottom-right corner
+border-bottom-left-radius	Defines the shape of the border of the bottom-left corner
+
+*/
