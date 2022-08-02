@@ -1,0 +1,27 @@
+/*
+
+Imagem do herói
+Você também pode usar diferentes propriedades de plano de fundo em um <div> para criar uma imagem principal (uma imagem grande com texto) e colocá-la onde quiser.
+
+*/
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-image {
+    background: url(https://www.w3schools.com/css/img_man.jpg) no-repeat center;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}

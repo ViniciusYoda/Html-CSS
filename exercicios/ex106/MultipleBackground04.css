@@ -1,0 +1,81 @@
+/*
+
+Propriedade CSS background-origin
+A propriedade CSS background-originespecifica onde a imagem de fundo está posicionada.
+
+A propriedade assume três valores diferentes:
+
+border-box - a imagem de fundo começa no canto superior esquerdo da borda
+caixa de preenchimento - (padrão) a imagem de fundo começa no canto superior esquerdo da borda de preenchimento
+content-box - a imagem de fundo começa no canto superior esquerdo do conteúdo
+O exemplo a seguir ilustra a background-originpropriedade:
+
+*/
+
+#example1 {
+    border: 10px solid black;
+    padding: 35px;
+    background: url(https://www.w3schools.com/css/img_flwr.gif);
+    background-repeat: no-repeat;
+}
+
+#example2 {
+    border: 10px solid black;
+    padding: 35px;
+    background: url(https://www.w3schools.com/css/img_flwr.gif);
+    background-origin: border-box;
+}
+
+#example3 {
+    border: 10px solid black;
+    padding: 35px;
+    background: url(https://www.w3schools.com/css/img_flwr.gif);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+}
+
+/*
+
+Propriedade do clipe de fundo CSS
+A propriedade CSS background-clipespecifica a área de pintura do plano de fundo.
+
+A propriedade assume três valores diferentes:
+
+border-box - (padrão) o plano de fundo é pintado na borda externa da borda
+caixa de preenchimento - o fundo é pintado na borda externa do preenchimento
+content-box - o fundo é pintado dentro da caixa de conteúdo
+O exemplo a seguir ilustra a background-clippropriedade:
+
+*/
+
+#example4 {
+    border: 10px dotted black;
+    padding: 35px;
+    background: yellow;
+}
+
+#example5 {
+    border: 10px dotted black;
+    padding: 35px;
+    background: yellow;
+    background-clip: padding-box;
+}
+
+#example6 {
+    border: 10px dotted black;
+    padding: 35px;
+    background: yellow;
+    background-clip: content-box;
+}
+
+/*
+
+Propriedades avançadas de plano de fundo CSS
+Property	Description
+background	A shorthand property for setting all the background properties in one declaration
+background-clip	Specifies the painting area of the background
+background-image	Specifies one or more background images for an element
+background-origin	Specifies where the background image(s) is/are positioned
+background-size	Specifies the size of the background image(s)
+
+*/

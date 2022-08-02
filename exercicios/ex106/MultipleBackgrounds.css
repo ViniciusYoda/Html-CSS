@@ -1,0 +1,128 @@
+/*
+
+Fundos Múltiplos CSS
+
+Neste capítulo, você aprenderá como adicionar várias imagens de fundo a um elemento.
+
+Você também aprenderá sobre as seguintes propriedades:
+
+background-size
+background-origin
+background-clip
+
+Fundos Múltiplos CSS
+CSS permite adicionar várias imagens de fundo para um elemento, através da background-imagepropriedade.
+
+As diferentes imagens de fundo são separadas por vírgulas e as imagens são empilhadas umas sobre as outras, onde a primeira imagem está mais próxima do visualizador.
+
+O exemplo a seguir tem duas imagens de plano de fundo, a primeira imagem é uma flor (alinhada à parte inferior e à direita) e a segunda imagem é um plano de fundo de papel (alinhada ao canto superior esquerdo):
+
+*/
+
+#example1 {
+    background-image:url(	https://www.w3schools.com/css/img_flwr.gif), url(	https://www.w3schools.com/css/paper.gif);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+    padding: 15px;
+}
+
+/*
+
+Várias imagens de plano de fundo podem ser especificadas usando as propriedades de plano de fundo individuais (como acima) ou a backgroundpropriedade abreviada.
+
+O exemplo a seguir usa a backgroundpropriedade shorthand (mesmo resultado do exemplo acima):
+
+*/
+
+#example2 {
+    background: url(https://www.w3schools.com/css/img_flwr.gif) right bottom no-repeat, url(https://www.w3schools.com/css/paper.gif) left top repeat;
+    padding: 15px
+}
+
+/*
+
+Tamanho do plano de fundo CSS
+A propriedade CSS background-sizepermite especificar o tamanho das imagens de fundo.
+
+O tamanho pode ser especificado em comprimentos, porcentagens ou usando uma das duas palavras-chave: conter ou cobrir.
+
+O exemplo a seguir redimensiona uma imagem de plano de fundo para muito menor que a imagem original (usando pixels):
+
+Lorem Ipsum Dolor
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+
+Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+
+Aqui está o código:
+
+*/
+
+#example3 {
+    border: 1px solid black;
+    background: url(https://www.w3schools.com/css/img_flwr.gif);
+    background-size: 100px 80px;
+    background-repeat: no-repeat;
+    padding: 15px;
+}
+
+#example4 {
+    border: 1px solid black;
+    background: url(https://www.w3schools.com/css/img_flwr.gif);
+    background-repeat: no-repeat;
+    padding: 15px;
+}
+
+/*
+
+Os outros dois valores possíveis para background-sizesão contain e cover.
+
+A containpalavra-chave dimensiona a imagem de fundo para ser o maior possível (mas tanto a largura quanto a altura devem caber dentro da área de conteúdo). Assim, dependendo das proporções da imagem de fundo e da área de posicionamento do fundo, pode haver algumas áreas do fundo que não são cobertas pela imagem de fundo.
+
+A coverpalavra-chave dimensiona a imagem de fundo para que a área de conteúdo seja completamente coberta pela imagem de fundo (sua largura e altura são iguais ou excedem a área de conteúdo). Como tal, algumas partes da imagem de fundo podem não ser visíveis na área de posicionamento de fundo.
+
+O exemplo a seguir ilustra o uso de containe cover:
+
+*/
+
+.div1 {
+    border: 1px solid black;
+    height: 120px;
+    width: 150px;
+    background: url(https://www.w3schools.com/css/img_flwr.gif);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.div2 {
+    border: 1px solid black;
+    height: 120px;
+    width: 150px;
+    background: url(https://www.w3schools.com/css/img_flwr.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.div3 {
+    border: 1px solid black;
+    height: 120px;
+    width: 120px;
+    background: url(https://www.w3schools.com/css/img_flwr.gif);
+    background-repeat: no-repeat;
+}
+
+/*
+
+Definir tamanhos de várias imagens de fundo
+A background-sizepropriedade também aceita vários valores para o tamanho do plano de fundo (usando uma lista separada por vírgulas), ao trabalhar com vários planos de fundo.
+
+O exemplo a seguir tem três imagens de plano de fundo especificadas, com valores de tamanho de plano de fundo diferentes para cada imagem:
+
+Exemplo
+
+*/
+
+#example5 {
+    background: url(https://www.w3schools.com/css/paper.gif) left top no-repeat, url(https://www.w3schools.com/css/img_flwr.gif) left top repeat;
+    padding: 15px;
+    background-size: 50px, 130px, auto;
+}
