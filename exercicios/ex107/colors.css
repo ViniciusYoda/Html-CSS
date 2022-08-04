@@ -1,0 +1,113 @@
+/*
+
+CSS suporta mais de 140 nomes de cores, valores HEX, valores RGB , valores RGBA, valores HSL, valores HSLA e opacidade.
+
+Cores RGBA
+Os valores de cor RGBA são uma extensão dos valores de cor RGB com um canal alfa - que especifica a opacidade de uma cor.
+
+Um valor de cor RGBA é especificado com: rgba(red, green, blue, alpha). O parâmetro alfa é um número entre 0,0 (totalmente transparente) e 1,0 (totalmente opaco).
+
+rgba(255, 0, 0, 0,2);
+rgba(255, 0, 0, 0,4);
+rgba(255, 0, 0, 0,6);
+rgba(255, 0, 0, 0,8);
+
+O exemplo a seguir define diferentes cores RGBA:
+
+*/
+
+#p1 {background-color:rgba(255,0,0,0.3);}
+
+#p2 {background: rgba(0,255,0,0.3);}
+
+#p3 {background-color: rgba(0,0,255,0.3);}
+
+#p4 {background-color: rgba(192,192,192,0.3);}
+
+#p5 {background-color: rgba(255,255,0,0.3);}
+
+#p6 {background-color: rgba(255,0,255,0.3);}
+
+/*
+
+Cores HSL
+HSL significa Hue, Saturation and Lightness.
+
+Um valor de cor HSL é especificado com: hsl(hue, saturation, lightness).
+
+Matiz é um grau na roda de cores (de 0 a 360):
+0 (ou 360) é vermelho
+120 é verde
+240 é azul
+A saturação é um valor percentual: 100% é a cor completa.
+A leveza também é uma porcentagem; 0% é escuro (preto) e 100% é branco.
+hsl(0, 100%, 30%);
+hsl(0, 100%, 50%);
+hsl(0, 100%, 70%);
+hsl(0, 100%, 90%);
+O exemplo a seguir define diferentes cores HSL:
+
+*/
+
+#p7 {background-color: hsl(120,100%,50%);}
+
+#p8 {background-color: hsl(120,100%,75%);}
+
+#p9 {background-color: hsl(120,100%,25%);}
+
+#p10 {background-color: hsl(120,60%,70%);}
+
+#p11 {background-color: hsl(290,100%,50%);}
+
+#p12 {background-color: hsl(290,60%,70%);}
+
+/*
+
+Cores HSLA
+Os valores de cor HSLA são uma extensão dos valores de cor HSL com um canal alfa - que especifica a opacidade de uma cor.
+
+Um valor de cor HSLA é especificado com: hsla(hue, saturation, lightness, alpha), onde o parâmetro alpha define a opacidade. O parâmetro alfa é um número entre 0,0 (totalmente transparente) e 1,0 (totalmente opaco).
+
+hsla(0, 100%, 30%, 0,3);
+hsla(0, 100%, 50%, 0,3);
+hsla(0, 100%, 70%, 0,3);
+hsla(0, 100%, 90%, 0,3);
+O exemplo a seguir define diferentes cores HSLA:
+
+*/
+
+#p13 {background-color:hsla(120,100%,50%,0.3);}
+
+#p14 {background-color:hsla(120,100%,75%,0.3);}
+
+#p15{background-color:hsla(120,100%,25%,0.3);}
+
+#p16 {background-color:hsla(120,60%,70%,0.3);}
+
+#p17 {background-color:hsla(290,100%,50%,0.3);}
+
+#p18{background-color:hsla(290,60%,70%,0.3);}
+
+/*
+
+Opacidade
+A propriedade CSS opacitydefine a opacidade de todo o elemento (tanto a cor de fundo quanto o texto serão opacos/transparentes).
+
+O opacityvalor da propriedade deve ser um número entre 0,0 (totalmente transparente) e 1,0 (totalmente opaco).
+
+rgb(255, 0, 0); opacidade: 0,2;
+rgb(255, 0, 0); opacidade: 0,4;
+rgb(255, 0, 0); opacidade: 0,6;
+rgb(255, 0, 0); opacidade: 0,8;
+Observe que o texto acima também será transparente/opaco!
+
+O exemplo a seguir mostra diferentes elementos com opacidade:
+
+*/
+
+#p19 {background-color:rgb(255,0,0);opacity:0.6;}
+#p20 {background-color:rgb(0,255,0);opacity:0.6;}
+#p21 {background-color:rgb(0,0,255);opacity:0.6;}
+#p22 {background-color:rgb(192,192,192);opacity:0.6;}
+#p23 {background-color:rgb(255,255,0);opacity:0.6;}
+#p24 {background-color:rgb(255,0,255);opacity:0.6;}
