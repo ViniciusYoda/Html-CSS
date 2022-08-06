@@ -1,0 +1,36 @@
+/*
+
+Palavras- chave de cores CSS
+
+Esta página explicará as palavras-chave transparent, currentcolor, e inherit.
+
+A palavra-chave transparente
+A transparentpalavra-chave é usada para tornar uma cor transparente. Isso geralmente é usado para criar uma cor de fundo transparente para um elemento.
+
+Exemplo
+Aqui, a cor de fundo do elemento <div> será totalmente transparente e a imagem de fundo será exibida:
+
+*/
+
+body {
+    background-image: url(https://www.w3schools.com/css/paper.gif);
+}
+
+div.ex1 {
+    background-color: lightgreen;
+    border: 2px solid black;
+    padding: 15px;
+}
+
+div.ex2 {
+    background-color: transparent;
+    border: 2px solid black;
+    padding: 15px;
+}
+
+/*
+
+Nota: A transparent palavra-chave é equivalente a rgba(0,0,0,0). Os valores de cor RGBA são uma extensão dos valores de cor RGB com um canal alfa - que especifica a opacidade de uma cor. Leia mais em nosso capítulo CSS RGB e em nosso capítulo CSS Colors .
+
+*/
+

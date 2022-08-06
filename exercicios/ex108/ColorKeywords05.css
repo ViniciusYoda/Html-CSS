@@ -1,0 +1,19 @@
+/*
+
+A palavra-chave herdada
+A palavra- inheritchave especifica que uma propriedade deve herdar seu valor de seu elemento pai.
+
+A inheritpalavra-chave pode ser usada para qualquer propriedade CSS e em qualquer elemento HTML.
+
+Exemplo
+Neste exemplo, as configurações de borda do <span> serão herdadas do elemento pai: 
+
+*/
+
+div {
+    border: 2px solid red;
+}
+
+span {
+    border: inherit;
+}

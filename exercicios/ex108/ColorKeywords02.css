@@ -1,0 +1,17 @@
+/*
+
+A palavra-chave cor atual
+A currentcolorpalavra-chave é como uma variável que contém o valor atual da propriedade color de um elemento.
+
+Essa palavra-chave pode ser útil se você quiser que uma cor específica seja consistente em um elemento ou página.
+
+Exemplo
+Neste exemplo, a cor da borda do elemento <div> será azul, porque a cor do texto do elemento <div> é azul:
+
+*/
+
+div {
+    color: blue;
+    border: 10px solid currentcolor;
+    padding: 15px;
+}
