@@ -1,0 +1,14 @@
+/*
+
+Funções de gradiente CSS
+A tabela a seguir lista as funções de gradiente CSS:
+
+Function	Description
+conic-gradient()	Creates a conic gradient. Define at least two colors (around a center point)
+linear-gradient()	Creates a linear gradient. Define at least two colors (top to bottom)
+radial-gradient()	Creates a radial gradient. Define at least two colors (center to edges)
+repeating-conic-gradient()	Repeats a conic gradient
+repeating-linear-gradient()	Repeats a linear gradient
+repeating-radial-gradient()	Repeats a radial gradient
+
+*/

@@ -1,0 +1,117 @@
+/*
+
+Gradientes radiais CSS
+Um gradiente radial é definido pelo seu centro.
+
+Para criar um gradiente radial, você também deve definir pelo menos duas paradas de cor.
+
+Sintaxe
+background-image: radial-gradient(shape size at position, start-color, ..., last-color);
+Por padrão, a forma é elipse, o tamanho é o canto mais distante e a posição é o centro.
+
+Gradiente radial - Paradas de cores uniformemente espaçadas (este é o padrão)
+
+O exemplo a seguir mostra um gradiente radial com paradas de cores uniformemente espaçadas:
+
+*/
+
+#grad1 {
+    height: 150px;
+    width: 200px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: radial-gradient(red, yellow, green);
+}
+
+/*
+
+Gradiente radial - Paradas de cores com espaçamento diferente
+
+O exemplo a seguir mostra um gradiente radial com paradas de cores com espaçamento diferente:
+
+*/
+
+#grad2 {
+    height: 150px;
+    width: 200px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: radial-gradient(red 5%, yellow 15%, green 60%);
+}
+
+/*
+
+Definir forma
+O parâmetro shape define a forma. Pode assumir o valor círculo ou elipse. O valor padrão é elipse.
+
+O exemplo a seguir mostra um gradiente radial com a forma de um círculo:
+
+*/
+
+#grad3 {
+    height: 150px;
+    width: 200px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: radial-gradient(red, yellow, green);
+  }
+  
+#grad4 {
+    height: 150px;
+    width: 200px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: radial-gradient(circle, red, yellow, green);
+}
+
+/*
+
+Uso de palavras-chave de tamanhos diferentes
+O parâmetro size define o tamanho do gradiente. Pode assumir quatro valores:
+
+lado mais próximo
+lado mais distante
+canto mais próximo
+canto mais distante
+Exemplo
+Um gradiente radial com palavras-chave de tamanho diferente:
+
+*/
+
+#grad5 {
+    height: 150px;
+    width: 150px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: radial-gradient(closest-side at 60% 55%, red, yellow, black);
+}
+  
+#grad6 {
+    height: 150px;
+    width: 150px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: radial-gradient(farthest-side at 60% 55%, red, yellow, black);
+}
+  
+#grad7 {
+    height: 150px;
+    width: 150px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: radial-gradient(closest-corner at 60% 55%, red, yellow, black);
+}
+  
+#grad8 {
+    height: 150px;
+    width: 150px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: radial-gradient(farthest-corner at 60% 55%, red, yellow, black);
+}
+
+/*
+
+Repetindo um gradiente radial
+A função repeating-radial-gradient() é usada para repetir gradientes radiais:
+
+*/
+
+#grad9 {
+    height: 150px;
+    width: 200px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: repeating-radial-gradient(red, yellow 10%, green 15%);
+}

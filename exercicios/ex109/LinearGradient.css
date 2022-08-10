@@ -1,0 +1,192 @@
+/*
+
+Gradientes CSS
+
+Planos de fundo gradientes
+
+Os gradientes CSS permitem exibir transições suaves entre duas ou mais cores especificadas.
+
+CSS define três tipos de gradientes:
+
+Gradientes Lineares (desce/cima/esquerda/direita/diagonal)
+Gradientes radiais (definidos pelo seu centro)
+Gradientes cônicos (girados em torno de um ponto central)
+
+Gradientes Lineares CSS
+Para criar um gradiente linear, você deve definir pelo menos duas paradas de cor. As paradas de cor são as cores entre as quais você deseja renderizar transições suaves. Você também pode definir um ponto de partida e uma direção (ou um ângulo) junto com o efeito de gradiente.
+
+Sintaxe
+background-image: linear-gradient(direction, color-stop1, color-stop2, ...);
+Direção - De cima para baixo (este é o padrão)
+
+O exemplo a seguir mostra um gradiente linear que começa na parte superior. Ele começa vermelho, passando para amarelo:
+
+de cima para baixo (padrão)
+Exemplo
+
+*/
+
+#grad1 {
+    height: 200px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(red, yellow;)
+}
+
+/*
+
+Direção - Esquerda para Direita
+
+O exemplo a seguir mostra um gradiente linear que começa da esquerda. Ele começa vermelho, passando para amarelo:
+
+da esquerda para direita
+
+*/
+
+#grad2 {
+    height: 200px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right,red, yellow;)
+}
+
+/*
+
+Direção - Diagonal
+
+Você pode fazer um gradiente na diagonal especificando as posições iniciais horizontais e verticais.
+
+O exemplo a seguir mostra um gradiente linear que começa no canto superior esquerdo (e vai para o canto inferior direito). Ele começa vermelho, passando para amarelo:
+
+*/
+
+#grad3 {
+    height: 200px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right, red, yellow);
+}
+
+/*
+
+Usando ângulos
+Se você quiser mais controle sobre a direção do gradiente, você pode definir um ângulo, em vez das direções predefinidas (para baixo, para cima, para a direita, para a esquerda, para baixo à direita, etc.). Um valor de 0deg é equivalente a "to top". Um valor de 90 graus é equivalente a "à direita". Um valor de 180 graus é equivalente a "para baixo".
+
+Sintaxe
+background-image: linear-gradient(angle, color-stop1, color-stop2);
+O exemplo a seguir mostra como usar ângulos em gradientes lineares:
+
+180 graus
+
+*/
+
+#grad4 {
+    height: 100px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(0deg, red, yellow);
+}
+  
+#grad5 {
+    height: 100px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(90deg, red, yellow);
+}
+  
+#grad6 {
+    height: 100px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(180deg, red, yellow);
+}
+  
+#grad7 {
+    height: 100px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(-90deg, red, yellow);
+}
+
+/*
+
+Usando várias paradas de cores
+O exemplo a seguir mostra um gradiente linear (de cima para baixo) com várias paradas de cor:
+
+*/
+
+#grad8 {
+    height: 200px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(red, yellow, green);
+}
+  
+#grad9 {
+    height: 200px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(red, orange, yellow, green, blue, indigo, violet);
+}
+  
+#grad10 {
+    height: 200px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(red 10%, green 85%, blue 90%);
+}
+
+/*
+
+O exemplo a seguir mostra como criar um gradiente linear (da esquerda para a direita) com a cor do arco-íris e algum texto:
+
+*/
+
+#grad11 {
+    height: 55px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+}
+
+/*
+
+Usando transparência
+Os gradientes CSS também suportam transparência, que pode ser usada para criar efeitos de desvanecimento.
+
+Para adicionar transparência, usamos a função rgba() para definir as paradas de cor. O último parâmetro na função rgba() pode ser um valor de 0 a 1 e define a transparência da cor: 0 indica transparência total, 1 indica cor total (sem transparência).
+
+O exemplo a seguir mostra um gradiente linear que começa da esquerda. Ele começa totalmente transparente, fazendo a transição para vermelho colorido:
+
+*/
+
+#grad12 {
+    height: 200px;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+}
+
+/*
+
+Repetindo um gradiente linear
+A função repeating-linear-gradient() é usada para repetir gradientes lineares:
+
+*/
+
+#grad13 {
+    height: 200px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+}
+  
+#grad14 {
+    height: 200px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: repeating-linear-gradient(45deg,red,yellow 7%,green 10%);
+}
+  
+#grad15 {
+    height: 200px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: repeating-linear-gradient(190deg,red,yellow 7%,green 10%);
+}
+  
+#grad16 {
+    height: 200px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: repeating-linear-gradient(90deg,red,yellow 7%,green 10%);
+}
+  
+#grad17 {
+    height: 200px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: repeating-linear-gradient(45deg, red 0px, red 10px, red 10px, yellow 10px, yellow 20px);
+}
