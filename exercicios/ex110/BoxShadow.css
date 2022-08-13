@@ -1,0 +1,173 @@
+/*
+
+Sombra de caixa CSS
+
+Propriedade CSS box-shadow
+A propriedade CSS box-shadowé usada para aplicar uma ou mais sombras a um elemento.
+
+Especificar uma sombra horizontal e vertical
+Em seu uso mais simples, você especifica apenas uma sombra horizontal e uma vertical. A cor padrão da sombra é a cor do texto atual.
+
+Um elemento <div> com um box-shadow
+
+Exemplo
+Especifique uma sombra horizontal e vertical:
+
+*/
+
+div {
+    width: 300px;
+    height: 100px;
+    padding: 15px;
+    background-color: coral;
+    box-shadow: 10px 10px;
+}
+
+/*
+
+Especifique uma cor para a sombra
+O colorparâmetro define a cor da sombra.
+
+Um elemento <div> com um box-shadow lightblue
+Exemplo
+Especifique uma cor para a sombra:
+
+*/
+
+div.dois {
+    width: 300px;
+    height: 100px;
+    padding: 15px;
+    background-color: coral;
+    box-shadow: 10px 10px lightblue;
+}
+
+/*
+
+Adicione um efeito de desfoque à sombra
+O blurparâmetro define o raio de desfoque. Quanto maior o número, mais borrada será a sombra.
+
+Um elemento <div> com uma sombra de caixa azul clara e desfocada de 5px
+Exemplo
+Adicione um efeito de desfoque à sombra:
+
+*/
+
+div.tres {
+    width: 300px;
+    height: 100px;
+    padding: 15px;
+    background-color: coral;
+    box-shadow: 10px 10px 5px lightblue;
+}
+
+/*
+
+Definir o raio de propagação da sombra
+O spreadparâmetro define o raio de dispersão. Um valor positivo aumenta o tamanho da sombra, um valor negativo diminui o tamanho da sombra.
+
+Um elemento <div> com uma sombra de caixa azul clara desfocada, com um raio de propagação de 12px
+Exemplo
+Defina o raio de propagação da sombra:
+
+*/
+
+div.quatro {
+    width: 300px;
+    height: 100px;
+    padding: 15px;
+    background-color: coral;
+    box-shadow: 10px 10px 5px 12px lightblue;
+}
+
+/*
+
+Defina o parâmetro de inserção
+O insetparâmetro altera a sombra de uma sombra externa (início) para uma sombra interna.
+
+Um elemento <div> com uma sombra de caixa desfocada, azul-clara e inserida
+Exemplo
+Adicione o parâmetro de inserção:
+
+*/
+
+div.cinco {
+    width: 300px;
+    height: 100px;
+    padding: 15px;
+    background-color: coral;
+    box-shadow: 10px 10px 5px lightblue inset;
+}
+
+/*
+
+Adicionar várias sombras
+Um elemento também pode ter várias sombras:
+
+*/
+
+#example1 {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green;
+    margin: 20px;
+}
+  
+#example2 {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 5px 8px blue, 10px 10px 8px red, 15px 15px 8px green;
+    margin: 20px;
+}
+
+/*
+
+Cartões
+Você também pode usar a box-shadowpropriedade para criar cartões semelhantes a papel:
+
+1
+1º de janeiro de 2021
+
+Noruega
+Hardanger, Noruega
+
+*/
+
+div.card {
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+  
+div.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    font-size: 40px;
+}
+  
+div.container {
+    padding: 10px;
+}
+
+div.polaroid {
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+  
+div.container2 {
+    padding: 10px;
+}
+
+/*
+
+Propriedades de sombra CSS
+A tabela a seguir lista as propriedades de sombra CSS:
+
+Property	Description
+box-shadow	Adds one or more shadows to an element
+text-shadow	Adds one or more shadows to a text
+
+
+*/

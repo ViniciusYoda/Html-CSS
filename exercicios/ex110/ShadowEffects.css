@@ -1,0 +1,113 @@
+/*
+
+Efeitos de sombra CSS
+
+Com CSS você pode adicionar sombra ao texto e aos elementos.
+
+Nestes capítulos, você aprenderá sobre as seguintes propriedades:
+
+text-shadow
+box-shadow
+
+Sombra de texto CSS
+A propriedade CSS text-shadowaplica sombra ao texto.
+
+Em seu uso mais simples, você especifica apenas a sombra horizontal (2px) e a sombra vertical (2px):
+
+Efeito de sombra de texto!
+
+*/
+
+h1 {
+    text-shadow: 2px 2px;
+}
+
+/*
+
+Em seguida, adicione uma cor à sombra:
+
+Efeito de sombra de texto!
+
+*/
+
+h2 {
+    text-shadow: 2px 2px red;
+}
+
+/*
+
+Em seguida, adicione um efeito de desfoque à sombra:
+
+Efeito de sombra de texto!
+
+*/
+
+h3 {
+    text-shadow: 2px 2px 5px red;
+}
+
+/*
+
+O exemplo a seguir mostra um texto branco com sombra preta:
+
+Efeito de sombra de texto!
+
+*/
+
+h4 {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/*
+
+O exemplo a seguir mostra uma sombra de brilho de néon vermelho:
+
+Efeito de sombra de texto!
+
+*/
+
+h5 {
+    text-shadow: 0 0 3px #ff0000;
+}
+
+/*
+
+Várias sombras
+Para adicionar mais de uma sombra ao texto, você pode adicionar uma lista de sombras separadas por vírgulas.
+
+O exemplo a seguir mostra uma sombra de brilho neon vermelho e azul:
+
+Efeito de sombra de texto!
+
+*/
+
+h6 {
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+/*
+
+O exemplo a seguir mostra um texto branco com sombra preta, azul e azul escuro:
+
+Efeito de sombra de texto!
+
+*/
+
+p {
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+/*
+
+Você também pode usar a propriedade text-shadow para criar uma borda simples ao redor de algum texto (sem sombras):
+
+Borda ao redor do texto!
+
+*/
+
+i {
+    color: coral;
+    text-shadow: -1px 0 black, 0 1px black 1px 0 black, 0 -1px black;
+}
