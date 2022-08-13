@@ -1,0 +1,152 @@
+/*
+
+Efeitos de texto CSS
+
+Estouro de texto CSS , quebra de linha, regras de quebra de linha e modos de escrita
+Neste capítulo você aprenderá sobre as seguintes propriedades:
+
+text-overflow
+word-wrap
+word-break
+writing-mode
+
+Estouro de texto CSS
+A propriedade CSS text-overflowespecifica como o conteúdo estourado que não é exibido deve ser sinalizado ao usuário.
+
+Pode ser recortado:
+
+Este é um texto longo que não cabe na caixa
+
+ou pode ser renderizado como reticências (...):
+
+Este é um texto longo que não cabe na caixa
+
+O código CSS é o seguinte:
+
+Exemplo
+
+*/
+
+p.test1 {
+    white-space: nowrap;
+    width: 200px;
+    border: 1px solid #000000;
+    overflow: hidden;
+    text-overflow: clip;
+}
+
+p.teste2 {
+    white-space: nowrap;
+    width: 200px;
+    border: 1px solid #000000;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*
+
+O exemplo a seguir mostra como você pode exibir o conteúdo transbordado ao passar o mouse sobre o elemento:
+
+*/
+
+div.test3 {
+    white-space: nowrap; 
+    width: 200px; 
+    overflow: hidden; 
+    border: 1px solid #000000;
+}
+
+div.test3:hover {
+    overflow: visible;
+}
+  
+/*
+
+Quebra de palavras CSS
+A propriedade CSS word-wrappermite que palavras longas possam ser quebradas e colocadas na próxima linha. 
+
+Se uma palavra for muito longa para caber em uma área, ela se expandirá para fora:
+
+Este parágrafo contém uma palavra muito longa: esta é uma palavra muito, muito, muito, muito longa. A palavra longa será quebrada e passará para a próxima linha.
+
+A propriedade word-wrap permite forçar o texto a quebrar - mesmo que isso signifique dividi-lo no meio de uma palavra:
+
+Este parágrafo contém uma palavra muito longa: esta é uma palavra muito, muito, muito, muito longa. A palavra longa será quebrada e passará para a próxima linha.
+
+O código CSS é o seguinte:
+
+Exemplo
+Permita que palavras longas possam ser quebradas e passar para a próxima linha:
+
+*/
+
+p.test4 {
+    width: 11em;
+    border: 1px solid #000000;
+    word-wrap: break-word;
+}
+
+/*
+
+Quebra de palavras CSS
+A propriedade CSS word-breakespecifica as regras de quebra de linha.
+
+Este parágrafo contém algum texto. Esta linha quebrará em hífens.
+
+Este parágrafo contém algum texto. As linhas serão quebradas em qualquer caractere.
+
+O código CSS é o seguinte:
+
+Exemplo
+
+*/
+
+p.test5 {
+    width: 140px;
+    border: 1px solid #000000;
+    word-break: keep-all;
+}
+
+p.test6 {
+    width: 140px;
+    border: 1px solid #000000;
+    word-break: break-all;
+}
+
+/*
+
+
+Modo de escrita CSS
+A propriedade CSS writing-modeespecifica se as linhas de texto são dispostas horizontalmente ou verticalmente.
+
+Algum texto com um elemento span com umvertical-rlmodo de escrita.
+
+O exemplo a seguir mostra alguns modos de escrita diferentes:
+
+*/
+
+
+p.test7 {
+    writing-mode: horizontal-tb;
+}
+
+span.test8 {
+    writing-mode: vertical-rl;
+}
+
+p.test9 {
+    writing-mode: vertical-rl;
+}
+
+/*
+
+Propriedades do efeito de texto CSS
+A tabela a seguir lista as propriedades do efeito de texto CSS:
+
+Property	Description
+text-justify	Specifies how justified text should be aligned and spaced
+text-overflow	Specifies how overflowed content that is not displayed should be signaled to the user
+word-break	Specifies line breaking rules for non-CJK scripts
+word-wrap	Allows long words to be able to be broken and wrap onto the next line
+writing-mode	Specifies whether lines of text are laid out horizontally or vertically
+*/
