@@ -1,0 +1,53 @@
+/*
+
+Fontes da Web CSS
+
+A regra CSS @font-face
+As fontes da Web permitem que os designers da Web usem fontes que não estão instaladas no computador do usuário.
+
+Quando você encontrar/comprar a fonte que deseja usar, basta incluir o arquivo de fonte em seu servidor web, e ele será baixado automaticamente para o usuário quando necessário.
+
+Suas fontes "próprias" são definidas dentro da @font-faceregra CSS.
+
+Diferentes formatos de fonte
+Fontes TrueType (TTF)
+
+TrueType é um padrão de fonte desenvolvido no final dos anos 80, pela Apple e Microsoft. TrueType é o formato de fonte mais comum para os sistemas operacionais Mac OS e Microsoft Windows.
+
+Fontes OpenType (OTF)
+
+OpenType é um formato para fontes de computador escaláveis. Foi construído em TrueType e é uma marca registrada da Microsoft. As fontes OpenType são usadas comumente hoje nas principais plataformas de computador.
+
+O formato de fonte aberta da Web (WOFF)
+
+WOFF é um formato de fonte para uso em páginas da web. Foi desenvolvido em 2009 e agora é uma Recomendação do W3C. WOFF é essencialmente OpenType ou TrueType com compressão e metadados adicionais. O objetivo é oferecer suporte à distribuição de fontes de um servidor para um cliente em uma rede com restrições de largura de banda.
+
+O formato de fonte aberta da Web (WOFF 2.0)
+
+Fonte TrueType/OpenType que oferece melhor compactação do que WOFF 1.0.
+
+Fontes/formas SVG
+
+As fontes SVG permitem que o SVG seja usado como glifos ao exibir texto. A especificação SVG 1.1 define um módulo de fontes que permite a criação de fontes dentro de um documento SVG. Você também pode aplicar CSS a documentos SVG, e a regra @font-face pode ser aplicada a texto em documentos SVG.
+
+Fontes OpenType incorporadas (EOT)
+
+As fontes EOT são uma forma compacta de fontes OpenType projetadas pela Microsoft para uso como fontes incorporadas em páginas da Web.
+
+Usando a fonte que você deseja
+Na @font-faceregra; primeiro defina um nome para a fonte (por exemplo, myFirstFont) e depois aponte para o arquivo de fonte.
+
+Dica: Sempre use letras minúsculas para o URL da fonte. Letras maiúsculas podem dar resultados inesperados no IE.
+
+Para usar a fonte para um elemento HTML, consulte o nome da fonte (myFirstFont) por meio da font-familypropriedade:
+
+*/
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(sansation_light.woff);
+}
+
+* {
+    
+}
