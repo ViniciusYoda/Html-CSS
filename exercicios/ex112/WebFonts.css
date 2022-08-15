@@ -49,5 +49,63 @@ Para usar a fonte para um elemento HTML, consulte o nome da fonte (myFirstFont) 
 }
 
 * {
-    
+    font-family: myFirstFont;
 }
+
+
+
+/*
+
+Usando texto em negrito
+Você deve adicionar outra @font-faceregra contendo descritores para texto em negrito:
+
+*/
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(sansation_bold.woff);
+    font-weight: bold;
+}
+
+/*
+
+O arquivo "sansation_bold.woff" é outro arquivo de fonte, que contém os caracteres em negrito para a fonte Sansation.
+
+Os navegadores usarão isso sempre que um pedaço de texto com a família de fontes "myFirstFont" for renderizado em negrito.
+
+Dessa forma, você pode ter muitas @font-faceregras para a mesma fonte.
+
+Descritores de fontes CSS
+A tabela a seguir lista todos os descritores de fonte que podem ser definidos dentro da @font-faceregra:
+
+Descriptor	Values	Description
+font-family	name	Required. Defines a name for the font
+src	URL	Required. Defines the URL of the font file
+font-stretch	normal
+condensed
+ultra-condensed
+extra-condensed
+semi-condensed
+expanded
+semi-expanded
+extra-expanded
+ultra-expanded	Optional. Defines how the font should be stretched. Default is "normal"
+font-style	normal
+italic
+oblique	Optional. Defines how the font should be styled. Default is "normal"
+font-weight	normal
+bold
+100
+200
+300
+400
+500
+600
+700
+800
+900	Optional. Defines the boldness of the font. Default is "normal"
+unicode-range	unicode-range	Optional. Defines the range of UNICODE characters the font supports. Default is "U+0-10FFFF"
+
+*/
+
+
