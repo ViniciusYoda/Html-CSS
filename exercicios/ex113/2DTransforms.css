@@ -5,3 +5,307 @@ As transformações CSS permitem mover, girar, dimensionar e inclinar elementos.
 
 Passe o mouse sobre o elemento abaixo para ver uma transformação 2D:
 
+Neste capítulo, você aprenderá sobre a seguinte propriedade CSS:
+
+transform
+
+Métodos de transformações CSS 2D
+Com a propriedade CSS transformvocê pode usar os seguintes métodos de transformação 2D:
+
+translate()
+rotate()
+scaleX()
+scaleY()
+scale()
+skewX()
+skewY()
+skew()
+matrix()
+
+Dica: Você aprenderá sobre transformações 3D no próximo capítulo.
+
+O método translate()
+Traduzir
+O translate()método move um elemento de sua posição atual (de acordo com os parâmetros fornecidos para o eixo X e o eixo Y).
+
+O exemplo a seguir move o elemento <div> 50 pixels para a direita e 100 pixels para baixo de sua posição atual:
+
+*/
+
+div.translate {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+    transform: translate(50px, 100px);
+}
+
+/*
+
+O método girar()
+Girar
+O rotate()método gira um elemento no sentido horário ou anti-horário de acordo com um determinado grau.
+
+O exemplo a seguir gira o elemento <div> no sentido horário com 20 graus:
+
+*/
+
+div.rotate div {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+div.rotate div#myDiv {
+    transform: rotate(20deg);
+}
+
+/*
+
+O uso de valores negativos girará o elemento no sentido anti-horário.
+
+O exemplo a seguir gira o elemento <div> no sentido anti-horário com 20 graus:
+
+*/
+
+div.rotate2 div {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+div.rotate2 div#myDiv {
+    transform: rotate(-20deg);
+}
+
+/*
+
+Escala
+O scale()método aumenta ou diminui o tamanho de um elemento (de acordo com os parâmetros dados para largura e altura).
+
+O exemplo a seguir aumenta o elemento <div> para duas vezes sua largura original e três vezes sua altura original: 
+
+*/
+
+div.scale div {
+    margin: 150px;
+    width: 200px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+    transform: scale(2,3);
+}
+
+/*
+
+O exemplo a seguir diminui o elemento <div> para metade de sua largura e altura originais: 
+
+*/
+
+div.scale2 div {
+    margin: 150px;
+    width: 200px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+    transform: scale(0.5, 0,5);
+}
+
+/*
+
+O método scaleX()
+O scaleX()método aumenta ou diminui a largura de um elemento.
+
+O exemplo a seguir aumenta o elemento <div> para duas vezes sua largura original: 
+
+*/
+
+div.scaleX div {
+    margin: 150px;
+    width: 200px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+    transform: scaleX(2);
+}
+
+/*
+
+O exemplo a seguir diminui o elemento <div> para metade de sua largura original: 
+
+*/
+
+div.scaleX2 div {
+    margin: 150px;
+    width: 200px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+    transform: scaleX(0.5);
+}
+
+/*
+
+O método scaleY()
+O scaleY()método aumenta ou diminui a altura de um elemento.
+
+O exemplo a seguir aumenta o elemento <div> para três vezes sua altura original: 
+
+*/
+
+div.scaleY div {
+    margin: 150px;
+    width: 200px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+    transform: scaleY(3);
+}
+
+/*
+
+ exemplo a seguir diminui o elemento <div> para metade de sua altura original: 
+
+ */
+
+div.scaleY2 div {
+    margin: 150px;
+    width: 200px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+    transform: scaleY(0.5);
+}
+
+/*
+
+O método skewX()
+O skewX()método inclina um elemento ao longo do eixo X pelo ângulo fornecido.
+
+O exemplo a seguir inclina o elemento <div> 20 graus ao longo do eixo X:
+
+*/
+
+div.skewX div {
+    width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+
+div.skewX div#myDiv {
+    transform: skewX(20deg);
+}
+
+/*
+
+O método skewY()
+O skewY()método inclina um elemento ao longo do eixo Y pelo ângulo fornecido.
+
+O exemplo a seguir inclina o elemento <div> 20 graus ao longo do eixo Y:
+
+*/
+
+div.skewY div {
+    width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+
+div.skewY div#myDiv {
+    transform: skewY(20deg);
+}
+
+/*
+
+O método skew()
+O skew()método inclina um elemento ao longo dos eixos X e Y pelos ângulos fornecidos.
+
+O exemplo a seguir inclina o elemento <div> 20 graus ao longo do eixo X e 10 graus ao longo do eixo Y:
+
+*/
+
+div.skew div {
+    width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+
+div.skew div#myDiv {
+    transform: skew(20deg, 10deg);
+}
+
+/*
+
+Se o segundo parâmetro não for especificado, ele terá um valor zero. Portanto, o exemplo a seguir inclina o elemento <div> 20 graus ao longo do eixo X:
+
+*/
+
+div.skew2 div {
+    width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+
+div.skew2 div#myDiv {
+    transform: skew(20deg);
+}
+
+/*
+
+O método matriz()
+Girar
+O matrix()método combina todos os métodos de transformação 2D em um.
+
+O método matrix() aceita seis parâmetros, contendo funções matemáticas, que permitem girar, dimensionar, mover (traduzir) e inclinar elementos.
+
+Os parâmetros são os seguintes: matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())
+
+*/
+
+div.matrix div {width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;}
+
+div.matrix div#myDiv1 {
+    transform: matrix(1, -0.3, 0, 1, 0, 0);
+} 
+
+div.matrix div#myDiv2 {
+    transform: matrix(1, 0, 0.5, 1, 150, 0);
+}
+
+/*
+
+Propriedades de transformação CSS
+A tabela a seguir lista todas as propriedades de transformação 2D:
+
+Property	Description
+transform	Applies a 2D or 3D transformation to an element
+transform-origin	Allows you to change the position on transformed elements
+
+Métodos de transformação CSS 2D
+Function	Description
+matrix(n,n,n,n,n,n)	Defines a 2D transformation, using a matrix of six values
+translate(x,y)	Defines a 2D translation, moving the element along the X- and the Y-axis
+translateX(n)	Defines a 2D translation, moving the element along the X-axis
+translateY(n)	Defines a 2D translation, moving the element along the Y-axis
+scale(x,y)	Defines a 2D scale transformation, changing the elements width and height
+scaleX(n)	Defines a 2D scale transformation, changing the element's width
+scaleY(n)	Defines a 2D scale transformation, changing the element's height
+rotate(angle)	Defines a 2D rotation, the angle is specified in the parameter
+skew(x-angle,y-angle)	Defines a 2D skew transformation along the X- and the Y-axis
+skewX(angle)	Defines a 2D skew transformation along the X-axis
+skewY(angle)	Defines a 2D skew transformation along the Y-axis
+
+*/
+
+
+
+
