@@ -1,3 +1,114 @@
 @charset "UTFT-8";
 
 /* TOdas as demais medias */
+
+/* Typical Device Breakpoints
+Pequenas telas : até 600px
+Celular: de 600px até 768px
+Tablet:  de 768px até 992px
+Desktop: de 992px até 1200px
+Grandes telas : acimda de 1200px
+
+*/
+
+/*Outros Breakpoints
+
+Mobile, portrait 
+            320px	
+            375px	
+            414px
+Mobile, landscape
+            568px	
+            667px	
+            736px	
+            812px
+Tablet, portrait
+            768px	
+            834px
+Tablet, landscape
+            1024px	
+            1024px	
+            1112px
+Laptop displays
+            1366px	
+            1366px	
+            1440px
+Desktop displays
+            1680px	
+            1920px
+*/
+
+@media print { /* Impressão */
+
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body {
+        background-image: url(../img/back-print.jpg);
+        
+    }
+
+    main {
+        width: 90vw;
+        border: 2px solid black;
+    }
+
+    main::after {
+        content: 'Este site foi feito por nóis';
+        text-decoration: overline;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+    
+    img#phone { display: none; }
+    img#tablet { display: none; }
+    img#print { display: block; }
+    img#pc { display: none; }
+    img#tv { display: none; }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /* Tablet */
+    body {
+        background-image: url(../img/back-tablet.jpg);
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: block; }
+    img#print { display: none; }
+    img#pc { display: none; }
+    img#tv { display: none; }
+}
+
+@media screen and (minx-width: 992px) and (max-width: 1200px) { /* Desktop */
+    body {
+        background-image: url(../img/back-pc.jpg);
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: none; }
+    img#print { display: none; }
+    img#pc { display: block; }
+    img#tv { display: none; }
+}
+
+@media screen and (min-width: 1200px) { /* Grandes telas */
+    body {
+        background-image: url(../img/back-tv.jpg);
+    }
+
+    main {
+        width: 720px;
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: none; }
+    img#print { display: none; }
+    img#pc { display: none; }
+    img#tv { display: block; }
+}
+
+
