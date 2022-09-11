@@ -1,0 +1,195 @@
+/*
+
+Transições CSS
+As transições CSS permitem que você altere os valores das propriedades sem problemas, durante um determinado período.
+
+Passe o mouse sobre o elemento abaixo para ver um efeito de transição CSS:
+
+Neste capítulo você aprenderá sobre as seguintes propriedades:
+
+transition
+transition-delay
+transition-duration
+transition-property
+transition-timing-function
+
+Como usar transições CSS?
+Para criar um efeito de transição, você deve especificar duas coisas:
+
+a propriedade CSS à qual você deseja adicionar um efeito
+a duração do efeito
+Nota: Se a parte da duração não for especificada, a transição não terá efeito, pois o valor padrão é 0.
+
+O exemplo a seguir mostra um elemento <div> vermelho de 100px * 100px. O elemento <div> também especificou um efeito de transição para a propriedade largura, com duração de 2 segundos:
+
+O efeito de transição começará quando a propriedade CSS especificada (largura) mudar de valor.
+
+Agora, vamos especificar um novo valor para a propriedade width quando um usuário passa o mouse sobre o elemento <div>:
+
+*/
+
+.t1 div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s;
+}
+
+.t1 div:hover {
+    width: 300px;
+}
+
+/*
+
+Observe que quando o cursor sai do elemento, ele irá gradualmente voltar ao seu estilo original.
+
+Alterar vários valores de propriedade
+O exemplo a seguir adiciona um efeito de transição para a propriedade largura e altura, com duração de 2 segundos para a largura e 4 segundos para a altura:
+
+*/
+
+.t2 div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s, height 4s;
+}
+
+.t2 div:hover {
+    width: 300px;
+    height: 300px;
+}
+
+/*
+
+Especifique a curva de velocidade da transição
+A transition-timing-functionpropriedade especifica a curva de velocidade do efeito de transição.
+
+A propriedade da função de tempo de transição pode ter os seguintes valores:
+
+ease- especifica um efeito de transição com um início lento, depois rápido e depois termina lentamente (este é o padrão)
+linear- especifica um efeito de transição com a mesma velocidade do início ao fim
+ease-in- especifica um efeito de transição com um início lento
+ease-out- especifica um efeito de transição com um final lento
+ease-in-out- especifica um efeito de transição com início e fim lentos
+cubic-bezier(n,n,n,n)- permite definir seus próprios valores em uma função cúbica-bezier
+O exemplo a seguir mostra algumas das diferentes curvas de velocidade que podem ser usadas:
+
+*/
+
+.t3 div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s;
+}
+
+.t3 #div1 {
+    transition-timing-function: linear;
+}
+.t3 #div2 {
+    transition-timing-function: ease;
+}
+.t3 #div3{
+    transition-timing-function: ease-in;
+}
+.t3 #div4 {
+    transition-timing-function: ease-in-out;
+}
+.t3 #div5 {
+    transition-timing-function: ease-in-out;
+}
+
+/*
+
+Atrasar o Efeito da Transição
+A transition-delaypropriedade especifica um atraso (em segundos) para o efeito de transição.
+
+O exemplo a seguir tem um atraso de 1 segundo antes de iniciar:
+
+*/
+
+.t4 div{
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 3s;
+    transition-delay: 1s;
+
+}
+
+.t4 div:hover {
+    width: 300px;
+}
+
+/*
+
+Transição + Transformação
+O exemplo a seguir adiciona um efeito de transição à transformação:
+
+*/
+
+.t5 div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.t5 div:hover {
+    width: 300px;
+    height: 300px;
+    transform: rotate(180deg);
+}
+
+/*
+
+Mais exemplos de transição
+As propriedades de transição CSS podem ser especificadas uma a uma, assim:
+
+*/
+
+.t6 div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+}
+
+.t6 div:hover {
+    width: 300px;
+}
+
+/*
+
+ou usando a propriedade abreviada transition:
+
+*/
+
+.t7 div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s linear 1s;
+}
+
+.t7 div:hover {
+    width: 300px;
+}
+
+/*
+
+Propriedades de transição CSS
+A tabela a seguir lista todas as propriedades de transição CSS:
+
+Property	Description
+transition	A shorthand property for setting the four transition properties into a single property
+transition-delay	Specifies a delay (in seconds) for the transition effect
+transition-duration	Specifies how many seconds or milliseconds a transition effect takes to complete
+transition-property	Specifies the name of the CSS property the transition effect is for
+transition-timing-function	Specifies the speed curve of the transition effect
+
+*/
