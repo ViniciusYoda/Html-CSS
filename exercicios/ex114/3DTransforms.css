@@ -1,0 +1,104 @@
+/*
+
+Transformações CSS 3D
+CSS também suporta transformações 3D.
+
+Passe o mouse sobre os elementos abaixo para ver a diferença entre uma transformação 2D e 3D:
+
+Neste capítulo, você aprenderá sobre a seguinte propriedade CSS:
+
+transform
+
+Métodos de transformações CSS 3D
+Com a propriedade CSS transformvocê pode usar os seguintes métodos de transformação 3D:
+
+rotateX()
+rotateY()
+rotateZ()
+
+O método girarX()
+Girar X
+O rotateX()método gira um elemento em torno de seu eixo X em um determinado grau:
+
+*/
+
+.rotateX div {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+.rotateX #myDiv {
+    transform: rotateX(150deg);
+}
+
+/*
+
+O método girarY()
+Girar Y
+O rotateY()método gira um elemento em torno de seu eixo Y em um determinado grau:
+
+*/
+
+.rotateY div {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+.rotateY #myDiv{
+    transform: rotateY(150deg);
+}
+
+/*
+
+O método girarZ()
+O rotateZ()método gira um elemento em torno de seu eixo Z em um determinado grau:
+
+*/
+
+.rotateZ div {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+.rotateZ #myDiv{
+    transform: rotateZ(90deg);
+}
+
+/*
+
+Propriedades de transformação CSS
+A tabela a seguir lista todas as propriedades de transformação 3D:
+
+Property	Description
+transform	Applies a 2D or 3D transformation to an element
+transform-origin	Allows you to change the position on transformed elements
+transform-style	Specifies how nested elements are rendered in 3D space
+perspective	Specifies the perspective on how 3D elements are viewed
+perspective-origin	Specifies the bottom position of 3D elements
+backface-visibility	Defines whether or not an element should be visible when not facing the screen
+Métodos de transformação CSS 3D
+Function	Description
+matrix3d
+(n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n)	Defines a 3D transformation, using a 4x4 matrix of 16 values
+translate3d(x,y,z)	Defines a 3D translation
+translateX(x)	Defines a 3D translation, using only the value for the X-axis
+translateY(y)	Defines a 3D translation, using only the value for the Y-axis
+translateZ(z)	Defines a 3D translation, using only the value for the Z-axis
+scale3d(x,y,z)	Defines a 3D scale transformation
+scaleX(x)	Defines a 3D scale transformation by giving a value for the X-axis
+scaleY(y)	Defines a 3D scale transformation by giving a value for the Y-axis
+scaleZ(z)	Defines a 3D scale transformation by giving a value for the Z-axis
+rotate3d(x,y,z,angle)	Defines a 3D rotation
+rotateX(angle)	Defines a 3D rotation along the X-axis
+rotateY(angle)	Defines a 3D rotation along the Y-axis
+rotateZ(angle)	Defines a 3D rotation along the Z-axis
+perspective(n)	Defines a perspective view for a 3D transformed element
+
+*/
+
