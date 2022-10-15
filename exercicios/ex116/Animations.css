@@ -124,3 +124,333 @@ O exemplo a seguir alterará a cor do plano de fundo e a posição do elemento <
     }
 }
 
+/*
+
+Atrasar uma Animação
+A animation-delaypropriedade especifica um atraso para o início de uma animação.
+
+O exemplo a seguir tem um atraso de 2 segundos antes de iniciar a animação:
+
+*/
+
+.quatro div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example4;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+
+@keyframes example4 {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+/*
+
+Valores negativos também são permitidos. Se estiver usando valores negativos, a animação começará como se já estivesse tocando por N segundos.
+
+No exemplo a seguir, a animação começará como se já estivesse sendo reproduzida por 2 segundos:
+
+*/
+
+.cinco div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example5;
+    animation-duration: 4s;
+    animation-delay: -2s;
+}
+
+@keyframes example5 {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+/*
+
+Definir quantas vezes uma animação deve ser executada
+A animation-iteration-countpropriedade especifica o número de vezes que uma animação deve ser executada.
+
+O exemplo a seguir executará a animação 3 vezes antes de parar:
+
+*/
+
+.seis div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example6;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+}
+
+@keyframes example6 {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+/*
+
+O exemplo a seguir usa o valor "infinite" para fazer a animação continuar para sempre:
+
+*/
+
+.sete div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example7;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example7 {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+/*
+
+Executar animação na direção reversa ou ciclos alternativos
+A animation-directionpropriedade especifica se uma animação deve ser reproduzida para frente, para trás ou em ciclos alternados.
+
+A propriedade animation-direction pode ter os seguintes valores:
+
+normal- A animação é reproduzida normalmente (para a frente). Isso é padrão
+reverse- A animação é reproduzida na direção inversa (para trás)
+alternate - A animação é reproduzida primeiro para a frente e depois para trás
+alternate-reverse- A animação é reproduzida primeiro para trás e depois para a frente
+O exemplo a seguir executará a animação na direção inversa (para trás):
+
+*/
+
+.oito div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example8;
+    animation-duration: 4s;
+    animation-direction: reverse; 
+}
+
+@keyframes example8 {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+/*
+
+O exemplo a seguir usa o valor "alternate" para fazer com que a animação seja executada primeiro e depois para trás:
+
+*/
+
+.nove div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example9;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    animation-direction: alternate; 
+}
+
+@keyframes example9 {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+/* O exemplo a seguir usa o valor "alternate-reverse" para fazer a animação rodar primeiro para trás e depois para a frente: */
+
+.dez div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example10;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    animation-direction: alternate-reverse;  
+}
+
+@keyframes example10 {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+/*
+
+Especifique a curva de velocidade da animação
+A animation-timing-functionpropriedade especifica a curva de velocidade da animação.
+
+A propriedade animation-timing-function pode ter os seguintes valores:
+
+ease- Especifica uma animação com início lento, rápido e final lento (este é o padrão)
+linear- Especifica uma animação com a mesma velocidade do início ao fim
+ease-in- Especifica uma animação com um início lento
+ease-out- Especifica uma animação com um final lento
+ease-in-out- Especifica uma animação com início e fim lentos
+cubic-bezier(n,n,n,n)- Permite definir seus próprios valores em uma função cúbica-bezier
+O exemplo a seguir mostra algumas das diferentes curvas de velocidade que podem ser usadas:
+
+*/
+
+.onze div {
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    font-weight: bold;
+    position: relative;
+    animation: mymove 5s infinite;
+}
+
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 300px;}
+}
+
+/*
+
+Especifique o modo de preenchimento para uma animação
+As animações CSS não afetam um elemento antes da reprodução do primeiro quadro-chave ou após a reprodução do último quadro-chave. A propriedade do modo de preenchimento de animação pode substituir esse comportamento.
+
+A animation-fill-modepropriedade especifica um estilo para o elemento de destino quando a animação não está sendo reproduzida (antes de começar, depois de terminar ou ambos).
+
+A propriedade animation-fill-mode pode ter os seguintes valores:
+
+none- Valor padrão. A animação não aplicará nenhum estilo ao elemento antes ou depois de ser executado
+forwards- O elemento manterá os valores de estilo definidos pelo último quadro-chave (depende da direção da animação e da contagem de iteração da animação)
+backwards- O elemento obterá os valores de estilo definidos pelo primeiro quadro-chave (depende da direção da animação) e reterá isso durante o período de atraso da animação
+both- A animação seguirá as regras para frente e para trás, estendendo as propriedades da animação em ambas as direções
+O exemplo a seguir permite que o elemento <div> retenha os valores de estilo do último quadro-chave quando a animação termina:
+
+*/
+
+.doze div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    animation-name: example12;
+    animation-duration: 3s;  
+    animation-fill-mode: forwards;
+}
+
+@keyframes example12 {
+    from {top: 0px;}
+    to {top: 200px; background-color: blue;}
+}
+
+/*  O exemplo a seguir permite que o elemento <div> obtenha os valores de estilo definidos pelo primeiro quadro-chave antes do início da animação e retenha os valores de estilo do último quadro-chave quando a animação terminar:  */
+
+.treze div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    animation-name: example13;
+    animation-duration: 3s;  
+    animation-delay: 2s;
+    animation-fill-mode: both;
+}
+
+@keyframes example13 {
+    from {top: 0px; background-color: yellow;}
+    to {top: 200px; background-color: blue;}
+}
+
+/* Propriedade abreviada de animação
+O exemplo abaixo usa seis das propriedades de animação: */
+
+.cartoze div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example14;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes example14 {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+/* O mesmo efeito de animação acima pode ser obtido usando a animationpropriedade abreviada: */
+
+.quinze div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation: myfirst 5s linear 2s infinite alternate;
+}
+
+@keyframes myfirst {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+/*
+
+Propriedades de animação CSS
+A tabela a seguir lista a regra @keyframes e todas as propriedades de animação CSS:
+
+Property	Description
+@keyframes	Specifies the animation code
+animation	A shorthand property for setting all the animation properties
+animation-delay	Specifies a delay for the start of an animation
+animation-direction	Specifies whether an animation should be played forwards, backwards or in alternate cycles
+animation-duration	Specifies how long time an animation should take to complete one cycle
+animation-fill-mode	Specifies a style for the element when the animation is not playing (before it starts, after it ends, or both)
+animation-iteration-count	Specifies the number of times an animation should be played
+animation-name	Specifies the name of the @keyframes animation
+animation-play-state	Specifies whether the animation is running or paused
+animation-timing-function	Specifies the speed curve of the animation
+
+*/
