@@ -1,0 +1,57 @@
+/*
+
+Dica de CSS
+
+Crie dicas de ferramentas com CSS.
+
+Demonstração: exemplos de dicas
+Uma dica de ferramenta é frequentemente usada para especificar informações extras sobre algo quando o usuário move o ponteiro do mouse sobre um elemento:
+
+Dica de ferramenta básica
+Crie uma dica de ferramenta que aparece quando o usuário move o mouse sobre um elemento:
+
+*/
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+/*
+
+Exemplo explicado
+HTML: Use um elemento de contêiner (como <div>) e adicione a "tooltip"classe a ele. Quando o usuário passar o mouse sobre este <div>, ele mostrará o texto da dica de ferramenta.
+
+O texto da dica de ferramenta é colocado dentro de um elemento embutido (como <span>) com class="tooltiptext".
+
+CSS: A tooltipclasse use position:relative, que é necessária para posicionar o texto da dica de ferramenta ( position:absolute). Nota: Veja os exemplos abaixo sobre como posicionar a dica de ferramenta.
+
+A tooltiptextclasse contém o texto real da dica de ferramenta. Ele está oculto por padrão e ficará visível ao passar o mouse (veja abaixo). Também adicionamos alguns estilos básicos a ele: largura de 120px, cor de fundo preto, cor de texto branco, texto centralizado e preenchimento superior e inferior de 5px.
+
+A propriedade CSS border-radiusé usada para adicionar cantos arredondados ao texto da dica de ferramenta.
+
+O :hoverseletor é usado para mostrar o texto da dica de ferramenta quando o usuário move o mouse sobre o <div> com class="tooltip".
+
+Dicas de posicionamento
+Neste exemplo, a dica de ferramenta é colocada à direita ( left:105%) do texto "hoverable" (<div>). Observe também que top:-5pxé usado para colocá-lo no meio de seu elemento contêiner. Usamos o número 5 porque o texto da dica de ferramenta tem um preenchimento superior e inferior de 5px. Se você aumentar o preenchimento, aumente também o valor da toppropriedade para garantir que ela fique no meio (se isso for algo que você deseja). O mesmo se aplica se você quiser que a dica de ferramenta seja colocada à esquerda.
+
+*/
