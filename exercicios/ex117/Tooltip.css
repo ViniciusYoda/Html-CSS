@@ -55,3 +55,323 @@ Dicas de posicionamento
 Neste exemplo, a dica de ferramenta é colocada à direita ( left:105%) do texto "hoverable" (<div>). Observe também que top:-5pxé usado para colocá-lo no meio de seu elemento contêiner. Usamos o número 5 porque o texto da dica de ferramenta tem um preenchimento superior e inferior de 5px. Se você aumentar o preenchimento, aumente também o valor da toppropriedade para garantir que ela fique no meio (se isso for algo que você deseja). O mesmo se aplica se você quiser que a dica de ferramenta seja colocada à esquerda.
 
 */
+
+.tooltip2 {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip2 .tooltiptext2 {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 105%;
+}
+
+.tooltip2:hover .tooltiptext2 {
+    visibility: visible;
+}
+
+.tooltip3 {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+  
+.tooltip3 .tooltiptext3 {
+visibility: hidden;
+    background-color: black;
+color: #fff;
+text-align: center;
+border-radius: 6px;
+padding: 5px 0;
+    
+    /* Position the tooltip */
+position: absolute;
+z-index: 1;
+top: -5px;
+right: 105%;
+}
+  
+.tooltip3:hover .tooltiptext3 {
+visibility: visible;
+}
+
+/*
+
+Se você quiser que a dica de ferramenta apareça na parte superior ou inferior, veja os exemplos abaixo. Observe que usamos a margin-leftpropriedade com um valor de menos 60 pixels. Isso é para centralizar a dica de ferramenta acima/abaixo do texto que pode passar o mouse. Ele é definido para a metade da largura da dica de ferramenta (120/2 = 60).
+
+*/
+
+.tooltip4{
+position: relative;
+display: inline-block;
+border-bottom: 1px dotted black;
+}
+
+.tooltip4 .tooltiptext4 {
+visibility: hidden;
+width: 120px;
+background-color: black;
+color: #fff;
+text-align: center;
+border-radius: 6px;
+padding: 5px 0;
+
+/* Position the tooltip */
+position: absolute;
+z-index: 1;
+bottom: 100%;
+left: 50%;
+margin-left: -60px;
+}
+
+.tooltip4:hover .tooltiptext4 {
+visibility: visible;
+}
+
+.tooltip5 {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip5 .tooltiptext5 {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .tooltip5:hover .tooltiptext5 {
+    visibility: visible;
+  }
+
+/*
+
+Setas de dica de ferramenta
+Para criar uma seta que deve aparecer de um lado específico da dica de ferramenta, adicione conteúdo "vazio" após a dica de ferramenta, com a classe pseudo-elemento ::afterjunto com a content propriedade. A seta em si é criada usando bordas. Isso fará com que a dica de ferramenta pareça um balão de fala.
+
+Este exemplo demonstra como adicionar uma seta na parte inferior da dica de ferramenta:
+
+*/
+
+.tooltip6 {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip6 .tooltiptext6 {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip6 .tooltiptext6::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparet;
+}
+
+.tooltip6:hover .tooltiptext6 {
+    visibility: visible;
+  }
+
+/*
+
+Exemplo explicado
+Posicione a seta dentro da dica de ferramenta: top: 100%colocará a seta na parte inferior da dica de ferramenta. left: 50%centralizará a seta.
+
+Nota: A border-widthpropriedade especifica o tamanho da seta. Se você alterar isso, altere também o margin-leftvalor para o mesmo. Isso manterá a seta centralizada.
+
+O border-coloré usado para transformar o conteúdo em uma seta. Definimos a borda superior como preta e o restante como transparente. Se todos os lados fossem pretos, você terminaria com uma caixa quadrada preta.
+
+Este exemplo demonstra como adicionar uma seta à parte superior da dica de ferramenta. Observe que definimos a cor da borda inferior desta vez:
+
+*/
+
+.tooltip7 {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip7 .tooltiptext7 {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 150%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .tooltip7 .tooltiptext7::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+  }
+  
+  .tooltip7:hover .tooltiptext7 {
+    visibility: visible;
+  }
+
+  /*
+  Este exemplo demonstra como adicionar uma seta à esquerda da dica de ferramenta:
+  */
+
+  .tooltip8 {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip8 .tooltiptext8 {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 110%;
+  }
+  
+  .tooltip8 .tooltiptext8::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+  }
+  .tooltip8:hover .tooltiptext8 {
+    visibility: visible;
+  }
+
+/*
+
+Este exemplo demonstra como adicionar uma seta à direita da dica de ferramenta:
+
+*/
+
+.tooltip9 {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip9 .tooltiptext9 {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    right: 110%;
+  }
+  
+  .tooltip9 .tooltiptext9::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent black;
+  }
+  .tooltip9:hover .tooltiptext9 {
+    visibility: visible;
+  }
+
+/*
+
+Dicas de ferramentas de fade in (animação)
+Se você quiser esmaecer o texto da dica de ferramenta quando estiver prestes a ficar visível, você pode usar a transitionpropriedade CSS junto com a opacity propriedade e passar de completamente invisível para 100% visível, em um número de segundos especificado (1 segundo em nosso exemplo):
+
+*/
+
+.tooltip10 {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip10 .tooltiptext10 {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  
+  .tooltip10:hover .tooltiptext10 {
+    visibility: visible;
+    opacity: 1;
+  }
