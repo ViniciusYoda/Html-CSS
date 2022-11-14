@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Images</title>
+    <link rel="stylesheet" href="StyleImages.css">
+</head>
+<body>
+    
+<h2>Rounded Image</h2>
+
+<p>Use the border-radius property to create rounded images:</p>
+
+<img src="https://www.w3schools.com/css/paris.jpg" alt="Paris" width="300" height="300" class="img1">
+
+<h2>Circled Image</h2>
+
+<p>Use the border-radius property to create circled images:</p>
+
+<img src="https://www.w3schools.com/css/paris.jpg" alt="Paris" width="300" height="300" class="img2">
+
+<h2>Thumbnail Image</h2>
+
+<p>Use the border property to create thumbnail images:</p>
+
+<img src="https://www.w3schools.com/css/paris.jpg" alt="Paris" style="width:150px" class="img3">
+
+<h2>Thumbnail Image as Link</h2>
+
+<p>Use the border property to create thumbnail images. Wrap an anchor around the image to use it as a link.</p>
+<p>Hover over the image and click on it to see the effect.</p>
+
+<a target="_blank" href="https://www.w3schools.com/css/paris.jpg">
+  <img src="https://www.w3schools.com/css/paris.jpg" alt="Paris" style="width:150px" class="img4">
+</a>
+
+<h2>Responsive Image</h2>
+
+<p>Responsive images will automatically adjust to fit the size of the screen.</p>
+<p>Resize the browser window to see the effect:</p>
+
+<img src="https://www.w3schools.com/css/img_5terre_wide.jpg" alt="Cinque Terre" width="1000" height="300" class="img5">
+
+<h2>Center an Image</h2>
+
+<p>To center an image, set left and right margin to auto, and make it into a block element.</p>
+
+<img src="https://www.w3schools.com/css/paris.jpg" alt="Paris" style="width:50%" class="img6">
+
+<h2>Responsive Polaroid Images / Cards</h2>
+
+<div class="polaroid">
+  <img src="https://www.w3schools.com/css/img_5terre.jpg" alt="5 Terre" style="width:100%">
+  <div class="container">
+  <p>Cinque Terre</p>
+  </div>
+</div>
+
+<div class="polaroid">
+  <img src="https://www.w3schools.com/css/lights600x400.jpg" alt="Norther Lights" style="width:100%">
+  <div class="container">
+  <p>Northern Lights</p>
+  </div>
+</div>
+
+<h1>Image Transparency</h1>
+
+<p>The opacity property specifies the transparency of an element. The lower the value, the more transparent:</p>
+
+<p>Image with 50% opacity:</p>
+<img src="https://www.w3schools.com/css/img_forest.jpg" alt="Forest" width="170" height="100" class="img7">
+
+<h2>Image Text</h2>
+
+<p>Add some text to an image in the top left corner:</p>
+
+<div class="container1">
+  <img src="https://www.w3schools.com/css/img_5terre_wide.jpg" alt="Cinque Terre" width="1000" height="300" class="img8">
+  <div class="topleft">Top Left</div>
+  <div class="topright">Top Right</div>
+  <div class="center">Centered</div>
+  <div class="bottomleft">Bottom Left</div>
+  <div class="bottomright">B. Right</div>
+</div>
+
+<h2>Image Filters</h2>
+
+<p><strong>Note:</strong> The filter property is not supported in Internet Explorer or Edge 12.</p>
+
+<img src="https://www.w3schools.com/css/pineapple.jpg" alt="Pineapple" width="300" height="300" id="img9">
+<img class="blur" id="img9" src="https://www.w3schools.com/css/pineapple.jpg" alt="Pineapple" width="300" height="300">
+<img 
+id="img9"  class="brightness" src="https://www.w3schools.com/css/pineapple.jpg" alt="Pineapple" width="300" height="300">
+<img id="img9" class="contrast" src="https://www.w3schools.com/css/pineapple.jpg" alt="Pineapple" width="300" height="300">
+<img id="img9" class="grayscale" src="https://www.w3schools.com/css/pineapple.jpg" alt="Pineapple" width="300" height="300">
+<img id="img9" class="huerotate" src="https://www.w3schools.com/css/pineapple.jpg" alt="Pineapple" width="300" height="300">
+<img id="img9" class="invert" src="https://www.w3schools.com/css/pineapple.jpg" alt="Pineapple" width="300" height="300">
+<img id="img9" class="opacity" src="https://www.w3schools.com/css/pineapple.jpg" alt="Pineapple" width="300" height="300">
+<img id="img9" class="saturate" src="https://www.w3schools.com/css/pineapple.jpg" alt="Pineapple" width="300" height="300">
+<img id="img9" class="sepia" src="https://www.w3schools.com/css/pineapple.jpg" alt="Pineapple" width="300" height="300">
+<img id="img9" class="shadow" src="https://www.w3schools.com/css/pineapple.jpg" alt="Pineapple" width="300" height="300">
+
+<h2>Fade in Overlay</h2>
+
+<div class="container2">
+  <img src="https://www.w3schools.com/css/img_avatar.png" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Hello World</div>
+  </div>
+</div>
+
+<h2>Fade in a Box</h2>
+
+<div class="container2">
+  <img src="https://www.w3schools.com/css/img_avatar.png" alt="Avatar" class="image1" style="width:100%">
+  <div class="middle">
+    <div class="text1">John Doe</div>
+  </div>
+</div>
+
+<h2>Slide in Overlay from the Top</h2>
+
+<div class="container2">
+  <img src="https://www.w3schools.com/css/img_avatar.png" alt="Avatar" class="image">
+  <div class="overlay1">
+    <div class="text2">Hello World</div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,327 @@
+/*
+
+Imagens de estilo CSS
+
+Aprenda como estilizar imagens usando CSS.
+
+Imagens arredondadas
+Use a border-radiuspropriedade para criar imagens arredondadas:
+
+*/
+
+.img1 {
+    border-radius: 8px;
+}
+
+.img2 {
+    border-radius: 50%;
+}
+
+/*
+
+Imagens em miniatura
+Use a borderpropriedade para criar imagens em miniatura.
+
+*/
+
+.img3 {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
+
+.img4 {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
+
+.img4:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+/*
+
+Imagens responsivas
+As imagens responsivas se ajustarão automaticamente ao tamanho da tela.
+
+Redimensione a janela do navegador para ver o efeito:
+
+Cinque Terre
+Se você quiser que uma imagem diminua se necessário, mas nunca aumente para ser maior que seu tamanho original, adicione o seguinte:
+
+*/
+
+.img5 {
+    max-width: 100%;
+    height: auto;
+}
+
+/*
+
+Centralizar uma imagem
+Para centralizar uma imagem, defina as margens esquerda e direita autoe transforme-a em um blockelemento:
+
+*/
+
+.img6 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*
+
+Imagens/Cartões Polaroid
+
+*/
+
+body {
+    margin: 25px;
+}
+
+div.polaroid {
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+}
+
+div.container {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+/*
+
+Imagem transparente
+A opacitypropriedade pode ter um valor de 0,0 a 1,0. Quanto menor o valor, mais transparente:
+
+*/
+
+.img7 {
+    opacity: 0.5;
+}
+
+/*
+
+Texto da imagem
+Como posicionar o texto em uma imagem:
+
+*/
+
+.container1 {
+    position: relative;
+}
+
+.topleft {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: 18px;
+}
+
+.topright {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 18px;
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    font-size: 18px;
+}
+
+.bottomright {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 18px;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img8 {
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
+}
+
+/*
+
+Filtros de imagem
+A propriedade CSS filteradiciona efeitos visuais (como desfoque e saturação) a um elemento.
+
+Observação: a propriedade de filtro não tem suporte no Internet Explorer ou no Edge 12.
+
+Exemplo
+Altere a cor de todas as imagens para preto e branco (100% cinza):
+
+*/
+
+#img9 {
+    width: 33%;
+    height: auto;
+
+}
+
+.bluer {
+    filter: blur(4px);
+}
+
+.brightness {
+    filter: brightness(250%);
+}
+
+.contrast {
+    filter: contrast(100%);
+}
+
+.grayscale {
+    filter: grayscale(100%);
+}
+
+.huerotate {
+    filter: hue-rotate(180deg);
+}
+
+.invert {
+    filter: invert(100%);
+}
+
+.opacity {
+    filter: opacity(50%);
+}
+
+.saturate {
+    filter: saturate(7);
+}
+
+.sepia {
+    filter: sepia(100%);
+}
+
+.shadow {
+    filter: drop-shadow(8px 8px 10px green);
+}
+
+/*
+
+Sobreposição de imagem ao passar o mouse
+Crie um efeito de sobreposição ao passar o mouse:
+
+Exemplo
+Desvanecer no texto:
+
+*/
+
+.container2 {
+    position: relative;
+    width: 50%;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+
+.container2:hover .overlay{
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.image1 {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.container2:hover .image1 {
+    opacity: 0.3;
+  }
+  
+.container2:hover .middle {
+    opacity: 1;
+}
+
+.text1 {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+.overlay1 {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.container2:hover .overlay1 {
+    bottom: 0;
+    height: 100%;
+}
+
+.text2 {
+    white-space: nowrap; 
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
