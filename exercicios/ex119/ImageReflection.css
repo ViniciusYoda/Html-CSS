@@ -1,0 +1,58 @@
+/*
+
+Reflexão de imagem CSS
+
+Neste capítulo, você aprenderá a refletir uma imagem.
+
+Reflexões de imagem CSS
+A box-reflectpropriedade é usada para criar um reflexo de imagem.
+
+O valor da box-reflectpropriedade pode ser: below, above, leftou right.
+
+Exemplo
+Aqui queremos a reflexão abaixo da imagem:
+
+*/
+
+.img1 {
+    -webkit-box-reflect: below;
+}
+
+/*
+
+Exemplo
+Aqui queremos o reflexo à direita da imagem:
+
+*/
+
+.img2 {
+    -webkit-box-reflect: right;
+}
+
+/*
+
+Deslocamento de reflexão CSS
+Para especificar a lacuna entre a imagem e o reflexo, adicione o tamanho da lacuna à box-reflectpropriedade.
+
+Exemplo
+Aqui queremos o reflexo abaixo da imagem, com um deslocamento de 20px:
+
+*/
+
+.img3 {
+    -webkit-box-reflect: below 20px;
+}
+
+/*
+
+Reflexão CSS com gradiente
+Também podemos criar um efeito fade-out no reflexo.
+
+Exemplo
+Crie um efeito fade-out no reflexo:
+
+*/
+
+.img4 {
+    -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+}
