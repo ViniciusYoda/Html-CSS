@@ -1,0 +1,127 @@
+/*
+
+CSS A propriedade object-fit
+
+A propriedade CSS object-fité usada para especificar como um <img> ou <video> deve ser redimensionado para caber em seu contêiner.
+
+A propriedade CSS object-fit
+A propriedade CSS object-fité usada para especificar como um <img> ou <video> deve ser redimensionado para caber em seu contêiner.
+
+Essa propriedade informa ao conteúdo para preencher o contêiner de várias maneiras; como "preservar essa proporção" ou "esticar e ocupar o máximo de espaço possível".
+
+Olhe para a seguinte imagem de Paris. Esta imagem tem 400 pixels de largura e 300 pixels de altura:
+
+No entanto, se estilizarmos a imagem acima para ter metade de sua largura (200 pixels) e a mesma altura (300 pixels), ela ficará assim:
+
+*/
+
+.img1 {
+    width: 200px;
+    height: 300px;
+}
+
+/*
+
+Vemos que a imagem está sendo comprimida para caber no contêiner de 200x300 pixels (sua proporção original é destruída).
+
+Aqui é onde object-fitentra a propriedade. A object-fitpropriedade pode assumir um dos seguintes valores:
+
+fill- Este é o padrão. A imagem é redimensionada para preencher a dimensão especificada. Se necessário, a imagem será esticada ou comprimida para caber
+contain- A imagem mantém sua proporção, mas é redimensionada para caber na dimensão especificada
+cover- A imagem mantém sua proporção e preenche a dimensão especificada. A imagem será cortada para caber
+none- A imagem não é redimensionada
+scale-down- a imagem é reduzida para a menor versão de noneou contain
+
+Usando ajuste de objeto: capa;
+Se usarmos object-fit: cover;a imagem mantém sua proporção e preenche a dimensão dada. A imagem será cortada para caber:
+
+*/
+
+.img2 {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+}
+
+/*
+
+Usando ajuste de objeto: contém;
+Se usarmos object-fit: contain;a imagem mantém sua proporção, mas é redimensionada para caber na dimensão especificada:
+
+*/
+
+.img3 {
+    width: 200px;
+    height: 300px;
+    object-fit: contain;
+}
+
+/*
+
+Usando ajuste de objeto: preenchimento;
+Se usarmos object-fit: fill;a imagem é redimensionada para preencher a dimensão dada. Se necessário, a imagem será esticada ou comprimida para caber:
+
+*/
+
+.img4 {
+    width: 200px;
+    height: 300px;
+    object-fit: fill;
+}
+
+/*
+
+Usando ajuste de objeto: nenhum;
+Se usarmos object-fit: none;a imagem não é redimensionada:
+
+*/
+
+.img5 {
+    width: 200px;
+    height: 300px;
+    object-fit: none;
+}
+
+/*
+
+Usando ajuste de objeto: escala para baixo;
+Se usarmos object-fit: scale-down;a imagem é reduzida para a menor versão de noneou contain:
+
+*/
+
+.img6 {
+    width: 200px;
+    height: 300px;
+    object-fit: scale-down;
+}
+
+/*
+
+Outro exemplo
+Aqui temos duas imagens e queremos que elas preencham a largura de 50% da janela do navegador e 100% da altura.
+
+No exemplo a seguir NÃO usamos object-fit, então ao redimensionarmos a janela do navegador, a proporção das imagens será destruída:
+
+No próximo exemplo, utilizamos object-fit: cover;, assim ao redimensionarmos a janela do navegador, a proporção das imagens é preservada:
+
+ CSS object-fit Mais exemplos
+O exemplo a seguir demonstra todos os valores possíveis da object-fitpropriedade em um exemplo:
+
+*/
+
+.fill {object-fit: fill;}
+.contain {object-fit: contain;}
+.cover {object-fit: cover;}
+.scale-down {object-fit: scale-down;}
+.none {object-fit: none;}
+
+/*
+
+Objeto CSS-* Propriedades
+A tabela a seguir lista as propriedades CSS object-*:
+
+Property	Description
+object-fit	Specifies how an <img> or <video> should be resized to fit its container
+object-position	Specifies how an <img> or <video> should be positioned with x/y coordinates inside its "own content box"
+
+*/
