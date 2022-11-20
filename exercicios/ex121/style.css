@@ -1,0 +1,10 @@
+/*
+
+CSS A propriedade de posição do objeto
+
+A propriedade CSS object-positioné usada para especificar como um <img> ou <video> deve ser posicionado em seu contêiner.
+
+A imagem
+Observe a seguinte imagem de Paris, que tem 400x300 pixels:
+
+Em seguida, usamos object-fit: cover;para manter a proporção e preencher a dimensão fornecida. No entanto, a imagem será cortada para caber, assim:
