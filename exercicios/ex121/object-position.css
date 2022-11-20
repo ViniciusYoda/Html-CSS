@@ -16,3 +16,44 @@ Em seguida, usamos object-fit: cover;para manter a proporção e preencher a dim
     height: 300px;
     object-fit: cover;
 }
+
+/*
+
+Usando a propriedade de posição do objeto
+Digamos que a parte da imagem que é mostrada não esteja posicionada como queremos. Para posicionar a imagem, usaremos a object-positionpropriedade.
+
+Aqui vamos usar a object-positionpropriedade para posicionar a imagem de forma que o grande prédio antigo fique no centro:
+
+*/
+
+.img2 {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    object-position: 80% 100%;
+}
+
+/*
+
+Aqui vamos usar a object-positionpropriedade para posicionar a imagem de forma que a famosa Torre Eiffel fique no centro:
+
+*/
+
+.img3 {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    object-position: 15% 100%;
+}
+
+/*
+
+Objeto CSS-* Propriedades
+A tabela a seguir lista as propriedades CSS object-*:
+
+Property	Description
+object-fit	Specifies how an <img> or <video> should be resized to fit its container
+object-posititon	Specifies how an <img> or <video> should be positioned with x/y coordinates inside its "own content box"
+
+*/
+
