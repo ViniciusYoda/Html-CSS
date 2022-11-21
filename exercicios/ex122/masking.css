@@ -1,0 +1,114 @@
+/*
+
+Mascaramento CSS
+
+Com o mascaramento CSS, você cria uma camada de máscara para colocar sobre um elemento para ocultar parcial ou totalmente partes do elemento.
+
+A propriedade CSS mask-image
+A propriedade CSS mask-imageespecifica uma imagem de camada de máscara.
+
+A imagem da camada de máscara pode ser uma imagem PNG, uma imagem SVG, um gradiente CSS ou um elemento <mask> SVG .
+
+Use uma imagem como a camada de máscara
+Para usar uma imagem PNG ou SVG como camada de máscara, use um valor url() para passar a imagem da camada de máscara.
+
+A imagem da máscara precisa ter uma área transparente ou semitransparente. Preto indica totalmente transparente.
+
+Aqui está a imagem da máscara (uma imagem PNG) que usaremos:
+
+Aqui está uma imagem de Cinque Terre, na Itália:
+
+Agora, aplicamos a imagem da máscara (a imagem PNG acima) como camada de máscara para a imagem de Cinque Terre, Itália:
+
+*/
+
+.mask1 {
+    -webkit-mask-image: url(w3logo.png);
+    -webkit-mask-image: url(w3logo.png);
+    mask-repeat: no-repeat;
+    width: 800px;
+    height: 800px;
+}
+
+/*
+
+Exemplo explicado
+A mask-imagepropriedade especifica a imagem a ser usada como camada de máscara para um elemento.
+
+A mask-repeatpropriedade especifica se ou como uma imagem de máscara será repetida. O no-repeat valor indica que a imagem da máscara não será repetida (a imagem da máscara será exibida apenas uma vez).
+
+Outro exemplo
+Se omitirmos a mask-repeatpropriedade, a imagem da máscara será repetida em toda a imagem de Cinque Terre, Itália:
+
+*/
+
+.mask2 {
+    -webkit-mask-image: url(w3logo.png);
+    mask-image: url(w3logo.png);
+
+}
+
+/*
+
+Use gradientes como a camada de máscara
+Os gradientes lineares e radiais CSS também podem ser usados ​​como imagens de máscara.
+
+Exemplos de Gradientes Lineares
+Aqui, usamos um gradiente linear como camada de máscara para nossa imagem. Este gradiente linear vai de cima (preto) para baixo (transparente):
+
+*/
+
+.mask3 {
+    -webkit-mask-image: linear-gradient(black, transparent);
+    mask-image: linear-gradient(black, transparent)
+}
+
+/*
+
+Aqui, usamos um gradiente linear junto com a máscara de texto como camada de máscara para nossa imagem:
+
+*/
+
+p {
+    font-size: 20px;
+    padding: 20px;
+    color: white;
+}
+
+.mask4 {
+    max-width: 600px;
+    height: 350px;
+    overflow-y: scroll;
+    background: url(img_5terre.jpg) no-repeat;
+    -webkit-mask-image: linear-gradient(black, transparent);
+    mask-image: linear-gradient(black, transparent)
+}
+
+/*
+
+Exemplos de Gradientes Radiais
+Aqui, usamos um gradiente radial (em forma de círculo) como camada de máscara para nossa imagem:
+
+*/
+
+.mask5 {
+    -webkit-mask-image: radial-gradient(circle, black 50%, rgba(0,0,0,0.5) 50%);
+    mask-image: radial-gradient(circle, black 50%, rgba(0,0,0,0.5) 50%);
+
+    /*
+
+    
+Propriedades de Mascaramento CSS
+A tabela a seguir lista todas as propriedades de máscara CSS:
+
+Property	Description
+mask-image	Specifies an image to be used as a mask layer for an element
+mask-mode	Specifies whether the mask layer image is treated as a luminance mask or as an alpha mask
+mask-origin	Specifies the origin position (the mask position area) of a mask layer image
+mask-position	Sets the starting position of a mask layer image (relative to the mask position area)
+mask-repeat	Specifies how the mask layer image is repeated
+mask-size	Specifies the size of a mask layer image
+
+*/
+
+}
