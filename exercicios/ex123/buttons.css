@@ -1,0 +1,434 @@
+/*
+
+Botões CSS
+
+Aprenda a estilizar botões usando CSS.
+
+Estilo básico de botão
+
+*/
+
+.button {
+    background-color: #4caf4c;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+/*
+
+Cores dos Botões
+Verde Azul Vermelho Cinza Preto
+Use a background-colorpropriedade para alterar a cor de fundo de um botão:
+
+*/
+
+.button2 {background-color: #008CBA;} /* Blue */
+.button3 {background-color: #f44336;} /* Red */ 
+.button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
+.button5 {background-color: #555555;} /* Black */
+
+/*
+
+Tamanhos de botão
+10px 12px 16px 20px 24px
+Use a font-sizepropriedade para alterar o tamanho da fonte de um botão:
+
+*/
+
+.button6 {font-size: 10px;}
+.button7 {font-size: 12px;}
+.button8 {font-size: 16px;}
+.button9 {font-size: 20px;}
+.button10 {font-size: 24px;}
+
+/*
+
+Use a paddingpropriedade para alterar o preenchimento de um botão:
+
+*/
+
+.button11 {padding: 10px 24px;}
+.button12 {padding: 12px 28px;}
+.button13 {padding: 14px 40px;}
+.button14 {padding: 32px 16px;}
+.button15 {padding: 16px;}
+
+/*
+
+Botões arredondados
+2px 4px 8px 12px 50%
+Use a border-radiuspropriedade para adicionar cantos arredondados a um botão:
+
+*/
+
+.button16 {border-radius: 2px;}
+.button17 {border-radius: 4px;}
+.button18 {border-radius: 8px;}
+.button19 {border-radius: 12px;}
+.button20 {border-radius: 50%;}
+
+/*
+
+Bordas de Botões Coloridos
+Verde Azul Vermelho Cinza Preto
+Use a borderpropriedade para adicionar uma borda colorida a um botão:
+
+*/
+
+.button21 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+  }
+  
+  .button22 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+  }
+  
+  .button23 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #f44336;
+  }
+  
+  .button24 {
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+  }
+  
+  .button25 {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+  }
+
+/*
+
+Botões pairáveis
+Verde Azul Vermelho Cinza Preto
+Verde Azul Vermelho Cinza Preto
+Use o :hoverseletor para alterar o estilo de um botão ao mover o mouse sobre ele.
+
+Dica: Use a transition-durationpropriedade para determinar a velocidade do efeito "hover":
+
+*/
+
+.button26 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+  }
+  
+  .button26:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .button27 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+  }
+  
+  .button27:hover {
+    background-color: #008CBA;
+    color: white;
+  }
+  
+  .button28 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #f44336;
+  }
+  
+  .button28:hover {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .button29 {
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+  }
+  
+  .button29:hover {background-color: #e7e7e7;}
+  
+  .button30 {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+  }
+  
+  .button30:hover {
+    background-color: #555555;
+    color: white;
+  }
+
+/*
+
+
+Botões Sombra
+Botão Sombra Sombra ao pairar
+Use a box-shadowpropriedade para adicionar sombras a um botão:
+
+*/
+
+.button31 {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+  
+  .button32:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+/*
+
+Botões desabilitados
+Botão normal Botão Desativado
+Use a opacitypropriedade para adicionar transparência a um botão (cria uma aparência "desativada").
+
+Dica: Você também pode adicionar a cursorpropriedade com um valor de "não permitido", que exibirá um "sinal de estacionamento proibido" quando você passar o mouse sobre o botão:
+
+*/
+
+.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+/*
+
+Largura do botão
+250px
+50% 100%
+Por padrão, o tamanho do botão é determinado por seu conteúdo de texto (tão largo quanto seu conteúdo). Use a widthpropriedade para alterar a largura de um botão:
+
+*/
+
+.button33 {width: 250px;}
+.button34 {width: 50%;}
+.button35 {width: 100%;}
+
+/*
+
+Grupos de botões
+BotãoBotãoBotãoBotão
+
+Remova as margens e adicione float:lefta cada botão para criar um grupo de botões:
+
+*/
+
+.btn-group .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    float: left;
+  }
+
+  .btn-group .button:hover {
+    background-color: #3e8e41;
+  }
+
+/*
+
+Grupo de botões com borda
+BotãoBotãoBotãoBotão
+
+Use a borderpropriedade para criar um grupo de botões com borda:
+
+*/
+
+.btn-group2 .button36 {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    float: left;
+  }
+
+  .btn-group .button:hover {
+    background-color: #3e8e41;
+  }
+
+.btn-group2 .button36:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+  
+  .btn-group2 .button36:hover {
+    background-color: #3e8e41;
+  }
+
+/*
+
+Grupo de botões verticais
+Botão
+Botão
+Botão
+Botão
+
+Use display:blockem vez de float:leftpara agrupar os botões um abaixo do outro, em vez de lado a lado:
+
+*/
+
+.btn-group3 .button37 {
+    background-color: #4CAF50; /* Green */
+    border: 1px solid green;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    width: 150px;
+    display: block;
+  }
+  
+  .btn-group3 .butto37:not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
+  }
+  
+  .btn-group3 .button37:hover {
+    background-color: #3e8e41;
+  }
+
+/*
+
+Botão na imagem
+
+*/
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .container img {
+    width: 100%;
+    height: auto;
+  }
+
+  .container .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    color: black;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .container .btn:hover {
+    background-color: black;
+    color: white;
+  }
+
+/*
+
+Botões Animados
+Exemplo
+Adicione uma seta ao passar o mouse:
+
+*/
+
+.button38 {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+
+  .button38 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .button38 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  .button38:hover span {
+    padding-right: 25px;
+  }
+  
+  .button38:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+/*
+
+Exemplo
+Adicione um efeito "pressionado" ao clicar:
+
+*/
+
+.button39 {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.button39:hover {
+    background-color: #3e8e41;
+}
+  
+.button39:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
