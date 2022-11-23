@@ -1,0 +1,128 @@
+/*
+
+Exemplos de Paginação CSS
+
+Aprenda a criar uma paginação responsiva usando CSS.
+
+Paginação Simples
+Se você tiver um site com muitas páginas, poderá adicionar algum tipo de paginação a cada página:
+
+*/
+
+body {
+    background-color: white;
+}
+
+.pagination, .pagination2, .pagination3, .pagination4, .pagination5, .pagination6 {
+    display: inline-block;
+}
+
+.pagination a, .pagination2 a, .pagination3 a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/*
+
+Paginação ativa e passável
+«1234567»
+Destaque a página atual com uma .active classe e use o :hover seletor para alterar a cor de cada link de página ao passar o mouse sobre eles:
+
+*/
+
+.pagination2 a.active, .pagination4 a.active{
+    background-color: #4CAF50;
+    color: white;
+}
+
+.pagination2 a:hover:not(.active), .pagination4 a:hover:not(.active), .pagination5 a:hover:not(.active), .pagination6 a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+/*
+
+Botões arredondados ativos e para pairar
+«1234567»
+Adicione a border-radiuspropriedade se desejar um botão arredondado "ativo" e "hover":
+
+*/
+
+.pagination3 a.active {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
+.pagination3 a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+/*
+
+Efeito de Transição Flutuável
+«1234567»
+Adicione a transitionpropriedade aos links da página para criar um efeito de transição ao passar o mouse:
+
+*/
+
+.pagination4 a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+/*
+
+Paginação com Bordas
+«1234567»
+Use a borderpropriedade para adicionar bordas à paginação:
+
+*/
+
+.pagination5 a, .pagination6 a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+}
+
+.pagination5 a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+/*
+
+Migalhas de pão
+Casa Fotos verão 15 Itália
+Outra variação de paginação é chamada de "breadcrumbs":
+
+*/
+
+ul.breadcrumb {
+    padding: 8px 16px;
+    list-style: none; 
+    background-color: #eee;
+}
+
+ul.breadcrumb li {
+    display: inline;
+}
+
+ul.breadcrumb li+li::before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+    color: green;
+}
