@@ -1,0 +1,143 @@
+/*
+
+Múltiplas Colunas CSS
+
+Layout de várias colunas CSS
+O layout de várias colunas do CSS permite uma fácil definição de várias colunas de texto - assim como nos jornais:
+
+Propriedades de várias colunas do CSS
+Neste capítulo, você aprenderá sobre as seguintes propriedades de várias colunas:
+
+column-count
+column-gap
+column-rule-style
+column-rule-width
+column-rule-color
+column-rule
+column-span
+column-width
+
+CSS Criar Múltiplas Colunas
+A column-countpropriedade especifica o número de colunas em que um elemento deve ser dividido.
+
+O exemplo a seguir dividirá o texto no elemento <div> em 3 colunas: 
+
+*/
+
+.newspaper {
+    column-count: 3;
+}
+
+/*
+
+CSS Especifique o espaço entre as colunas
+A column-gappropriedade especifica o intervalo entre as colunas.
+
+O exemplo a seguir especifica um intervalo de 40 pixels entre as colunas:
+
+*/
+
+.newspaper2 {
+    column-count: 3;
+    column-gap: 40px;
+}
+
+/*
+
+Regras de coluna CSS
+A column-rule-stylepropriedade especifica o estilo da regra entre as colunas:
+
+*/
+
+.newspaper3 {
+    column-count: 3;
+    column-gap: 40px;
+    column-rule-style: solid;
+}
+
+/*
+
+A column-rule-widthpropriedade especifica a largura da regra entre as colunas:
+
+*/
+
+.newspaper4 {
+    column-count: 3;
+    column-gap: 40px;
+    column-rule-style: solid;
+    column-rule-width: 1px;
+}
+
+/*
+
+A column-rule-colorpropriedade especifica a cor da regra entre as colunas:
+
+*/
+
+.newspaper5 {
+    column-count: 3;
+    column-gap: 40px;
+    column-rule-style: solid;
+    column-rule-width: 1px;
+    column-rule-color: lightblue;
+}
+
+/*
+
+A column-rulepropriedade é uma propriedade abreviada para definir todas as propriedades de regra de coluna* acima.
+
+O exemplo a seguir define a largura, o estilo e a cor da lâmina entre as colunas:
+
+*/
+
+.newspaper6, .newspaper7 {
+    column-count: 3;
+    column-gap: 40px;
+    column-rule: 1px solid lightblue;
+}
+
+/*
+
+Especificar quantas colunas um elemento deve abranger
+A column-spanpropriedade especifica quantas colunas um elemento deve abranger.
+
+O exemplo a seguir especifica que o elemento <h2> deve abranger todas as colunas:
+
+*/
+
+h2 {
+    column-span: all;
+}
+
+/*
+
+Especifique a largura da coluna
+A column-widthpropriedade especifica uma largura ideal sugerida para as colunas.
+
+O exemplo a seguir especifica que a largura ideal sugerida para as colunas deve ser de 100px:
+
+*/
+
+.newspaper8 {
+    column-width: 100px;
+}
+
+/*
+
+Propriedades de várias colunas CSS
+A tabela a seguir lista todas as propriedades de várias colunas: 
+
+Property	Description
+column-count	Specifies the number of columns an element should be divided into
+column-fill	Specifies how to fill columns
+column-gap	Specifies the gap between the columns
+column-rule	A shorthand property for setting all the column-rule-* properties
+column-rule-color	Specifies the color of the rule between columns
+column-rule-style	Specifies the style of the rule between columns
+column-rule-width	Specifies the width of the rule between columns
+column-span	Specifies how many columns an element should span across
+column-width	Specifies a suggested, optimal width for the columns
+columns	A shorthand property for setting column-width and column-count
+
+*/
+
