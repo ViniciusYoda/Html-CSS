@@ -1,0 +1,101 @@
+/*
+
+Interface de usuário do CSS
+Neste capítulo, você aprenderá sobre as seguintes propriedades da interface de usuário do CSS:
+
+resize
+outline-offset
+
+
+Redimensionamento de CSS
+A resizepropriedade especifica se (e como) um elemento deve ser redimensionável pelo usuário.
+
+Este elemento div é redimensionável pelo usuário!
+
+Para redimensionar: Clique e arraste o canto inferior direito deste elemento div.
+
+O exemplo a seguir permite que o usuário redimensione apenas a largura de um elemento <div>:
+
+*/
+
+.div1 {
+    border: 2px solid;
+    padding: 20px;
+    width: 300px;
+    resize: horizontal;
+    overflow: auto;
+}
+
+/*
+
+O exemplo a seguir permite que o usuário redimensione apenas a altura de um elemento <div>:
+
+*/
+
+.div2 {
+    border: 2px solid;
+    padding: 20px;
+    width: 300px;
+    resize: vertical;
+    overflow: auto;
+}
+
+/*
+
+O exemplo a seguir permite que o usuário redimensione a altura e a largura de um elemento <div>:
+
+*/
+
+.div3 {
+    border: 2px solid;
+    padding: 20px;
+    width: 300px;
+    resize: both;
+    overflow: auto;
+}
+
+/*
+
+Em muitos navegadores, <textarea> é redimensionável por padrão. Aqui, usamos a propriedade resize para desabilitar o redimensionamento:
+
+*/
+
+textarea#test {
+    resize: none;
+}
+
+/*
+
+Deslocamento do Contorno do CSS
+A outline-offsetpropriedade adiciona espaço entre um contorno e a borda ou borda de um elemento.
+
+Este div tem um contorno de 15px fora da borda da borda.
+Observação: o contorno é diferente das bordas! Ao contrário da borda, o contorno é desenhado fora da borda do elemento e pode se sobrepor a outro conteúdo. Além disso, o contorno NÃO faz parte das dimensões do elemento; a largura e a altura totais do elemento não são afetadas pela largura do contorno.
+
+O exemplo a seguir usa a outline-offsetpropriedade para adicionar espaço entre a borda e o contorno:
+
+*/
+
+div.ex1 {
+    margin: 20px;
+    border: 1px solid black;
+    outline: 4px solid red;
+    outline-offset: 15px;
+}
+
+div.ex2 {
+    margin: 10px;
+    border: 1px solid blue;
+    outline-offset: 5px;
+}
+
+/*
+
+Propriedades da interface do usuário CSS
+A tabela a seguir lista todas as propriedades da interface do usuário:
+
+Property	Description
+outline-offset	Adds space between an outline and the edge or border of an element
+resize	Specifies whether or not an element is resizable by the user
+
+*/
