@@ -1,0 +1,52 @@
+/*
+
+CSS usando variáveis ​​em consultas de mídia
+
+Usando variáveis ​​em consultas de mídia
+Agora queremos alterar o valor de uma variável dentro de uma consulta de mídia.
+
+Aqui, primeiro declaramos uma nova variável local chamada --fontsize para a .containerclasse. Definimos seu valor para 25 pixels. Em seguida, usamos na .containerclasse mais abaixo. Em seguida, criamos uma @mediaregra que diz "Quando a largura do navegador for 450px ou maior, altere o valor da variável --fontsize da .containerclasse para 50px".
+
+Aqui está o exemplo completo:
+
+*/
+
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+}
+
+.container {
+    --fontsize: 25px;
+}
+
+body {
+    background-color: var(--blue);
+}
+
+h2 {
+    border-bottom: 2px solid var(--blue);
+}
+
+.container {
+    color: var(--blue);
+    background-color: var(--white);
+    padding: 15px;
+    font-size: var(--fontsize);
+}
+
+@media screen and(min-width: 450px) {
+    .container {
+        --fontsize: 50px;
+    }
+    :root {
+        --blue: lightblue;
+    }
+}
+
+/*
+
+Aqui está outro exemplo em que também alteramos o valor da variável --blue na @mediaregra:
+
+*/
+
