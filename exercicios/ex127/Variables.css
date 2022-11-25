@@ -1,0 +1,106 @@
+/*
+
+Variáveis ​​CSS - A função var()
+
+
+Variáveis ​​CSS
+A var()função é usada para inserir o valor de uma variável CSS.
+
+As variáveis ​​CSS têm acesso ao DOM, o que significa que você pode criar variáveis ​​com escopo local ou global, alterar as variáveis ​​com JavaScript e alterar as variáveis ​​com base em consultas de mídia.
+
+Uma boa maneira de usar variáveis ​​CSS é quando se trata das cores do seu design. Em vez de copiar e colar as mesmas cores repetidamente, você pode colocá-las em variáveis.
+
+A maneira tradicional
+O exemplo a seguir mostra a forma tradicional de definir algumas cores em uma folha de estilo (definindo as cores a serem usadas, para cada elemento específico):
+
+*/
+
+body {
+    background-color: #1e90ff;
+}
+
+h2 {
+    border-bottom: 2px solid #1e90ff;
+}
+
+.container {
+    color: #1e90ff;
+    background-color: #ffffff;
+    padding: 15px;
+}
+
+button {
+    background-color: #ffffff;
+    color: #1e90ff;
+    border: 1px solid #1e90ff;
+    padding: 5px;
+}
+
+/*
+
+Sintaxe da função var()
+A var()função é usada para inserir o valor de uma variável CSS.
+
+A sintaxe da var()função é a seguinte:
+
+var(--name, value)
+Value	Description
+name	Required. The variable name (must start with two dashes)
+value	Optional. The fallback value (used if the variable is not found)
+Nota: O nome da variável deve começar com dois traços (--) e diferencia maiúsculas de minúsculas!
+
+Como var() Funciona
+Primeiro de tudo: as variáveis ​​CSS podem ter um escopo global ou local.
+
+As variáveis ​​globais podem ser acessadas/utilizadas em todo o documento, enquanto as variáveis ​​locais podem ser utilizadas apenas dentro do seletor onde é declarada.
+
+Para criar uma variável com escopo global, declare-a dentro do :root seletor. O :rootseletor corresponde ao elemento raiz do documento.
+
+Para criar uma variável com escopo local, declare-a dentro do seletor que vai utilizá-la.
+
+O exemplo a seguir é igual ao exemplo acima, mas aqui usamos a var()função.
+
+Primeiro, declaramos duas variáveis ​​globais (--blue e --white). Então, usamos a var()função para inserir o valor das variáveis ​​posteriormente na folha de estilo:
+
+*/
+
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+}
+
+body {
+    background-color: var(--blue);
+}
+
+h2 {
+    border-bottom: var(--blue);
+}
+
+.container2 {
+    color: var(--blue);
+    background-color: var(--white);
+    padding: 15px;
+}
+
+button {
+    background-color: var(--white);
+    color: var(--blue);
+    border: 1px solid var(--blue);
+    padding: 5px;
+}
+
+/*
+
+As vantagens de usar var() são:
+
+torna o código mais fácil de ler (mais compreensível)
+torna muito mais fácil alterar os valores das cores
+Para alterar a cor azul e branco para um azul e branco mais suave, basta alterar os dois valores das variáveis:
+
+Função CSS var()
+Property	Description
+var()	Inserts the value of a CSS variable
+
+*/
+
