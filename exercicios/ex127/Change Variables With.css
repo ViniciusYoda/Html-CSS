@@ -1,0 +1,36 @@
+/*
+
+Variáveis ​​de alteração de CSS com JavaScript
+
+Alterar variáveis ​​com JavaScript
+As variáveis ​​CSS têm acesso ao DOM, o que significa que você pode alterá-las com JavaScript.
+
+Aqui está um exemplo de como você pode criar um script para exibir e alterar a variável --blue do exemplo usado nas páginas anteriores.
+
+*/
+
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff; 
+  }
+  
+  body {
+    background-color: var(--blue);
+  }
+  
+  h2 {
+    border-bottom: 2px solid var(--blue);
+  }
+  
+  .container {
+    color: var(--blue);
+    background-color: var(--white);
+    padding: 15px;
+  }
+  
+  .container button  {
+    background-color: var(--white);
+    color: var(--blue);
+    border: 1px solid var(--blue);
+    padding: 5px;
+  }
