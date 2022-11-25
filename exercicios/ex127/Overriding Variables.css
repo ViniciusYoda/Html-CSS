@@ -1,0 +1,70 @@
+/*
+
+Variáveis ​​de sobreposição de CSS
+
+Substituir variável global por variável local
+Na página anterior aprendemos que as variáveis ​​globais podem ser acessadas/usadas em todo o documento, enquanto as variáveis ​​locais podem ser usadas apenas dentro do seletor onde são declaradas.
+
+Veja o exemplo da página anterior:
+
+*/
+
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff; 
+  }
+  
+  body {
+    background-color: var(--blue);
+  }
+  
+  h2 {
+    border-bottom: 2px solid var(--blue);
+  }
+  
+  .container {
+    color: var(--blue);
+    background-color: var(--white);
+    padding: 15px;
+  }
+  
+  button {
+    background-color: var(--white);
+    color: var(--blue);
+    border: 1px solid var(--blue);
+    padding: 5px;
+  }
+
+/*
+
+Às vezes, queremos que as variáveis ​​mudem apenas em uma seção específica da página.
+
+Suponha que queremos uma cor diferente de azul para os elementos de botão. Então, podemos declarar novamente a variável --blue dentro do seletor de botão. Quando usamos var(--blue) dentro deste seletor, ele usará o valor da variável local --blue declarada aqui.
+
+Vemos que a variável --blue local substituirá a variável --blue global para os elementos de botão:
+
+*/
+
+.btn {
+    --blue: #0000ff; /* local variable will override global */
+    background-color: var(--white);
+    color: var(--blue);
+    border: 1px solid var(--blue);
+    padding: 5px;
+}
+
+/*
+
+Adicionar uma nova variável local
+Se uma variável for usada em apenas um único local, também poderíamos ter declarado uma nova variável local, assim:
+
+*/
+
+.btn2 {
+    --button-blue: #0000ff;
+    /* new local variable */
+    background-color: var(--white);
+    color: var(--button-blue);
+    border: 1px solid var(--button-blue);
+    padding: 5px;
+}
