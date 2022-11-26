@@ -1,0 +1,91 @@
+/*
+
+Dimensionamento da Caixa CSS
+A propriedade CSS box-sizingnos permite incluir o preenchimento e a borda na largura e altura total de um elemento.
+
+Sem a propriedade CSS box-sizing
+Por padrão, a largura e a altura de um elemento são calculadas assim:
+
+largura + preenchimento + borda = largura real de um elemento
+altura + preenchimento + borda = altura real de um elemento
+
+Isso significa: quando você define a largura/altura de um elemento, o elemento geralmente parece maior do que você definiu (porque a borda e o preenchimento do elemento são adicionados à largura/altura especificada do elemento).
+
+A ilustração a seguir mostra dois elementos <div> com a mesma largura e altura especificadas:
+
+Este div é menor (largura é 300px e altura é 100px).
+
+Este div é maior (largura também é 300px e altura é 100px).
+
+Os dois elementos <div> acima acabam com tamanhos diferentes no resultado (porque div2 tem um padding especificado):
+
+*/
+
+.div1 {
+    width: 300px;
+    height: 100px;
+    border: 1px solid blue;
+}
+
+.div2 {
+    width: 300px;
+    height: 100px;
+    padding: 50px;
+    border: 1px solid red;
+    box-sizing: content-box;
+}
+
+/*
+
+A box-sizingpropriedade resolve esse problema.
+
+Com a propriedade CSS box-sizing
+A box-sizingpropriedade nos permite incluir o preenchimento e a borda na largura e altura total de um elemento.
+
+Se você definir box-sizing: border-box;um elemento, o preenchimento e a borda serão incluídos na largura e na altura:
+
+Ambos os divs são do mesmo tamanho agora!
+
+Viva!
+
+Aqui está o mesmo exemplo acima, box-sizing: border-box; adicionado a ambos os elementos <div>:
+
+*/
+
+.div3 {
+    width: 300px;
+    height: 100px;
+    padding: 50px;
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+
+/*
+
+Como o resultado do uso do box-sizing: border-box;é muito melhor, muitos desenvolvedores desejam que todos os elementos em suas páginas funcionem dessa maneira.
+
+O código abaixo garante que todos os elementos sejam dimensionados dessa maneira mais intuitiva. Muitos navegadores já usam box-sizing: border-box;muitos elementos de formulário (mas não todos - e é por isso que entradas e áreas de texto parecem diferentes em largura: 100%;).
+
+Aplicar isso a todos os elementos é seguro e sábio:
+
+*/
+
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+input, textarea {
+    width: 100%;
+}
+
+/*
+
+Propriedade de tamanho da caixa CSS
+Property	Description
+box-sizing	Defines how the width and height of an element are calculated: should they include padding and borders, or not
+
+*/
