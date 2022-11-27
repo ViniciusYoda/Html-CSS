@@ -1,0 +1,112 @@
+/*
+
+Consultas de mídia CSS
+
+Tipos de mídia introduzidos por CSS2
+A @mediaregra, introduzida no CSS2, possibilitou definir diferentes regras de estilo para diferentes tipos de mídia.
+
+Exemplos: você pode ter um conjunto de regras de estilo para telas de computador, uma para impressoras, uma para dispositivos portáteis, uma para dispositivos do tipo televisão e assim por diante.
+
+Infelizmente, esses tipos de mídia nunca receberam muito suporte dos dispositivos, exceto o tipo de mídia impressa.
+
+Consultas de mídia introduzidas por CSS3
+Consultas de mídia em CSS3 estenderam a ideia de tipos de mídia CSS2: em vez de procurar por um tipo de dispositivo, elas analisam a capacidade do dispositivo.
+
+As consultas de mídia podem ser usadas para verificar muitas coisas, como:
+
+largura e altura da viewport
+largura e altura do dispositivo
+orientação (o tablet/telefone está no modo paisagem ou retrato?)
+resolução
+O uso de consultas de mídia é uma técnica popular para fornecer uma folha de estilo personalizada para desktops, laptops, tablets e telefones celulares (como iPhone e telefones Android).
+
+Sintaxe de consulta de mídia
+Uma consulta de mídia consiste em um tipo de mídia e pode conter uma ou mais expressões, que são resolvidas como verdadeiras ou falsas.
+
+@media not|only mediatype and (expressions) {
+  CSS-Code;
+}
+O resultado da consulta é verdadeiro se o tipo de mídia especificado corresponder ao tipo de dispositivo no qual o documento está sendo exibido e todas as expressões na consulta de mídia forem verdadeiras. Quando uma consulta de mídia é verdadeira, a folha de estilo ou as regras de estilo correspondentes são aplicadas, seguindo as regras normais em cascata.
+
+A menos que você use os operadores not ou only, o tipo de mídia é opcional e o alltipo será implícito.
+
+Você também pode ter diferentes folhas de estilo para diferentes mídias:
+
+<link rel="stylesheet" media="mediatype and|not|only (expressions)" href="print.css">
+
+Tipos de Mídia CSS3
+Value	Description
+all	Used for all media type devices
+print	Used for printers
+screen	Used for computer screens, tablets, smart-phones etc.
+speech	Used for screenreaders that "reads" the page out loud
+
+Exemplos Simples de Media Queries
+Uma maneira de usar consultas de mídia é ter uma seção CSS alternatibody {
+    background-colorva dentro de sua folha de estilo.
+
+O exemplo a seguir altera a cor de fundo para verde claro se a viewport tiver 480 pixels de largura ou mais (se a viewport tiver menos de 480 pixels, a cor de fundo será rosa):
+
+*/
+
+body {
+    background-color: pink;
+}
+
+@media screen and (min-width: 480px) {
+    body {
+        background-color: lightgreen;
+    }
+}
+
+/*
+
+O exemplo a seguir mostra um menu que flutuará à esquerda da página se a janela de visualização tiver 480 pixels de largura ou mais (se a janela de visualização for menor que 480 pixels, o menu estará no topo do conteúdo):
+
+*/
+
+.wrapper {
+    overflow: auto;
+}
+
+#main {
+    margin-left: 4px;
+}
+
+#leftsidebar {
+    float: none;
+    width: auto;
+}
+
+#menulist {
+    margin: 0;
+    padding: 0;
+}
+
+.menuitem {
+    background: #CDF0F6;
+    border: 1px solid #d4d4d4;
+    border-radius: 4px;
+    list-style-type: none;
+    margin: 4px;
+    padding: 2px;
+}
+
+@media screen and (min-width: 480px) {
+    #leftsidebar {
+        width: 200px;
+        float: left;
+    }
+    
+    #main {
+        margin-left: 216px;
+    }
+}
+
+/*
+
+Referência CSS @media
+Para obter uma visão geral completa de todos os tipos de mídia e recursos/expressões, consulte a regra @media em nossa referência CSS .
+
+*/
+
