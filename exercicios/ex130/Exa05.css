@@ -1,0 +1,17 @@
+/*
+
+Ocultar elementos com consultas de mídia
+Outro uso comum de consultas de mídia é ocultar elementos em diferentes tamanhos de tela:
+
+*/
+
+div.example {
+    background-color: yellow;
+    padding: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    div.example {
+        display: none;
+    }
+}

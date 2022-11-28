@@ -1,0 +1,21 @@
+/*
+
+Orientação: Retrato / Paisagem
+As consultas de mídia também podem ser usadas para alterar o layout de uma página, dependendo da orientação do navegador.
+
+Você pode ter um conjunto de propriedades CSS que só serão aplicadas quando a janela do navegador for mais larga que sua altura, a chamada orientação "Paisagem":
+
+Exemplo
+Use uma cor de fundo azul claro se a orientação estiver no modo paisagem:
+
+*/
+
+body {
+    background-color: lightgreen;
+}
+
+@media only screen and (orientation: landscape) {
+    body {
+        background-color: lightskyblue;
+    }
+}

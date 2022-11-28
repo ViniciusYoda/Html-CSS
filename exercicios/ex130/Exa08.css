@@ -1,0 +1,68 @@
+/*
+
+Site Flexível
+Neste exemplo, usamos media queries junto com flexbox para criar um site responsivo, contendo uma barra de navegação flexível e conteúdo flexível.
+
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.header {
+    padding: 60px;
+    text-align: center;
+    background: #1abc9c;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.side {
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+.main {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+@media screen and (max-width: 700px) {
+    .row, .navbar {
+        flex-direction: column;
+    }
+}

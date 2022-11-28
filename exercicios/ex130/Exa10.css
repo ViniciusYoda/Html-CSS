@@ -1,0 +1,32 @@
+/*
+
+Largura mínima para largura máxima
+Você também pode usar os valores para definir uma largura mínima e uma largura máxima.(max-width: ..) and (min-width: ..)
+
+Por exemplo, quando a largura do navegador estiver entre 600 e 900px, altere a aparência de um elemento <div>:
+
+*/
+
+@media screen and (max-width: 900px) and (min-width: 600px) {
+    div.example {
+        font-size: 50px;
+        padding: 50px;
+        border: 8px solid black;
+        background-color: yellow;
+    }
+}
+
+/*
+
+Usando um valor adicional: No exemplo abaixo, adicionamos uma consulta de mídia adicional à nossa já existente usando uma vírgula (isso se comportará como um operador OR):
+
+*/
+
+@media screen and (max-width: 900px) and (min-width: 600px), (min-width: 1100px) {
+    div.example2{
+      font-size: 50px;
+      padding: 50px;
+      border: 8px solid black;
+      background: yellow;
+    }
+}

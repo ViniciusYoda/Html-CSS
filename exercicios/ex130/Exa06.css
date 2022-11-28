@@ -1,0 +1,25 @@
+/*
+
+Alterar o tamanho da fonte com consultas de mídia
+Você também pode usar consultas de mídia para alterar o tamanho da fonte de um elemento em diferentes tamanhos de tela:
+
+Tamanho da fonte variável.
+
+*/
+
+div.example {
+    background-color: lightgrey;
+    padding: 20px;
+}
+
+@media screen and (min-width: 600px) {
+    div.example {
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    div.example {
+        font-size: 30px;
+    }
+}
