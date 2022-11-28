@@ -1,0 +1,34 @@
+/*
+
+Consultas de mídia CSS - mais exemplos
+
+Vejamos mais alguns exemplos de uso de consultas de mídia.
+
+As consultas de mídia são uma técnica popular para fornecer uma folha de estilo personalizada para diferentes dispositivos. Para demonstrar um exemplo simples, podemos alterar a cor de fundo para diferentes dispositivos:
+
+*/
+
+/* Set the background color of body to tan */
+body {
+    background-color: tan;
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+    body {
+        background-color: blue;
+    }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+    body {
+        background-color: olive;
+    }
+}
+
+/*
+
+Você se pergunta por que usamos exatamente 992px e 600px? Eles são o que chamamos de "pontos de interrupção típicos" para dispositivos. Você pode ler mais sobre pontos de interrupção típicos em nosso Tutorial de web design responsivo .
+
+*/
