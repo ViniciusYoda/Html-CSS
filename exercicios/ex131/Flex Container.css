@@ -1,0 +1,646 @@
+/*
+
+Contêiner flexível de CSS
+
+Elemento Pai (Contêiner)
+Como especificamos no capítulo anterior, este é um contêiner flexível (a área azul) com três itens flexíveis :
+
+1
+2
+3
+O flex container torna-se flexível definindo a displaypropriedade como flex:
+
+*/
+
+.flex-container {
+    display: flex;
+    background-color: DodgerBlue;
+}
+
+.flex-container>div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+/*
+
+As propriedades do flex container são:
+
+flex-direction
+flex-wrap
+flex-flow
+justify-content
+align-items
+align-content
+
+A propriedade flex-direction
+A flex-directionpropriedade define em qual direção o contêiner deseja empilhar os itens flexíveis.
+
+Exemplo
+O columnvalor empilha os itens flexíveis verticalmente (de cima para baixo):
+
+*/
+
+.flex-container2 {
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+}
+
+.flex-container2>div {
+    background-color: #f2f2f2;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+/*
+
+Exemplo
+O column-reversevalor empilha os itens flexíveis verticalmente (mas de baixo para cima):
+
+*/
+
+.flex-container3 {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: blueviolet;
+}
+
+.flex-container3>div {
+    background-color: #f3f3f3f3;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+/*
+
+Exemplo
+O rowvalor empilha os itens flexíveis horizontalmente (da esquerda para a direita):
+
+*/
+
+.flex-container4 {
+    display: flex;
+    flex-direction: row;
+    background-color: cornflowerblue;
+}
+
+.flex-container4>div {
+    background-color: #f4f4f4;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+/*
+
+Exemplo
+O row-reversevalor empilha os flex items horizontalmente (mas da direita para a esquerda):
+
+*/
+
+.flex-container5 {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: fuchsia;
+}
+
+.flex-container5>div {
+    background-color: #f5f5f5;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+/*
+
+A propriedade flex-wrap
+A flex-wrappropriedade especifica se os itens flexíveis devem ser encapsulados ou não.
+
+Os exemplos abaixo possuem 12 flex items, para melhor demonstrar a flex-wrappropriedade.
+
+Exemplo
+O wrapvalor especifica que os itens flexíveis serão encapsulados, se necessário:
+
+*/
+
+.flex-container6 {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: gold;
+}
+
+.flex-container6>div {
+    background-color: #a1a1a1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+/*
+
+Exemplo
+O nowrapvalor especifica que os itens flexíveis não serão encapsulados (este é o padrão):
+
+*/
+
+.flex-container7 {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: hotpink;
+}
+
+.flex-container7>div {
+    background-color: #b1b1b1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+/*
+
+Exemplo
+O wrap-reversevalor especifica que os itens flexíveis serão encapsulados, se necessário, na ordem inversa:
+
+*/
+
+.flex-container8 {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    background-color: indigo;
+}
+
+.flex-container8>div {
+    background-color: #c7bcb1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+/*
+
+A propriedade de fluxo flexível
+A flex-flowpropriedade é uma propriedade abreviada para definir as propriedades flex-directione flex-wrap.
+
+*/
+
+.flex-container9 {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: khaki;
+}
+
+.flex-container9>div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+/*
+
+A propriedade de conteúdo justificado
+A justify-contentpropriedade é usada para alinhar os itens flexíveis:
+
+Exemplo
+O centervalor alinha os itens flexíveis no centro do contêiner:
+
+*/
+
+.flex-container10 {
+    display: flex;
+    justify-content: center;
+    background-color: lawngreen;
+}
+
+.flex-container10>div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+/*
+
+Exemplo
+O flex-startvalor alinha os itens flexíveis no início do contêiner (este é o padrão):
+
+*/
+
+.flex-container11 {
+    display: flex;
+    justify-content: flex-start;
+    background-color: mediumslateblue;
+}
+
+.flex-container11>div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+/*
+
+Exemplo
+O flex-endvalor alinha os itens flexíveis no final do contêiner:
+
+*/
+
+.flex-container12 {
+    display: flex;
+    justify-content: flex-end;
+    background-color: navajowhite;
+}
+
+.flex-container12>div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+/*
+
+Exemplo
+O space-aroundvalor exibe os itens flexíveis com espaço antes, entre e depois das linhas:
+
+*/
+
+.flex-container13 {
+    display: flex;
+    justify-content: space-around;
+    background-color: orangered;
+}
+
+.flex-container13>div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+/*
+
+Exemplo
+O space-betweenvalor exibe os itens flexíveis com espaço entre as linhas:
+
+*/
+
+.flex-container14 {
+    display: flex;
+    justify-content: space-between;
+    background-color: purple;
+}
+
+.flex-container14>div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+/*
+
+A propriedade align-items
+A align-itemspropriedade é usada para alinhar os itens flexíveis.
+
+Exemplo
+O centervalor alinha os itens flexíveis no meio do contêiner:
+
+*/
+
+.flex-container15 {
+    display: flex;
+    height: 200px;
+    align-items: center;
+    background-color: red;
+}
+
+.flex-container15>div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+/*
+
+Exemplo
+O flex-startvalor alinha os itens flexíveis na parte superior do contêiner:
+
+*/
+
+.flex-container16 {
+    display: flex;
+    height: 200px;
+    align-items: flex-start;
+    background-color: seagreen;
+}
+
+.flex-container16>div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+/*
+
+Exemplo
+O flex-endvalor alinha os itens flexíveis na parte inferior do contêiner:
+
+*/
+
+.flex-container17 {
+    display: flex;
+    height: 200px;
+    align-items: flex-end;
+    background-color: tomato;
+}
+
+.flex-container17>div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+/*
+
+Exemplo
+O stretchvalor estica os itens flexíveis para preencher o contêiner (este é o padrão):
+
+*/
+
+.flex-container18 {
+    display: flex;
+    height: 200px;
+    align-items: stretch;
+    background-color: violet;
+}
+
+.flex-container18>div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+/*
+
+Exemplo
+O baselinevalor alinha os itens flexíveis, como suas linhas de base se alinham:
+
+Observação: o exemplo usa tamanho de fonte diferente para demonstrar que os itens são alinhados pela linha de base do texto:
+
+*/
+
+.flex-container19 {
+    display: flex;
+    height: 200px;
+    align-items: baseline;
+    background-color: whitesmoke;
+}
+
+.flex-container19>div {
+    background-color: #000;
+    color: white;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+/*
+
+  A propriedade align-content
+A align-contentpropriedade é usada para alinhar as linhas flexíveis.
+
+Exemplo
+O space-betweenvalor exibe as linhas flexíveis com espaço igual entre elas:
+
+*/
+
+.flex-container20 {
+    display: flex;
+    height: 600px;
+    flex-wrap: wrap;
+    align-content: space-between;
+    overflow: scroll;
+    background-color: DodgerBlue;
+}
+
+.flex-container20>div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+/*
+
+Exemplo
+O space-aroundvalor exibe as linhas flexíveis com espaço antes, entre e depois delas:
+
+*/
+
+.flex-container21 {
+    display: flex;
+    height: 600px;
+    flex-wrap: wrap;
+    align-content: space-around;
+    overflow: scroll;
+    background-color: DodgerBlue;
+}
+
+.flex-container21>div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+/*
+
+Exemplo
+O stretchvalor estica as linhas flexíveis para ocupar o espaço restante (este é o padrão):
+
+*/
+
+.flex-container22 {
+    display: flex;
+    height: 600px;
+    flex-wrap: wrap;
+    align-content: stretch;
+    overflow: scroll;
+    background-color: DodgerBlue;
+}
+
+.flex-container22>div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+/*
+
+Exemplo
+As centerexibições de valor exibem as linhas flexíveis no meio do contêiner:
+
+*/
+
+.flex-container23 {
+    display: flex;
+    height: 600px;
+    flex-wrap: wrap;
+    align-content: center;
+    overflow: scroll;
+    background-color: DodgerBlue;
+}
+
+.flex-container23>div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+/*
+
+Exemplo
+O flex-startvalor exibe as linhas flexíveis no início do contêiner:
+
+*/
+
+.flex-container24 {
+    display: flex;
+    height: 600px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    overflow: scroll;
+    background-color: DodgerBlue;
+}
+
+.flex-container24>div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+/*
+
+Exemplo
+O flex-endvalor exibe as linhas flexíveis no final do contêiner: 
+
+*/
+
+.flex-container25 {
+    display: flex;
+    height: 600px;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    overflow: scroll;
+    background-color: DodgerBlue;
+}
+
+.flex-container25>div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+/*
+
+Centralização Perfeita
+No exemplo a seguir resolveremos um problema de estilo muito comum: centragem perfeita.
+
+SOLUÇÃO: Defina as propriedades justify-contente como , e o item flexível ficará perfeitamente centralizado:align-itemscenter
+
+*/
+
+.flex-container26 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-color: yellowgreen;
+}
+
+.flex-container26 > div {
+    background-color: #e4e;
+    color: white;
+    width: 100px;
+    height: 100px;
+}
+
+/*
+
+As propriedades do contêiner CSS Flexbox
+A tabela a seguir lista todas as propriedades do CSS Flexbox Container:
+
+Property	Description
+align-content	Modifies the behavior of the flex-wrap property. It is similar to align-items, but instead of aligning flex items, it aligns flex lines
+align-items	Vertically aligns the flex items when the items do not use all available space on the cross-axis
+display	Specifies the type of box used for an HTML element
+flex-direction	Specifies the direction of the flexible items inside a flex container
+flex-flow	A shorthand property for flex-direction and flex-wrap
+flex-wrap	Specifies whether the flex items should wrap or not, if there is not enough room for them on one flex line
+justify-content	Horizontally aligns the flex items when the items do not use all available space on the main-axis
+
+*/
+

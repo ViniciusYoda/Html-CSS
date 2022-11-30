@@ -1,0 +1,268 @@
+/*
+
+Itens flexíveis de CSS
+
+Elementos filhos (itens)
+Os elementos filhos diretos de um contêiner flexível tornam-se automaticamente itens flexíveis (flex).
+
+1
+2
+3
+4
+O elemento acima representa quatro itens flexíveis azuis dentro de um contêiner flexível cinza.
+
+*/
+
+.flex-container {
+    display: flex;
+    background-color: #f1f1f1;
+}
+
+.flex-container>div {
+    background-color: DodgerBlue;
+    color: white;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+/*
+
+As propriedades do item flexível são:
+
+order
+flex-grow
+flex-shrink
+flex-basis
+flex
+align-self
+
+A propriedade do pedido
+A orderpropriedade especifica a ordem dos itens flexíveis.
+
+1
+2
+3
+4
+O primeiro item flexível no código não precisa aparecer como o primeiro item no layout.
+
+O valor do pedido deve ser um número, o valor padrão é 0.
+
+Exemplo
+A propriedade order pode alterar a ordem dos itens flexíveis:
+
+*/
+
+.flex-container2 {
+    display: flex;
+    align-items: stretch;
+    background-color: #f1f1f1;
+}
+
+.flex-container2>div {
+    background-color: DodgerBlue;
+    color: white;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+/*
+
+A propriedade de crescimento flexível
+A flex-growpropriedade especifica quanto um item flexível crescerá em relação ao restante dos itens flexíveis.
+
+1
+2
+3
+O valor deve ser um número, o valor padrão é 0.
+
+Exemplo
+Faça o terceiro item flexível crescer oito vezes mais rápido que os outros itens flexíveis:
+
+*/
+
+.flex-container3 {
+    display: flex;
+    align-items: stretch;
+    background-color: #f1f1f1;
+}
+
+.flex-container3>div {
+    background-color: DodgerBlue;
+    color: white;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+/*
+
+A propriedade flex-shrink
+A flex-shrinkpropriedade especifica quanto um item flexível encolherá em relação ao restante dos itens flexíveis.
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+O valor deve ser um número, o valor padrão é 1.
+
+Exemplo
+Não deixe o terceiro flex item encolher tanto quanto os outros flex items:
+
+*/
+
+.flex-container4 {
+    display: flex;
+    align-items: stretch;
+    background-color: #f1f1f1;
+}
+
+.flex-container4>div {
+    background-color: DodgerBlue;
+    color: white;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+/*
+
+A propriedade de base flexível
+A flex-basispropriedade especifica o comprimento inicial de um item flexível.
+
+1
+2
+3
+4
+Exemplo
+Defina o comprimento inicial do terceiro item flexível para 200 pixels:
+
+*/
+
+.flex-container5 {
+    display: flex;
+    align-items: stretch;
+    background-color: #f1f1f1;
+}
+
+.flex-container5>div {
+    background-color: DodgerBlue;
+    color: white;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+/*
+
+A propriedade flexível
+A flexpropriedade é uma propriedade abreviada para as propriedades flex-grow, flex-shrinke flex-basis.
+
+Exemplo
+Torne o terceiro item flexível não expansível (0), não reduzível (0) e com um comprimento inicial de 200 pixels:
+
+*/
+
+.flex-container6 {
+    display: flex;
+    align-items: stretch;
+    background-color: #f1f1f1;
+}
+
+.flex-container6>div {
+    background-color: DodgerBlue;
+    color: white;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+/*
+
+A propriedade align-self
+A align-selfpropriedade especifica o alinhamento do item selecionado dentro do contêiner flexível.
+
+A align-self propriedade substitui o alinhamento padrão definido pela align-itemspropriedade do contêiner.
+
+1
+2
+3
+4
+Nestes exemplos utilizamos um container de 200 pixels de altura, para melhor demonstrar a align-selfpropriedade:
+
+Exemplo
+Alinhe o terceiro item flexível no meio do contêiner:
+
+*/
+
+.flex-container7 {
+    display: flex;
+    height: 200px;
+    background-color: #f1f1f1;
+}
+
+.flex-container7>div {
+    background-color: DodgerBlue;
+    color: white;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+/*
+
+Exemplo
+Alinhe o segundo item flexível na parte superior do contêiner e o terceiro item flexível na parte inferior do contêiner:
+
+*/
+
+.flex-container8 {
+    display: flex;
+    height: 200px;
+    background-color: #f1f1f1;
+}
+
+.flex-container8>div {
+    background-color: DodgerBlue;
+    color: white;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+/*
+
+As propriedades dos itens CSS Flexbox
+A tabela a seguir lista todas as propriedades CSS Flexbox Items:
+
+Property	Description
+align-self	Specifies the alignment for a flex item (overrides the flex container's align-items property)
+flex	A shorthand property for the flex-grow, flex-shrink, and the flex-basis properties
+flex-basis	Specifies the initial length of a flex item
+flex-grow	Specifies how much a flex item will grow relative to the rest of the flex items inside the same container
+flex-shrink	Specifies how much a flex item will shrink relative to the rest of the flex items inside the same container
+order	Specifies the order of the flex items inside the same container
+
+*/

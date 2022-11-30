@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Items</title>
+    <link rel="stylesheet" href="Flex Items.css">
+</head>
+
+<body>
+    <h1>Flexible Items</h1>
+
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+
+    <p>All direct children of a flexible container becomes flexible items.</p>
+
+    <h1>The order Property</h1>
+
+    <p>Use the order property to sort the flex items as you like:</p>
+
+    <div class="flex-container2">
+        <div style="order: 3">1</div>
+        <div style="order: 2">2</div>
+        <div style="order: 4">3</div>
+        <div style="order: 1">4</div>
+    </div>
+
+    <h1>The flex-grow Property</h1>
+
+    <p>Make the third flex item grow eight times faster than the other flex items:</p>
+
+    <div class="flex-container3">
+        <div style="flex-grow: 1">1</div>
+        <div style="flex-grow: 1">2</div>
+        <div style="flex-grow: 8">3</div>
+    </div>
+
+    <h1>The flex-shrink Property</h1>
+
+    <p>Do not let the third flex item shrink as much as the other flex items:</p>
+
+    <div class="flex-container4">
+        <div>1</div>
+        <div>2</div>
+        <div style="flex-shrink: 0">3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+
+    Property</h1>
+
+    <p>Set the initial length of the third flex item to 200 pixels:</p>
+
+    <div class="flex-container5">
+        <div>1</div>
+        <div>2</div>
+        <div style="flex-basis:200px">3</div>
+        <div>4</div>
+    </div>
+
+    <h1>The flex Property</h1>
+
+    <p>Make the third flex item not growable (0), not shrinkable (0), and with an initial length of 200 pixels:</p>
+
+    <div class="flex-container6">
+        <div>1</div>
+        <div>2</div>
+        <div style="flex: 0 0 200px">3</div>
+        <div>4</div>
+    </div>
+
+    <h1>The align-self Property</h1>
+
+    <p>The "align-self: center;" aligns the selected flex item in the middle of the container:</p>
+
+    <div class="flex-container7">
+        <div>1</div>
+        <div>2</div>
+        <div style="align-self: center">3</div>
+        <div>4</div>
+    </div>
+
+    <p>The align-self property overrides the align-items property of the container.</p>
+
+
+    <h1>The align-self Property</h1>
+
+    <p>The "align-self: flex-start;" aligns the selected flex item at the top of the container.</p>
+    <p>The "align-self: flex-end;" aligns the selected flex item at the bottom of the container.</p>
+
+    <div class="flex-container8">
+        <div>1</div>
+        <div style="align-self: flex-start">2</div>
+        <div style="align-self: flex-end">3</div>
+        <div>4</div>
+    </div>
+
+    <p>The align-self property overrides the align-items property of the container.</p>
+
+
+</body>
+
+</html>

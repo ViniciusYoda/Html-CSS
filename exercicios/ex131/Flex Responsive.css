@@ -1,0 +1,78 @@
+/*
+
+CSS flexível responsivo
+
+Caixa flexível responsiva
+Você aprendeu no capítulo CSS Media Queries que pode usar media queries para criar diferentes layouts para diferentes tamanhos de tela e dispositivos.
+
+Portáteis e Desktops:
+
+1
+2
+3
+Celulares e Tablets :
+
+1
+2
+3
+
+Por exemplo, se você deseja criar um layout de duas colunas para a maioria dos tamanhos de tela e um layout de uma coluna para tamanhos de tela pequenos (como telefones e tablets), pode alterar flex-directionde rowpara column em um ponto de interrupção específico (800px no exemplo abaixo):
+
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+}
+
+.flex-item-left {
+    background-color: #f1f1f1;
+    padding: 10px;
+    flex: 50%;
+}
+
+.flex-item-right {
+    background-color: dodgerblue;
+    padding: 10px;
+    flex: 50%;
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+
+@media (max-width: 800px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
+
+/*
+
+Outra maneira é alterar a porcentagem da flexpropriedade dos itens flexíveis para criar diferentes layouts para diferentes tamanhos de tela. Observe que também temos que incluir flex-wrap: wrap;no flex container para que este exemplo funcione:
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-item-left {
+  flex: 50%;
+}
+
+.flex-item-right {
+  flex: 50%;
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout 
+@media (max-width: 800px) {
+    .flex-item-right, .flex-item-left {
+      flex: 100%;
+    }
+  }
+
+*/
