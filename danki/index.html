@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Video</title>
+   <style>
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+      }
+
+      .video {
+         position: fixed;
+         bottom: 0;
+         left: 0;
+         width: 100%;
+         z-index: 1;
+      }
+
+      .login {
+         z-index: 2;
+         position: absolute;
+         width: 80%;
+         max-width: 600px;
+         padding: 40px;
+         background-color: white;
+         left: 50%;
+         top: 50%;
+         transform: translate(-50%, -50%);
+         
+      }
+
+      .login h3 {
+         text-align: center;
+         margin: 10px 0;
+      }
+
+      .login input[type=text], input[type=email] {
+         width: 100%;
+         height: 30px;
+         border: 1px solid #ccc;
+         margin-bottom: 10px;
+         background: transparent;
+         border-radius: 10px;
+
+      }
+
+      .login input::placeholder {
+         color: slategray;
+         padding: 10px;
+      }
+
+      .login input[type=submit] {
+         width: 100%;
+         height: 30px;
+         background-color: #333;
+         color: white;
+         font-size: 18px;
+         cursor: pointer;
+         border-radius: 10px;
+      }
+   </style>
+</head>
+<body>
+   <video autoplay muted loop class="video">
+      <source src="video.mp4" type="video/mp4">
+   </video>
+
+   <div class="login">
+      <h3>Faça seu login</h3>
+      <form action="">
+         <input type="text" name="nome" id="nome" placeholder="nome">
+         <input type="email" name="email" id="email" placeholder="email">
+         <input type="submit" value="enviar">
+      </form>
+   </div>
+</body>
+</html>
